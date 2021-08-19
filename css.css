@@ -1,0 +1,126 @@
+.bg_green-s{
+    background-color: #006400;
+}
+
+.fg_green-s{
+    color: #006400;
+}
+
+.background_img-s{
+    background-image:url(assets/Football.svg), url(assets/Black_Bg.svg);
+    /* Full height */
+    height: 90vh;
+    /* Center and scale the image nicely */
+    background-position:top left, right;
+    background-size:30%, 75%;
+    background-repeat: no-repeat, repeat-y;
+
+}
+
+
+@media screen and (max-width:1024px) {
+    .background_img-s{
+        background: url(assets/fb.png), url(assets/Black_Bg.svg);
+        /* Full height */
+        height: 100vh;
+        /* Center and scale the image nicely */
+        background-position:left top,  right ;
+        background-size:39%,  69%;
+        background-repeat:no-repeat, repeat-y;
+    
+    }
+}
+
+@media screen and (max-width:768px) {
+    .background_img-s{
+        background: url(assets/fb.png), url(assets/Black_Bg.svg);
+        /* Full height */
+        height: 100vh;
+        /* Center and scale the image nicely */
+        background-position:left top,  right ;
+        background-size:35%, 71%;
+        background-repeat:no-repeat, repeat-y;
+    
+    }
+}
+
+@media screen and (max-width:425px) {
+    .background_img-s{
+        background: url(assets/fb.png), url(assets/White\ bg.svg), url(assets/Black_Bg.svg);
+        /* Full height */
+        height: 100vh;
+        /* Center and scale the image nicely */
+        background-position:left top, left top, right ;
+        background-size:55%, 33%,  133%;
+        background-repeat:no-repeat, no-repeat, repeat-y;
+    }
+    .text_sm_white-s{
+        color: white !important;
+    }
+}
+
+.fs_19px-s{
+    font-size: 19px;
+}
+
+.green_bottom_on_hover-s:hover,
+.green_bottom_on_hover-s.active{
+    border-bottom: 5px solid #348734;
+    width: 60%;
+    border-radius: 4px;
+}
+
+.fg_light_green-s{
+    color: #349434;
+}
+
+.fs_90px-s{
+    font-size: 90px;
+}
+
+.fs_40px-s{
+    font-size: 40px;
+}
+
+.opacity_60-s{
+    opacity: 0.6;
+}
+
+.fg_dark_green-s{
+    color: #358734;
+}
+
+.br_10px-s{
+    border-radius: 10px;
+}
+
+.logo_text-s{
+    top: 31%;
+    left: 42px;
+    
+}
+
+.bg_grey-s{
+    background-color: #E5EEE7;
+}
+
+
+@media screen and (max-width:768px) {
+    .w_78_for_md-s{
+        width: 78% !important;
+    }
+}
+
+
+@media screen and (max-width:425px) {
+    .fs_small_for_sm-s{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .navbar-collapse{
+        background-color: black !important;
+    }
+}
+

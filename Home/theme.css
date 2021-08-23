@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   border-bottom: 1px solid #eee;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .week {
-  margin: 10px 0;
+  margin: 1px 0;
 }
 
 .week.highlight {
@@ -61,10 +61,11 @@
   text-transform: capitalize;
   color: #212121;
   font-weight: bold;
+  margin-bottom: 0.7rem;
 }
 .badge {
   color: white;
-  padding: 0.9rem;
+  padding: 0.7rem;
 }
 .week .day.header {
   font-weight: bold;
@@ -149,7 +150,7 @@
 .special-buttons {
   text-align: center;
   border-top: 1px solid #eee;
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 .today-button {

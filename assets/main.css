@@ -173,13 +173,16 @@ html {
   background-color: #f6f6f6;
 } */
 .card_slider {
-  height: 15rem;
+  height: 14rem;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 39px #00000024;
   border-radius: 15px;
 }
 .btn_grp {
   word-spacing: 2.2rem;
+}
+.btn_grp button:hover {
+  border: 2px solid #006400;
 }
 .btn_grp button {
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -216,6 +219,14 @@ html {
   font-size: 1.8rem !important;
   word-spacing: 0.5rem;
 }
+
+.rating_textt {
+  color: #ffffff !important;
+  font-size: 1.8rem !important;
+  word-spacing: 0.5rem;
+  float: right;
+  font-weight: 600;
+}
 .home_card {
   /* background-image: url(../assets/images/green\ bg.svg);
   background-repeat: no-repeat;
@@ -229,6 +240,7 @@ html {
   font-size: 2rem;
   color: white;
 }
+
 .thamer_startrating_m {
   font-family: Roboto;
   text-transform: capitalize;
@@ -252,6 +264,18 @@ html {
   font-size: 0.8rem;
 }
 .fa-heart-o {
+  position: absolute;
+  top: -11px;
+  right: -4%;
+  background-color: #ffffff;
+  height: 3rem;
+  width: 3rem;
+  padding: 1rem 3rem 3rem 1rem;
+  border-radius: 0rem 1.5rem 0rem 3rem;
+  color: #006400 !important;
+}
+
+.fa-heart {
   position: relative;
   top: -11px;
   right: -4%;
@@ -262,14 +286,9 @@ html {
   border-radius: 0rem 1.5rem 0rem 3rem;
   color: #006400 !important;
 }
-.fa-heart-o:hover {
+/* .fa-heart-o:hover {
   background-color: red;
-}
-.rating_text {
-  float: right;
-  color: #ffffff !important;
-  font-weight: 600;
-}
+} */
 
 .goalkeeper_margin_b {
   border-bottom: 1px solid #ffffff;
@@ -320,12 +339,24 @@ html {
   font-family: Roboto;
   text-transform: capitalize;
   line-height: 1.4rem;
-  padding: 3rem 0rem;
+  padding: 2rem 0rem 1rem 0rem;
 }
 .cardbody_text p {
   font-size: 1.8rem;
   color: #212121;
   opacity: 0.4;
+}
+
+.cardbody_text h6 {
+  font-size: 1.8rem;
+  color: #212121;
+  font-weight: 600;
+}
+
+.cardbody_text h5 {
+  font-size: 1.6rem;
+  color: #212121;
+  font-weight: 600;
 }
 
 .cardbody_text h3 {
@@ -413,7 +444,7 @@ html {
   opacity: 1;
   font-family: Roboto;
   text-transform: capitalize;
-  padding: 2rem 0rem 1rem;
+  padding: 1.5rem 0rem 1rem;
 }
 .subtitle_text p {
   display: flex;
@@ -425,10 +456,12 @@ html {
 
 .subtitle_text h3 {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   color: #212121;
   opacity: 1;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1rem;
 }
 .btn_send {
   background: #006400 0% 0% no-repeat padding-box;
@@ -437,7 +470,7 @@ html {
   text-transform: uppercase;
   color: #ffffff;
   font-size: 2rem;
-  margin: 2rem 0rem 2rem 0rem;
+  margin: 1.5rem 0rem 1rem 0rem;
 }
 .hour_increment input {
   padding: 1rem;
@@ -446,7 +479,7 @@ html {
 }
 .location_card {
   background-color: #006400;
-  height: 62rem;
+  height: 48.7rem;
   border-radius: 1.4rem;
 }
 .location_card_child {
@@ -454,6 +487,9 @@ html {
   bottom: 2%;
   width: 91%;
   border-radius: 1.2rem;
+}
+.heart_iconn {
+  padding: 4rem 0.6rem 0rem 0rem;
 }
 .location_card_child h4 {
   font-family: Roboto;
@@ -475,9 +511,192 @@ html {
   color: #006400;
   text-transform: uppercase;
 }
+.bg-successs {
+  background-color: #e5eee7 !important;
+  color: #006400 !important;
+}
+sup {
+  top: 0rem;
+}
+
+.card_bg {
+  background-image: url("../assets/images/green\ bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home_bgg {
+  background-image: url("../assets/images/home_bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home_bg {
+  background-image: url("../assets/images/home_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.stadium_img {
+  margin: -0.1rem;
+}
 /* .................Home Page Sent invitation CSS End .........................  */
 
+/* .................User Profile Page CSS Start .........................  */
+.myprofile_text {
+  font-family: Roboto;
+  margin-top: 5rem;
+}
+.myprofile_text h1 {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: #212121;
+}
+.myprofile_text p {
+  font-size: 2.4rem;
+  font-weight: normal;
+  color: #212121;
+}
+.usercard {
+  margin-top: 14rem;
+  background-color: #006400;
+  border-radius: 15px;
+}
+.userp_hearticon {
+  padding: 3rem 0.6rem 0rem 0rem;
+}
+.userp_hearticon i {
+  position: absolute;
+  top: -1%;
+  right: -0.1%;
+  background-color: #ffffff;
+  height: 3rem;
+  width: 3rem;
+  padding: 1rem 3rem 3rem 1rem;
+  border-radius: 0rem 1.5rem 0rem 3rem;
+  color: #006400 !important;
+  float: right;
+  font-size: 2rem;
+}
+
+.ahmad_startrating_m {
+  font-family: Roboto;
+  text-transform: capitalize;
+  line-height: 0rem;
+}
+.ahmad_startrating_m h4 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: white;
+}
+.ahmad_startrating_m h6 {
+  font-weight: normal;
+  color: #e5eee7 !important;
+  opacity: 0.4;
+}
+.ahmad_startrating_m p {
+  color: #eac600;
+  word-spacing: 0.4rem;
+}
+.ahmad_startrating_m i {
+  letter-spacing: 0.3rem;
+  font-size: 1.2rem;
+}
+.userprofile_aditya {
+  opacity: 0.4 !important;
+  margin-left: 0.6rem;
+  font-size: 1.4rem;
+}
+.location_aditya {
+  color: #ffffff !important;
+  margin-left: 0.6rem;
+  opacity: 0.8;
+  font-size: 1.4rem;
+}
+.rating_txt {
+  color: #ffffff !important;
+  font-size: 2.8rem !important;
+  word-spacing: 0.5rem;
+  float: right;
+  font-weight: 600;
+}
+.age_years_user {
+  font-family: Roboto;
+  text-transform: capitalize;
+  line-height: 0rem;
+  padding-top: 1.8rem;
+  justify-content: space-between;
+  margin-left: -1.3rem;
+}
+.age_years_user p {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-left: 0rem;
+  opacity: 0.4;
+}
+.age_years_user {
+  font-family: Roboto;
+  text-transform: capitalize;
+  line-height: 0rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: -1.2rem;
+}
+.age_years_user h2 {
+  font-size: 2.1rem;
+  font-weight: normal;
+  line-height: 0rem;
+  color: #ffffff;
+}
+.age_years_user img {
+  width: 6rem;
+  margin-top: -1rem;
+}
+.qadsiya_text {
+  margin-left: 1.5rem;
+}
+.defender_text {
+  margin-right: 15rem;
+}
+.performance_text {
+  border-bottom: 2px solid #212121 !important;
+  opacity: 0.4;
+}
+.performance_text a {
+  color: #212121;
+  font-family: Roboto;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  /* border-bottom: 2px solid #006400; */
+}
+/* .active {
+  border-bottom: 2px solid #006400;
+  padding-bottom: 1.2rem;
+} */
+.performance_text p {
+  margin-right: 3rem;
+}
+.performance_img img {
+  width: 40rem;
+  padding-top: 5rem;
+}
+.performance_span {
+  border-bottom: 0.3rem solid #006400;
+  position: absolute;
+  width: 108%;
+  left: 0%;
+  top: 132%;
+}
+/* .................User Profile Page CSS End .........................  */
+
 /* .................Media Querry Start .........................  */
+
+@media screen and (max-width: 767.8px) {
+  .navbar-nav li {
+    font-size: 1.8rem;
+    color: #212121;
+    margin: 0rem !important;
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 991.9px) {
   .navbar-nav li {
@@ -498,6 +717,34 @@ html {
   }
   .hour_increment input {
     width: 100%;
+  }
+  .ahmad_startrating_m {
+    margin-left: 1.6rem;
+  }
+  .age_years_user p {
+    font-size: 1.2rem;
+  }
+  .age_years_user h2 {
+    font-size: 1.2rem;
+  }
+  .defender_text {
+    margin-right: 7rem;
+  }
+  .t28_text {
+    position: absolute;
+    left: 19%;
+  }
+  .t15_text {
+    position: absolute;
+    left: 33.2%;
+  }
+  .t2_text {
+    position: absolute;
+    left: 45%;
+  }
+  .defender_text {
+    position: absolute;
+    left: 55%;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1199.9px) {
@@ -525,6 +772,67 @@ html {
   }
   .hour_increment input {
     width: 100%;
+  }
+
+  .thamer_startrating_m {
+    margin-left: 0.9rem;
+  }
+  .celender_responsive {
+    height: 14rem;
+  }
+
+  .t28_text {
+    position: absolute;
+    left: 18.5%;
+  }
+  .t15_text {
+    position: absolute;
+    left: 33.2%;
+  }
+  .t2_text {
+    position: absolute;
+    left: 45%;
+  }
+  .defender_text {
+    position: absolute;
+    left: 55%;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1439.9px) {
+  .t28_text {
+    position: absolute;
+    left: 18.5%;
+  }
+  .t15_text {
+    position: absolute;
+    left: 33.2%;
+  }
+  .t2_text {
+    position: absolute;
+    left: 46%;
+  }
+  .defender_text {
+    position: absolute;
+    left: 57%;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2020px) {
+  .t28_text {
+    position: absolute;
+    left: 18.5%;
+  }
+  .t15_text {
+    position: absolute;
+    left: 33.2%;
+  }
+  .t2_text {
+    position: absolute;
+    left: 46%;
+  }
+  .defender_text {
+    position: absolute;
+    left: 57%;
   }
 }
 /* .................Media Querry End.........................  */

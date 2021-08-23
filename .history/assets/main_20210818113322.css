@@ -1,0 +1,54 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* .................Home Page CSS Start .........................  */
+/* 
+.social-part .fa img {
+  padding-right: 20px;
+} */
+/* ul li a {
+  margin-right: 20px;
+} */
+.navbar-expand-md {
+  padding: 2.5rem 0rem 0rem 0rem;
+}
+.nav-item img {
+  margin-top: -0.4rem;
+}
+.navbar-nav li {
+  font-size: 1.8rem;
+  color: #212121;
+  margin-left: 5rem;
+}
+.social-part a {
+  margin-right: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.social-part {
+  margin-right: 4rem;
+}
+.nav_profile {
+  width: 2.5rem;
+  border: 0.2rem solid #006400;
+  border-radius: 10rem;
+  margin-left: 2rem;
+}
+.nav_notification_img {
+  width: 3rem;
+  margin-left: 2rem;
+}
+.nav_location_img {
+  margin-top: -0.4rem;
+  width: 1.2rem;
+}
+.ahmed_text_m h1{
+  font-family: ;
+}
+/* .................Home Page CSS End .........................  */

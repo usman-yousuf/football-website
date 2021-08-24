@@ -1,0 +1,27 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* .................Home Page CSS Start .........................  */
+/* 
+.social-part .fa img {
+  padding-right: 20px;
+} */
+/* ul li a {
+  margin-right: 20px;
+} */
+.nav-item img {
+  margin-top: -0.8rem;
+}
+.navbar-nav li {
+  font-size: 1.8rem;
+  color: #212121;
+  margin-left: 1rem;
+}
+
+/* .................Home Page CSS End .........................  */

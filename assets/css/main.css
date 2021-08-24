@@ -59,7 +59,7 @@ html {
 }
 
 .nav_notification_img {
-    width: 3rem;
+    width: 2rem;
     margin-left: 2rem;
 }
 
@@ -685,12 +685,21 @@ sup {
 
 /* ----- USMAN WORK - START ----- */
 
+.bg_img-s {
+    background-image: url(../images/background_img.png);
+    background-size: 53%;
+    background-repeat: no-repeat;
+    background-position: 113% 116%;
+    background-blend-mode: overlay;
+    background-color: #E5EEE7;
+}
+
 .ft_size_14px-s {
     font-size: 14px;
 }
 
-.br_57px-s {
-    border-radius: 47px 47px 0px 0px;
+.br_47px-s {
+    border-radius: 47px 47px 47px 47px;
 }
 
 .height_card-s {
@@ -699,6 +708,28 @@ sup {
 
 .pt_50px-s {
     padding-top: 200px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .bg_img-s {
+        background-image: url(../images/background_img.png);
+        background-size: 47%;
+        background-repeat: no-repeat;
+        background-position: 107% -32%;
+        background-blend-mode: overlay;
+        background-color: #E5EEE7;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 760px) {
+    .bg_img-s {
+        background-image: url(../images/background_img.png);
+        background-size: 41%;
+        background-repeat: no-repeat;
+        background-position: 93% 4%;
+        background-blend-mode: overlay;
+        background-color: #E5EEE7;
+    }
 }
 
 

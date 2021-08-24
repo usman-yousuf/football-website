@@ -698,16 +698,12 @@ sup {
     font-size: 14px;
 }
 
+.ft_3rem-s {
+    font-size: 3.5rem
+}
+
 .br_47px-s {
     border-radius: 47px 47px 47px 47px;
-}
-
-.height_card-s {
-    height: 470px;
-}
-
-.pt_50px-s {
-    padding-top: 200px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {

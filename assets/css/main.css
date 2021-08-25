@@ -692,6 +692,7 @@ sup {
     background-position: 113% 116%;
     background-blend-mode: overlay;
     background-color: #E5EEE7;
+    overflow-x: hidden;
 }
 
 .ft_size_14px-s {
@@ -702,8 +703,12 @@ sup {
     font-size: 3.5rem
 }
 
+.ft_2rem-s {
+    font-size: 2rem;
+}
+
 .br_47px-s {
-    border-radius: 47px 47px 47px 47px;
+    border-radius: 47px 47px 0px 0px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -726,6 +731,10 @@ sup {
         background-blend-mode: overlay;
         background-color: #E5EEE7;
     }
+}
+
+.min_h_340px-s {
+    min-height: 345px;
 }
 
 

@@ -13,8 +13,8 @@
 
     <link rel="stylesheet" href="assets/css/main.css" />
 
-    <title>gameInvitation</title>
-    <style></style>
+    <title>EditProfile</title>
+
 </head>
 
 <body class="bg_img-s">
@@ -22,44 +22,13 @@
     <div class="container-fluid px-0 mx-0 ">
         <!-- .................Home Page NavBar Start ......................... -->
 
-        <nav class="navbar navbar-expand-md navbar-light pt-5 pb-3">
+
             <div class="container-fluid px-xl-4 px-0">
                 <div class="row w-100">
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-2">
-                        <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                                <li class="nav-item ml-xl-4 ml-2">
-                                    <a class="nav-link" href="#">
-                                        <span><img src="assets/images/home.svg" class="img-fluid" alt="navbar_home"/></span> Home <span class="sr-only">(current)</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <span><img src="assets/images/chat.svg" class="img-fluid" alt="navbar_chat" /></span> Chat
-                                    </a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <span><img src="assets/images/favrticon.svg" class="img-fluid" alt="navbar_fvrt" /> </span> Favorites
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <span> <img src="assets/images/GameInvitation.svg" class="img-fluid" alt="navbar_home" /> </span> Game Invitations
-                                    </a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <span> <img src="assets/images/moreoption.svg" class="img-fluid" alt="navbar_home" /> </span> More
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-2 d-flex">
+                        <h3 class="pr-2">Game Invitations</h3>
+                        <h3 class="px-2"><strong>/</strong></h3>
+                        <h3 class="fg_green-s pl-2">Rating Player</h3>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-10 pt-2 text-right">
                         <div class="">
@@ -76,20 +45,6 @@
         </nav>
         <!-- .................Home Page NavBar End ......................... -->
 
-        <!-- -------heading container - start -->
-        <div class="container-fluid">
-            <div class="row py-5 px-xl-5 justify-content-between">
-                <div class="col-md-5 col-12 align-self-center">
-                    <h1 class="ft_3rem-s"><Strong>Game Invitation</Strong></h1>
-                    <h3>Send or accept game invitations.</h3>
-                </div>
-                <div class="col-md-7 col-12 justify-content-md-end mt-md-0 mt-4 d-flex align-self-center">
-                    <a href="javascript:void(0)" class="btn bg-white br_10px-s mr-2 br_green_on_hover-s fg_light_grey-s py-4 w_216px-s"><strong><h3>Invitation</h3></strong></a>
-                    <a href="javascript:void(0)" class="btn bg-white br_10px-s ml-2 br_green_on_hover-s fg_light_grey-s py-4 w_216px-s"><strong><h3>Hire Players</h3></strong></a>
-                </div>
-            </div>
-        </div>
-        <!-- ------heading container - end -->
 
         <!-- container for favorite players - start -->
         <div class="container-fluid bg-white mt-5 br_47px-s">
@@ -119,7 +74,7 @@
                 <div class="col-12 col-md-6 col-lg-4 py-2">
 
                     <div class="card home_card">
-                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s"><h3>pending</h3></div>
+                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s"><h3>Accepted</h3></div>
                         <div class="heart_icon">
                             <i class="fa fa-heart" aria-hidden="true"></i>
                         </div>
@@ -167,14 +122,8 @@
                             </div>
 
                             <div class="row py-4">
-                                <div class="col-6 pr-2">
-                                    <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" ><strong>DECLINE</strong></button>
-                                </div>
-                                <!--CANCEL button end-->
-    
-                                <!--SUBMIT button-->
-                                <div class="col-6 pl-2">
-                                    <button type="submit" class="btn bg-white br_10px-s py-3 fg_green-s w-100"><strong>ACCEPT</strong></button>
+                                <div class="col-12">
+                                    <button type="button" class="btn bg-white br_10px-s fg_green-s py-3 w-100" ><strong>Send Message</strong></button>
                                 </div>
                             </div>
                         </div>
@@ -184,7 +133,7 @@
                 <div class="col-12 col-md-6 col-lg-4 py-2">
 
                     <div class="card home_card">
-                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s"><h3>pending</h3></div>
+                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s"><h3>Accepted</h3></div>
                         <div class="heart_icon">
                             <i class="fa fa-heart" aria-hidden="true"></i>
                         </div>
@@ -232,14 +181,8 @@
                             </div>
 
                             <div class="row py-4">
-                                <div class="col-6 pr-2">
-                                    <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" ><strong>DECLINE</strong></button>
-                                </div>
-                                <!--CANCEL button end-->
-    
-                                <!--SUBMIT button-->
-                                <div class="col-6 pl-2">
-                                    <button type="submit" class="btn bg-white br_10px-s py-3 fg_green-s w-100"><strong>ACCEPT</strong></button>
+                                <div class="col-12 ">
+                                    <button type="button" class="btn bg-white br_10px-s fg_green-s py-3 w-100" ><strong>Send Message</strong></button>
                                 </div>
                             </div>
                         </div>
@@ -249,7 +192,7 @@
                 <div class="col-12 col-md-6 col-lg-4 py-2">
 
                     <div class="card home_card">
-                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s"><h3>pending</h3></div>
+                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s"><h3>Declined</h3></div>
                         <div class="heart_icon">
                             <i class="fa fa-heart" aria-hidden="true"></i>
                         </div>
@@ -296,15 +239,9 @@
                                 <span class="opacity_4-s">Sami Al-Ahmad Al Munayes St, Al Kuwayt, Kuwait</span>
                             </div>
 
-                            <div class="row py-4">
-                                <div class="col-6 pr-2">
-                                    <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" ><strong>DECLINE</strong></button>
-                                </div>
-                                <!--CANCEL button end-->
-    
-                                <!--SUBMIT button-->
-                                <div class="col-6 pl-2">
-                                    <button type="submit" class="btn bg-white br_10px-s py-3 fg_green-s w-100"><strong>ACCEPT</strong></button>
+                            <div class="row py-4 invisible">
+                                <div class="col-12">
+                                    <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" ><strong>Send Message</strong></button>
                                 </div>
                             </div>
                         </div>

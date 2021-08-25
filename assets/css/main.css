@@ -730,3 +730,32 @@ sup {
 
 
 /* ----- USMAN WORK - END ----- */
+
+
+/* ----- MINA WORK - START ----- */
+.br_10px-s{
+    border-radius: 10px;
+}
+
+.fg_light_grey-s{
+    color: #bdc5bf;
+   
+}
+
+.w_216px-s{
+    width: 216px;
+}
+
+.br_green_on_hover-s:hover{
+    border: 2px solid #006400;
+    color: black !important;
+}
+
+.fg_green-s{
+    color: #006400;
+}
+
+.bg_green-s{
+    background-color: #006400;
+}
+/* ----- MINA WORK - END ----- */

@@ -861,5 +861,19 @@ sup {
   .slider.round:before {
     border-radius: 50%;
   }
+
+.border_green-s{
+    border: 2px solid #006400;
+}
+
+.logo_text-s{
+    top: 31%;
+    left: 42px;
+    
+}
+
+.fs_18px-s{
+    font-size: 18px;
+}
   /*notification button end*/
 /* ----- MINA WORK - END ----- */

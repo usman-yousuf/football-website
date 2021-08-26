@@ -12,8 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/mina.css">
+    <!-- <link rel="stylesheet" href="assets/css/page.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
 
-    <title>gameInvitation</title>
+
+
+    <title>gameInvitation.html</title>
     <style></style>
 </head>
 
@@ -32,18 +38,18 @@
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                                 <li class="nav-item ml-xl-4 ml-2">
-                                    <a class="nav-link" href="#">
+                                    <a class="nav-link" href="Home/home.html">
                                         <span><img src="assets/images/home.svg" class="img-fluid" alt="navbar_home"/></span> Home <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">
+                                    <a class="nav-link" href="chat.html">
                                         <span><img src="assets/images/chat.svg" class="img-fluid" alt="navbar_chat" /></span> Chat
                                     </a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">
+                                    <a class="nav-link" href="favorite_player.html">
                                         <span><img src="assets/images/favrticon.svg" class="img-fluid" alt="navbar_fvrt" /> </span> Favorites
                                     </a>
                                 </li>
@@ -80,18 +86,20 @@
         <div class="container-fluid">
             <div class="row py-5 px-xl-5 justify-content-between">
                 <div class="col-md-5 col-12 align-self-center">
-                    <h1 class="ft_3rem-s"><Strong>Game Invitation</Strong></h1>
+                    <h1 class="ft_3rem-s">
+                        <Strong>Game Invitation</Strong>
+                    </h1>
                     <h3>Send or accept game invitations.</h3>
                 </div>
                 <div class="col-md-7 col-12 justify-content-md-end mt-md-0 mt-4 d-flex align-self-center">
-                    <a href="javascript:void(0)" class="btn bg-white br_10px-s mr-2 br_green_on_hover-s fg_light_grey-s py-4 w_216px-s"><strong><h3>Invitation</h3></strong></a>
-                    <a href="javascript:void(0)" class="btn bg-white br_10px-s ml-2 br_green_on_hover-s fg_light_grey-s py-4 w_216px-s"><strong><h3>Hire Players</h3></strong></a>
+                    <a href="javascript:void(0)" role="button" class="btn bg-white br_10px-s mr-2 br_green_on_hover-s fg_light_grey-s py-4 w_216px-s" data-toggle="modal" data-target="#accept_invitation_modal-d"><strong><h3>Invitation</h3></strong></a>
+                    <a href="hire_Players.html" class="btn bg-white br_10px-s ml-2 br_green_on_hover-s fg_light_grey-s py-4 w_216px-s"><strong><h3>Hire Players</h3></strong></a>
                 </div>
             </div>
         </div>
         <!-- ------heading container - end -->
 
-        <!-- container for favorite players - start -->
+        <!-- container for invited players - start -->
         <div class="container-fluid bg-white mt-5 br_47px-s">
             <div class="row pt-5 px-xl-5">
                 <div class="col-12 d-flex fg_green-s">
@@ -104,7 +112,7 @@
                 <div class="col-6 pl-0 d-flex">
                     <div class="">
                         <div class="bg_green-s py-3 w_42px-s br_right_10px-s"></div>
-                        
+
                     </div>
                     <div class="pl-2">
                         <h4>03:00 pm</h4>
@@ -113,13 +121,15 @@
                 <div class="col-6 text-right">
                     <h3 class="fg_light_grey-s">Upcoming Matches</h3>
                 </div>
-            </div>    
+            </div>
             <div class="row px-xl-4 py-3 px-xl-5 px-2">
-                
+
                 <div class="col-12 col-md-6 col-lg-4 py-2">
 
                     <div class="card home_card">
-                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s"><h3>pending</h3></div>
+                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s">
+                            <h3>pending</h3>
+                        </div>
                         <div class="heart_icon">
                             <i class="fa fa-heart" aria-hidden="true"></i>
                         </div>
@@ -140,7 +150,7 @@
                                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                                     <i class="fa fa-star-o" aria-hidden="true"></i> 5.0
-                                                    
+
                                                 </p>
                                             </div>
                                         </div>
@@ -160,7 +170,7 @@
 
                             <div class="aditya_location">
                                 <p class="mb-0 pb-0">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     <span>Jaber Al-Ahmad International Stadium</span>
                                 </p>
                                 <span class="opacity_4-s">Sami Al-Ahmad Al Munayes St, Al Kuwayt, Kuwait</span>
@@ -168,10 +178,10 @@
 
                             <div class="row py-4">
                                 <div class="col-6 pr-2">
-                                    <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" ><strong>DECLINE</strong></button>
+                                    <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100"><strong>DECLINE</strong></button>
                                 </div>
                                 <!--CANCEL button end-->
-    
+
                                 <!--SUBMIT button-->
                                 <div class="col-6 pl-2">
                                     <button type="submit" class="btn bg-white br_10px-s py-3 fg_green-s w-100"><strong>ACCEPT</strong></button>
@@ -184,7 +194,9 @@
                 <div class="col-12 col-md-6 col-lg-4 py-2">
 
                     <div class="card home_card">
-                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s"><h3>pending</h3></div>
+                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s">
+                            <h3>pending</h3>
+                        </div>
                         <div class="heart_icon">
                             <i class="fa fa-heart" aria-hidden="true"></i>
                         </div>
@@ -205,7 +217,7 @@
                                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                                     <i class="fa fa-star-o" aria-hidden="true"></i> 5.0
-                                                    
+
                                                 </p>
                                             </div>
                                         </div>
@@ -225,7 +237,7 @@
 
                             <div class="aditya_location">
                                 <p class="mb-0 pb-0">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     <span>Jaber Al-Ahmad International Stadium</span>
                                 </p>
                                 <span class="opacity_4-s">Sami Al-Ahmad Al Munayes St, Al Kuwayt, Kuwait</span>
@@ -233,10 +245,10 @@
 
                             <div class="row py-4">
                                 <div class="col-6 pr-2">
-                                    <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" ><strong>DECLINE</strong></button>
+                                    <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100"><strong>DECLINE</strong></button>
                                 </div>
                                 <!--CANCEL button end-->
-    
+
                                 <!--SUBMIT button-->
                                 <div class="col-6 pl-2">
                                     <button type="submit" class="btn bg-white br_10px-s py-3 fg_green-s w-100"><strong>ACCEPT</strong></button>
@@ -249,7 +261,9 @@
                 <div class="col-12 col-md-6 col-lg-4 py-2">
 
                     <div class="card home_card">
-                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s"><h3>pending</h3></div>
+                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s">
+                            <h3>pending</h3>
+                        </div>
                         <div class="heart_icon">
                             <i class="fa fa-heart" aria-hidden="true"></i>
                         </div>
@@ -270,7 +284,7 @@
                                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                                     <i class="fa fa-star-o" aria-hidden="true"></i> 5.0
-                                                    
+
                                                 </p>
                                             </div>
                                         </div>
@@ -290,7 +304,7 @@
 
                             <div class="aditya_location">
                                 <p class="mb-0 pb-0">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     <span>Jaber Al-Ahmad International Stadium</span>
                                 </p>
                                 <span class="opacity_4-s">Sami Al-Ahmad Al Munayes St, Al Kuwayt, Kuwait</span>
@@ -298,10 +312,10 @@
 
                             <div class="row py-4">
                                 <div class="col-6 pr-2">
-                                    <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" ><strong>DECLINE</strong></button>
+                                    <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100"><strong>DECLINE</strong></button>
                                 </div>
                                 <!--CANCEL button end-->
-    
+
                                 <!--SUBMIT button-->
                                 <div class="col-6 pl-2">
                                     <button type="submit" class="btn bg-white br_10px-s py-3 fg_green-s w-100"><strong>ACCEPT</strong></button>
@@ -316,7 +330,7 @@
                 <div class="col-6 pl-0 d-flex">
                     <div class="">
                         <div class="bg_green-s py-3 w_42px-s br_right_10px-s"></div>
-                        
+
                     </div>
                     <div class="pl-2">
                         <h4>03:00 pm</h4>
@@ -325,14 +339,16 @@
                 <div class="col-6 text-right">
                     <h3 class="fg_light_grey-s">Match Finished</h3>
                 </div>
-            </div> 
+            </div>
 
             <div class="row px-xl-4 py-3 px-xl-5 px-2">
-                
+
                 <div class="col-12 col-md-6 col-lg-4 py-2">
 
                     <div class="card home_card">
-                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s"><h3>Accepted</h3></div>
+                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s">
+                            <h3>Accepted</h3>
+                        </div>
                         <div class="heart_icon">
                             <i class="fa fa-heart" aria-hidden="true"></i>
                         </div>
@@ -353,7 +369,7 @@
                                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                                     <i class="fa fa-star-o" aria-hidden="true"></i>
                                                     <i class="fa fa-star-o" aria-hidden="true"></i> 5.0
-                                                    
+
                                                 </p>
                                             </div>
                                         </div>
@@ -373,7 +389,7 @@
 
                             <div class="aditya_location">
                                 <p class="mb-0 pb-0">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     <span>Jaber Al-Ahmad International Stadium</span>
                                 </p>
                                 <span class="opacity_4-s">Sami Al-Ahmad Al Munayes St, Al Kuwayt, Kuwait</span>
@@ -381,10 +397,10 @@
 
                             <div class="row py-4">
                                 <div class="col-6 pr-2">
-                                    <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" ><strong>RATE</strong></button>
+                                    <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100"><strong>RATE</strong></button>
                                 </div>
                                 <!--CANCEL button end-->
-    
+
                                 <!--SUBMIT button-->
                                 <div class="col-6 pl-2">
                                     <button type="submit" class="btn bg-white br_10px-s py-3 fg_green-s w-100"><strong>MESSAGE</strong></button>
@@ -395,12 +411,185 @@
                 </div>
             </div>
         </div>
-        <!-- container for favorite players - end -->
+        <!-- container for invited players - end -->
     </div>
+
+    <!-- Invitation Modal -->
+    <div class="modal fade" id="accept_invitation_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content br_10px-s border-0">
+                <div class="container-fluid">
+                    <!--header image-->
+                    <div class="row modal-header border-0 mt-5">
+                        <div class="col-12 text-center">
+                            <img src="assets/images/invitation.svg" width="130" alt="send invitation">
+                        </div>
+                    </div>
+                    <!--header image end-->
+
+                    <div class="row modal-body ">
+                        <!--modal text-->
+                        <div class="col-12 text-center">
+                            <h4 class="fg_green-s">ACCEPT INVITATION</h4>
+                            <h6><strong>Are you sure you want to accept this invitation?</strong></h6>
+                        </div>
+                        <!--modal text end-->
+
+                        <!--player info-->
+                        <div class="mt-3 col-12">
+                            <span class="opacity_4-s"><strong>Player</strong></span>
+                            <div class="d-flex justify-content-between border px-2 py-3 br_10px-s">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" class="rounded-circle" width="60" height="60" alt="player img">
+                                    </div>
+                                    <div class="ml-2 text-left">
+                                        <h6 class="fg_green-s mb-0">Thamer</h6>
+                                        <a href="javascript:void(0)" class="opacity_4-s text-dark">@thamedmd</a>
+                                        <div class="">
+                                            <img class="star_img-s" src="assets/images/yellow_star.svg" alt="star img">
+                                            <img class="star_img-s" src="assets/images/yellow_star.svg" alt="star img">
+                                            <img class="star_img-s" src="assets/images/yellow_star.svg" alt="star img">
+                                            <img class="star_img-s" src="assets/images/half_star.svg" alt="star img">
+                                            <img class="star_img-s" src="assets/images/grey_star.svg" alt="star img">
+                                            <span class="rating_star-d fs_10px-s fg_yellow-s">3.5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-right align-self-center">
+                                    <h6 class=""><strong>Goalkeeper</strong></h6>
+                                    <span class="opacity_4-s">Position</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--player info-->
+
+                        <!--amount pay-->
+                        <div class="col-12 mt-4">
+                            <div class="d-flex justify-content-between">
+                                <div class="opacity_4-s">Amount to pay</div>
+                                <div>
+                                    <img src="" alt="">
+                                    <span><strong>$12.5</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--amount pay end-->
+                    </div>
+                    <div class="row px-3 pt-3 pb-5">
+                        <!--NO button-->
+                        <div class="col-6 pr-2">
+                            <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" data-dismiss="modal"><strong>No</strong></button>
+                        </div>
+                        <!--NO button end-->
+
+                        <!--YES button-->
+                        <div class="col-6 pl-2">
+                            <button type="button" class="btn bg_green-s br_10px-s py-3 text-white w-100" id="switch_to_select_date-d"><strong>Yes</strong></button>
+                        </div>
+                        <!--YES button end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- after invitation accepted modal -->
+    <div class="modal fade" id="select_date_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content br_10px-s border-0">
+                <div class="container-fluid">
+                    <!--modal header-->
+                    <div class="row modal-header br_up_left_right_10px-s border-0 bg_grey-s">
+                        <div class="col-12 mt-2">
+                            <h4><strong>DATE</strong></h4>
+                        </div>
+                    </div>
+                    <!--modal header end-->
+                    <div class="row modal-body pt-5 pb-0">
+                        <div class="col-12 mb-4">
+                            <main>
+                                <div class="calendar-wrapper" id="calendar-wrapper"></div>
+                            </main>
+                        </div>
+                    </div>
+
+                    <div class="row px-3  pb-5">
+                        <!--CANCEL button-->
+                        <div class="col-6 pr-2">
+                            <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" data-dismiss="modal"><strong>CANCEL</strong></button>
+                        </div>
+                        <!--CANCEL button end-->
+
+                        <!--SUBMIT button-->
+                        <div class="col-6 pl-2">
+                            <a role="button" type="submit" id="cal" class="btn bg_green-s br_10px-s py-3 text-white w-100" data-dismiss="modal"><strong>SUBMIT</strong></a>
+                        </div>
+                        <!--SUBMIT button end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <!-- .................Home Page End ......................... -->
     <script src="assets/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Sultan work -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+    <script src="assets/js/calendar.js"></script>
+    <script src="assets/js/calendar.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/codeflask/build/codeflask.min.js"></script>
+    <script type="text/javascript">
+        var config = `
+        function selectDate(date) {
+          $('#calendar-wrapper').updateCalendarOptions({
+            date: date
+          });
+          console.log(calendar.getSelectedDate());
+        }
+
+        var defaultConfig = {
+          weekDayLength: 1,
+          date: '08-05-2021',
+          onClickDate: selectDate,
+          showYearDropdown: true,
+          startOnMonday: true,
+        };
+
+        var calendar = $('#calendar-wrapper').calendar(defaultConfig);
+        console.log(calendar.getSelectedDate());
+`;
+        eval(config);
+        const flask = new CodeFlask("#editor", {
+            language: "js",
+            lineNumbers: true,
+        });
+        flask.updateCode(config);
+        flask.onUpdate((code) => {
+            try {
+                eval(code);
+            } catch (e) {}
+        });
+    </script>
+    <script>
+        $("#switch_to_select_date-d").click(function() {
+            $("#accept_invitation_modal-d").modal('hide');
+            $("#select_date_modal-d").modal('show');
+        });
+
+        $(`#cal`).click(function() {
+            window.location.href = "hire_Players.html";
+        });
+    </script>
 </body>
 
 </html>

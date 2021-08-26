@@ -170,7 +170,20 @@
 
 .fg_light_grey-s{
     color: #bdc5bf;
-   
+}
+
+
+.code_border-s {
+    border: 1px solid #E5EEE7;
+    border-radius: 5px;
+    border-bottom: 2px solid #006400;
+    width: 77px;
+    height: 77px;
+    background-color: #E5EEE7;
+}
+
+.fs_30px-s{
+    font-size: 30px;
 }
 
 

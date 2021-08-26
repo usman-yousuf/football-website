@@ -862,6 +862,8 @@ sup {
     border-radius: 50%;
   }
 
+  /*notification button end*/
+
 .border_green-s{
     border: 2px solid #006400;
 }
@@ -875,5 +877,21 @@ sup {
 .fs_18px-s{
     font-size: 18px;
 }
-  /*notification button end*/
+
+.bg_light_grey-s{
+    background-color: #f8f8f8;
+}
+
+.h_21px-s{
+    height: 21px;
+}
+
+.mh_86vh-s{
+    min-height: 86vh;
+}
+
+.footer-s{
+    bottom: 0;
+    width: 100%;
+}
 /* ----- MINA WORK - END ----- */

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/mina.css">
+    <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
+    <title>Update Phone No.</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#update_phone_num_modal-d">
+            Update Phone No.
+        </button>
+        <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#num_verification_modal-d">
+            Email verification
+        </button>
+        <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#new_num_modal-d">
+            New Email
+        </button>
+        <!-- Update Number Modal -->
+        <div class="modal fade" id="update_phone_num_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content br_10px-s border-0">
+                    <div class="container-fluid">
+                        <!--modal header-->
+                        <div class="row pt-4 modal-header border-0">
+                            <div class="col-12 text-center">
+                                <img src="assets/images/phone_no..svg" width="160" alt="update password">
+                            </div>
+                        </div>
+                        <!--modal header end-->
+                        <div class="row modal-body justify-content-center pt-3 pb-0">
+                            <div class="col-12">
+                                <div class="col-12 text-center">
+                                    <h4 class="fg_green-s">UPDATE PHONE NUMBER</h4>
+                                    <h6>Please enter phone number and password associated with your account and we’ll send a verification code to update your phone number</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 px-4">
+                                <form action="">
+                                    <div class="form-group pt-3">
+                                        <label for="number-d" class=""><strong>PHONE NUMBER</strong></label>
+                                        <input type="number" name="number" placeholder="Enter your phone number" id="number-d" class="form-control rounded form-control-xl py-4 number-t">
+                                    </div>
+                                    <div class="form-group pt-3">
+                                        <label for="current_password-d" class=""><strong>PASSWORD</strong></label>
+                                        <input type="password" name="password" placeholder="Enter your password" id="current_password-d" class="form-control rounded form-control-xl py-4 current_Password-t">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row pt-3 pb-4 pb-5 px-2">
+                            <!--CANCEL button-->
+                            <div class="col-6 pr-2">
+                                <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" data-dismiss="modal"><strong>CANCEL</strong></button>
+                            </div>
+                            <!--CANCEL button end-->
+
+                            <!--PROCEED button-->
+                            <div class="col-6 pl-2">
+                                <button type="submit" class="btn bg_green-s br_10px-s py-3 text-white w-100"><strong>PROCEED</strong></button>
+                            </div>
+                            <!--PROCEED button end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Update Number Modal end-->
+
+        <!-- enter code Modal -->
+        <div class="modal fade" id="num_verification_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content br_10px-s border-0">
+                    <div class="container-fluid">
+                        <!--modal header-->
+                        <div class="row pt-4 modal-header border-0">
+                            <div class="col-12 text-center">
+                                <img src="assets/images/code.svg" width="160" alt="verification code">
+                            </div>
+                        </div>
+                        <!--modal header end-->
+                        <div class="row modal-body justify-content-center pt-3 pb-0">
+                            <div class="col-12">
+                                <div class="col-12 text-center">
+                                    <h4 class="fg_green-s">EMAIL VERIFICATION</h4>
+                                    <h6>Please enter the 4 digit code sent to <span>ahmadmd.23@gmail.com</span></h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row px-md-3">
+                            <div class="col-12 px-4">
+                                <form action="">
+                                    <div class="d-flex text-center py-4 justify-content-between">
+                                        <div class=" p-3 code_border-s">
+                                            <span class="fs_30px-s"><strong>4</strong></span>
+                                        </div>
+                                        <div class="  p-3 code_border-s">
+                                            <span class="fs_30px-s"><strong>4</strong></span>
+                                        </div>
+                                        <div class=" p-3 code_border-s">
+                                            <span class="fs_30px-s"><strong>4</strong></span>
+                                        </div>
+                                        <div class=" p-3 code_border-s">
+                                            <span class="fs_30px-s"><strong>4</strong></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-12 py-3 text-center">
+                                <a href="javascript:void(0)" class="text-dark"><u><strong>Resend Code</strong></u></a>
+                            </div>
+                        </div>
+                        <div class="row pt-3 pb-4 pb-5 px-2">
+                            <!--CANCEL button-->
+                            <div class="col-6 pr-2">
+                                <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" data-dismiss="modal"><strong>CANCEL</strong></button>
+                            </div>
+                            <!--CANCEL button end-->
+
+                            <!--verify button-->
+                            <div class="col-6 pl-2">
+                                <button type="submit" class="btn bg_green-s br_10px-s py-3 text-white w-100"><strong>VERIFY</strong></button>
+                            </div>
+                            <!--verify button end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- enter code Modal end -->
+
+        <!-- change Number Modal-->
+        <div class="modal fade" id="new_num_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content br_10px-s border-0">
+                    <div class="container-fluid">
+                        <!--modal header-->
+                        <div class="row pt-4 modal-header border-0">
+                            <div class="col-12 text-center">
+                                <img src="assets/images/email.svg" width="160" alt="update password">
+                            </div>
+                        </div>
+                        <!--modal header end-->
+                        <div class="row modal-body justify-content-center pt-3 pb-0">
+                            <div class="col-12">
+                                <div class="col-12 text-center">
+                                    <h4 class="fg_green-s">NEW PHONE NUMBER</h4>
+                                    <h6>Please enter phone number which you want to associate with your account</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 px-4">
+                                <form action="">
+                                    <div class="form-group pt-3">
+                                        <label for="new_number-d" class=""><strong>NEW PHONE NUMBER</strong></label>
+                                        <input type="number" name="number" placeholder="Enter your phone number" id="new_number-d" class="form-control rounded form-control-xl py-4 new_number-t">
+                                    </div>
+                                    <div class="form-group pt-3">
+                                        <label for="password-d" class=""><strong>PASSWORD</strong></label>
+                                        <input type="password" name="email" placeholder="Enter your password" id="password-d" class="form-control rounded form-control-xl py-4 password-t">
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="row pt-3 pb-4 pb-5 px-2">
+                            <!--CANCEL button-->
+                            <div class="col-6 pr-2">
+                                <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" data-dismiss="modal"><strong>CANCEL</strong></button>
+                            </div>
+                            <!--CANCEL button end-->
+
+                            <!--UPDATE button-->
+                            <div class="col-6 pl-2">
+                                <button type="submit" class="btn bg_green-s br_10px-s py-3 text-white w-100"><strong>UPDATE</strong></button>
+                            </div>
+                            <!--UPDATE button end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- change Number  Modal end -->
+    </div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+
+    <!-- ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+</body>
+</html>

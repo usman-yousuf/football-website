@@ -47,16 +47,18 @@
 
 
         <!-- container for favorite players - start -->
-        <div class="container-fluid bg-white mt-5 br_47px-s">
+        <div class="container-fluid bg-white mt-5 br_47px-s mh_86vh-s">
             <div class="row pt-5 px-xl-5 justify-content-center">
-                <div class="col-2 text-center">
-                    <img src="assets/images/edit_profile.svg" class="position-absolute" alt="edit profile icon">
-                    <img src="assets/images/user_img.png" width="128" class="border_green-s rounded-circle" alt="player img">
+                <div class="col-12 text-center">
+                    <img src="assets/images/edit_profile.svg" class="position-absolute edit_profile-s" alt="edit profile icon">
+                    <div>
+                        <img src="assets/images/user_img.png" width="128" class="border_green-s rounded-circle" alt="player img"> 
+                    </div>
                     
                 </div>
             </div>
-            <div class="row p-t-2 pb-5 pr-xl-5 pr-3">
-                <form action="" class="d-flex">
+            <form action="" class="">
+                <div class="row pt-2 pb-5 px-xl-5 px-3">
                     <div class="col-lg-4 col-md-6 col-12 pt-3">
                         <div class="form-group">
                             <label for="first_name-d"><strong><h4>FIRST NAME</h4></strong></label>
@@ -75,7 +77,6 @@
                             <input type="text" class="form-control form-control-lg User_name-t rounded" value="@ahmadjamele" id="first_name-d" placeholder="User Name">
                         </div>
                     </div>
-                </form>    
                     <div class="col-lg-4 col-md-6 col-12 pt-3">
                         <div class="form-group">
                             <label for="date_of_birth-d"><strong><h4>DATE OF BIRTH</h4></strong></label>
@@ -93,10 +94,53 @@
                             <label for="price-d"><strong><h4>PRICE</h4></strong></label>
                             <input type="number" class="form-control form-control-lg price-t rounded" value="$ 10" id="price-d" placeholder="price">
                         </div>
-                    </div>
-                
-            </div>    
+                    </div>  
+                </div> 
+            </form>    
 
+            <div class="row px-xl-5 px-3">
+                <div class="col-lg-4 col-12 pt-4">
+                    <h4><strong>Gender</strong></h4>
+                    <div class="form-check">
+                        <label class="form-check-label fs_18px-s">
+                          <input class="form-check-input radio-inline mt-2 mr-3" type="radio" name="male" id="male-d" value="male" checked>
+                            <span class="pl-3">Male</span>
+                        </label>
+                          <label class="form-check-label fs_18px-s ml-5">
+                          <input class="form-check-input radio-inline mt-2 mr-3" type="radio" name="female" id="female-d" value="female">
+                            <span class="pl-3"> Female</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-12 pt-4">
+                    <h4><strong>Position</strong></h4>
+                    <div class="form-check">
+                        <label class="form-check-label fs_18px-s">
+                            <input class="form-check-input radio-inline mt-2 mr-3" type="radio" name="goalkeeper" id="goalkeeper-d" value="goalkeeper" checked>
+                            <span class="pl-3">Goalkeeper</span>
+                        </label>
+                        <label class="form-check-label fs_18px-s ml-5">
+                            <input class="form-check-input radio-inline mt-2 mr-3" type="radio" name="defender" id="defender-d" value="defender">
+                            <span class="pl-3">Defernder</span>
+                        </label>
+                        <label class="form-check-label fs_18px-s ml-5">
+                            <input class="form-check-input radio-inline mt-2 mr-3" type="radio" name="midfielder" id="midfielder-d" value="midfielder" checked>
+                            <span class="pl-3">Midfielder</span>
+                        </label>
+                            <label class="form-check-label fs_18px-s ml-5">
+                            <input class="form-check-input radio-inline mt-2 mr-3" type="radio" name="forward" id="forward-d" value="forward">
+                            <span class="pl-3">Forward</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row px-xl-5 px-3 py-5">
+                <div class="col-12 text-right">
+                    <button type="submit" class="btn bg_green-s br_10px-s py-3 text-white w_184px-s"><strong>SAVE</strong></button>
+                </div>
+            </div>
         </div>
         <!-- container for favorite players - end -->
     </div>

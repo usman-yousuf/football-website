@@ -865,7 +865,7 @@ sup {
   /*notification button end*/
 
 .border_green-s{
-    border: 2px solid #006400;
+    border: 3px solid #006400;
 }
 
 .logo_text-s{
@@ -893,5 +893,52 @@ sup {
 .footer-s{
     bottom: 0;
     width: 100%;
+}
+
+[type="radio"]{
+    visibility: hidden;
+}
+
+
+[type="radio"]::before { 
+    border: 1px solid #D8D8D8;
+    height: 16px;
+    width: 16px; 
+    background-color: #D8D8D8;
+    border-radius: 50%; 
+    display: block;
+    content: " ";
+    cursor: pointer;
+    visibility: visible; 
+}
+
+[type="radio"]:checked::before {
+    background-color: #70B547; 
+}
+
+.edit_profile-s{
+    bottom: 0;
+    left: 52%;
+}
+
+@media screen and (max-width:1024px) {
+    .edit_profile-s{
+        bottom: 0;
+        left: 53%;
+    }
+}
+
+@media screen and (max-width:786px) {
+    .edit_profile-s{
+        bottom: 0;
+        left: 54%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .edit_profile-s{
+        bottom: 0;
+        left: 57%;
+    }
 }
 /* ----- MINA WORK - END ----- */

@@ -941,4 +941,44 @@ sup {
         left: 57%;
     }
 }
+
+.focus_none-s:focus{
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.td_none-s:hover{
+    text-decoration: none;
+}
+
+.dropdown_icon-s::before{
+    background-image: url(../images/arrow_up.svg);
+
+}
+
+.dropdown_icon-s::after{
+    background-image:  url(../images/arrow_down.svg);
+}
+
+.chat_button-s{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+.wrapper {
+    position: fixed;
+    right: 32px;
+    bottom: 131px;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    transition: all 0.4s;
+    z-index: 1;
+}
+
+
 /* ----- MINA WORK - END ----- */

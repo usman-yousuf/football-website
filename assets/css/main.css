@@ -699,6 +699,10 @@ sup {
     font-size: 14px;
 }
 
+.ft_size_12px-s {
+    font-size: 12px;
+}
+
 .ft_3rem-s {
     font-size: 3.5rem
 }
@@ -752,10 +756,6 @@ sup {
     font-size: 17px;
 }
 
-.fg_green-s {
-    color: #006400;
-}
-
 .br_fg-s {
     border: 1px solid #006400;
 }
@@ -766,8 +766,8 @@ sup {
 
 .profile_img-s {
     /* background-color: darkseagreen; */
-    width: 54px;
-    height: 54px;
+    width: 47px;
+    height: 47px;
     border-radius: 37px;
     border: 1px solid green;
 }
@@ -789,6 +789,36 @@ sup {
     color: white;
 }
 
+.mb_25px-s {
+    margin-bottom: -25px;
+}
+
+.fg_darkgrey_s {
+    color: #212121;
+}
+
+.profile_img_in_chat-s {
+    width: 30px;
+    height: 30px;
+    border-radius: 37px;
+    border: 1px solid green;
+}
+
+.br_10x10-s {
+    border-radius: 10px 10px 10px 0px;
+}
+
+.br_10px10px-s {
+    border-radius: 10px 10px 0px 10px;
+}
+
+.textarea_h_w-s {
+    min-height: 50px;
+    max-height: 70px;
+}
+
+
+/*
 
 /* ----- Chat - end ---- */
 

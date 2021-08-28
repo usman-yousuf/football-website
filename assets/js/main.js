@@ -36,9 +36,7 @@
             }
 
             var show_chat = document.getElementById("wrapper-d");
-            
-            if(show_chat.getAttribute("class") == "d-none"){
-                console.log(show_chat.classList);
+            if(show_chat.classList.contains("d-none")){
                 show_chat.classList.remove("d-none");
                 show_chat.classList.add("d-block");
             }

@@ -699,6 +699,10 @@ sup {
     font-size: 14px;
 }
 
+.ft_size_12px-s {
+    font-size: 12px;
+}
+
 .ft_3rem-s {
     font-size: 3.5rem
 }
@@ -738,84 +742,167 @@ sup {
 }
 
 
+/* ----- Chat - start ---- */
+
+.bg-greenish_grey-s {
+    background-color: #E5EEE7;
+}
+
+.fg_lightgrey_s {
+    color: #00000017;
+}
+
+.ft_17px-s {
+    font-size: 17px;
+}
+
+.br_fg-s {
+    border: 1px solid #006400;
+}
+
+.br_10px-s {
+    border-radius: 10px;
+}
+
+.profile_img-s {
+    /* background-color: darkseagreen; */
+    width: 47px;
+    height: 47px;
+    border-radius: 37px;
+    border: 1px solid green;
+}
+
+.img_set_to_div-s {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.message_count-s {
+    width: 40%;
+    background-color: green;
+    height: 40%;
+    border-radius: 20px;
+}
+
+.fg_white-s {
+    color: white;
+}
+
+.mb_25px-s {
+    margin-bottom: -25px;
+}
+
+.fg_darkgrey_s {
+    color: #212121;
+}
+
+.profile_img_in_chat-s {
+    width: 30px;
+    height: 30px;
+    border-radius: 37px;
+    border: 1px solid green;
+}
+
+.br_10x10-s {
+    border-radius: 10px 10px 10px 0px;
+}
+
+.br_10px10px-s {
+    border-radius: 10px 10px 0px 10px;
+}
+
+.textarea_h_w-s {
+    min-height: 50px;
+    max-height: 70px;
+}
+
+
+/*
+
+/* ----- Chat - end ---- */
+
+
 /* ----- USMAN WORK - END ----- */
 
 
 /* ----- MINA WORK - START ----- */
-.br_10px-s{
+
+.br_10px-s {
     border-radius: 10px;
 }
 
-.fg_light_grey-s{
+.fg_light_grey-s {
     color: #bdc5bf;
-   
 }
 
-.w_216px-s{
+.w_216px-s {
     width: 216px;
 }
 
-.br_green_on_hover-s:hover{
+.br_green_on_hover-s:hover {
     border: 2px solid #006400;
     color: black !important;
 }
 
-.fg_green-s{
+.fg_green-s {
     color: #006400;
 }
 
-.bg_green-s{
+.bg_green-s {
     background-color: #006400;
 }
 
-.br_right_10px-s{
+.br_right_10px-s {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.w_42px-s{
+.w_42px-s {
     width: 42px;
 }
 
-.card_ticker-s{
+.card_ticker-s {
     left: -14px;
 }
 
-.br_15px-s{
+.br_15px-s {
     border-radius: 15px;
 }
 
-.opacity_4-s{
+.opacity_4-s {
     opacity: .4;
 }
 
-.fg_yellow-s{
+.fg_yellow-s {
     color: #EAC600;
 }
 
-.bg_grey-s{
+.bg_grey-s {
     background-color: #E5EEE7;
 }
 
-.w_184px-s{
+.w_184px-s {
     width: 184px;
 }
 
+
 /*notification button*/
+
 .switch {
     position: relative;
     display: inline-block;
     width: 50px;
     height: 25px;
-  }
-  
-  .switch input { 
+}
+
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  .slider {
+}
+
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -825,9 +912,9 @@ sup {
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
     height: 20px;
@@ -837,30 +924,35 @@ sup {
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked+.slider {
     background-color: #006400;
-  }
-  
-  input:focus + .slider {
+}
+
+input:focus+.slider {
     box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(24px);
     -ms-transform: translateX(24px);
     transform: translateX(24px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
     border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
     border-radius: 50%;
-  }
+}
+
+
+/*notification button end*/
 
   /*notification button end*/
 
@@ -868,15 +960,15 @@ sup {
     border: 3px solid #006400;
 }
 
-.logo_text-s{
+.logo_text-s {
     top: 31%;
     left: 42px;
-    
 }
 
-.fs_18px-s{
+.fs_18px-s {
     font-size: 18px;
 }
+
 
 .bg_light_grey-s{
     background-color: #f8f8f8;
@@ -979,6 +1071,10 @@ sup {
     transition: all 0.4s;
     z-index: 1;
 }
+
+
+/*notification button end*/
+
 
 
 /* ----- MINA WORK - END ----- */

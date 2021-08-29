@@ -46,22 +46,16 @@
             }
         }
 
-        // let dropdown_img = document.getElementsByClassName("button_click-s");
-        // Array.from(dropdown_img).forEach(elm => {
-        //     elm.addEventListener( "click" ,changeImg );
-        // });
-    
-        // function changeImg () {
-        //     var child_nodes = this.children[0];
-        //     console.log(child_nodes.getAttribute("class").innerHTML);
-        //     for(var i=0; i < child_nodes.length; i++) {
-        //         if(child_nodes[i].getAttribute("class") == "text-right"){
-        //             var img_div = child_nodes[i];
-        //         }
-        //     }
-
-        //     console.log(img_div);
-        // }
+        let rating_slider =document.getElementsByClassName("ratig_slider-s");
+        Array.from(rating_slider).forEach( elm => {
+            console.log("sdkj");
+            let rating_value = document.getElementById("ability-d");
+            rating_value.innerHTML = elm.value;
+            elm.oninput = function() {
+                rating_value.innerHTML = this.value;
+              }
+        });
+        
     });
 
 

@@ -1007,7 +1007,7 @@ input:checked+.slider:before {
 }
 
 [type="radio"]:checked::before {
-    background-color: #70B547; 
+    background-color: #006400; 
 }
 
 .edit_profile-s{
@@ -1093,127 +1093,35 @@ input:checked+.slider:before {
     font-size: 27px;
 }
 
-/* .rating_filed-s{
-    position: relative;
-}
-
-.rating_filed-s input[type=range] {
-    width: 100%;
-    height: 6px; 
-    border: 0;
-    outline: 0;
-    border-radius: 5px;
-    pointer-events: none;
+.ratig_slider-s {
+    width: 90%;
     -webkit-appearance: none;
-} */
-
-/* .rating_filed-s input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-} */
-
-/* .rating_filed-s input[type=range]:active,
-.rating_filed-s input[type=range]:focus {
-  outline: 0;
-}
-
-.rating_filed-s input[type=range]::-ms-track {
-  width: 188px;
-  height: 2px; 
-  border: 0;
-  outline: 0;
-  box-sizing: border-box;
-  border-radius: 5px;
-  pointer-events: none;
-  background: red;
-  border-color: red;
-  color: red;
-  border-radius: 5px;
-}
+} 
 
 /* Style toddler input range */
 
-/*.rating_filed-s input[type=range]::-webkit-slider-thumb { 
-  /* WebKit/Blink */
-    /*position: relative;
+.ratig_slider-s::-webkit-slider-thumb { 
     -webkit-appearance: none;
-    margin: 0;
-    border: 0;
-    outline: 0;
     border-radius: 50%;
-    height: 10px;
-    width: 10px;
-    margin-top: -4px;
-    background-color: #fff;
-    cursor: pointer;
-    cursor: pointer;
-    pointer-events: all;
-    z-index: 100;
-} */
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    margin-top: -8px;
+    background-color: #006400;
+}
 
-/* .rating_filed-s input[type=range]::-moz-range-thumb { 
-
-  position: relative;
-  appearance: none;
-  margin: 0;
-  border: 0;
-  outline: 0;
-  border-radius: 50%;
-  height: 10px;
-  width: 10px;
-  margin-top: -5px;
-  background-color: #fff;
-  cursor: pointer;
-  cursor: pointer;
-  pointer-events: all;
-  z-index: 100;
-} */
-
-/* .rating_filed-s input[type=range]::-ms-thumb  { 
-  
-  position: relative;
-  appearance: none;
-  margin: 0;
-  border: 0;
-  outline: 0;
-  border-radius: 50%;
-  height: 10px;
-  width: 10px;
-  margin-top: -5px;
-  background-color: #fff;
-  cursor: pointer;
-  cursor: pointer;
-  pointer-events: all;
-  z-index: 100;
-} */
 
 /* Style track input range */
 
-/* .rating_filed-s input[type=range]::-webkit-slider-runnable-track { 
+.ratig_slider-s::-webkit-slider-runnable-track { 
   
   width: 188px;
   height: 2px;
   cursor: pointer;
-  background: #fff;
-  border-radius: 5px; */
-/* } */
+  background: #006400;
+  border-radius: 5px; 
+}
 
-/* .rating_filed-s input[type=range]::-moz-range-track { 
-  
-  width: 188px;
-  height: 2px;
-  cursor: pointer;
-  background: #fff;
-  border-radius: 5px;
-} */
-
-/*.rating_filed-s input[type=range]::-ms-track { 
-  
-  width: 188px;
-  height: 2px;
-  cursor: pointer;
-  background: #fff;
-  border-radius: 5px;
-} */
 /*notification button end*/
 
 

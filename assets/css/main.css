@@ -266,14 +266,11 @@
   background-repeat: no-repeat;
   background-size: cover; */
     background-color: #006400;
-    padding: 1rem 0.6rem 0rem 0rem;
-    border-radius: 1.5rem;
 }
 
 .heart_icon i {
     float: right;
-    font-size: 2rem;
-    color: white;
+
 }
 
 .thamer_startrating_m {

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/mina.css">
+    <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
+    <title>PlayerPlayed</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#player_played_modal-d">
+            Player played or not
+        </button>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="player_played_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content br_10px-s border-0">
+                    <div class="container-fluid">
+                        <!--header image-->
+                        <div class="row modal-header border-0 mt-3">
+                            <div class="col-12 text-center">
+                                <img src="assets/images/user_img.png" class="rounded-circle b_5px-s shadow" width="150" alt="player img">
+                            </div>
+                        </div>
+                        <!--header image end-->
+                        
+                        <div class="row modal-body text-center">
+                            <!--modal text-->
+                            <div class="col-12 ">
+                                <h4 class="fg_green-s">Jamele</h4>
+                                <a href="javascript:void(0)">
+                                    <h5  class="opacity_4-s text-dark"><strong>@jamelemd</strong></h5>
+                                </a>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <h6><strong>Did jamele played this match?</strong></h6>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <p class="opacity_4-s">You can rate this only if he played this match? After confirming this, you can not revert it.</p>
+                            </div>
+                            <!--modal text end-->
+                        </div>
+                        <div class="row px-3 pt-3 pb-5">
+                            <!--NO button-->
+                            <div class="col-6 pr-2">
+                                <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" data-toggle="modal" data-target="#player_not_played_modal-d"><strong>No</strong></button>
+                            </div>
+                            <!--NO button end-->
+
+                            <!--YES button-->
+                            <div class="col-6 pl-2">
+                                <button type="button" class="btn bg_green-s br_10px-s py-3 text-white w-100"><strong>Yes</strong></button>
+                            </div>
+                            <!--YES button end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--player not played Modal -->
+        <div class="modal fade" id="player_not_played_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content br_10px-s border-0">
+                    <div class="container-fluid">
+                        <!--header image-->
+                        <div class="row modal-header border-0 mt-3">
+                            <div class="col-12 text-center">
+                                <img src="assets/images/user_img.png" class="rounded-circle b_5px-s shadow" width="150" alt="player img">
+                            </div>
+                        </div>
+                        <!--header image end-->
+                        
+                        <div class="row modal-body text-center">
+                            <!--modal text-->
+                            <div class="col-12 ">
+                                <h4 class="fg_green-s">Jamele</h4>
+                                <a href="javascript:void(0)">
+                                    <h5  class="opacity_4-s text-dark"><strong>@jamelemd</strong></h5>
+                                </a>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <h5><strong>Sorry</strong></h5>
+                                <h5><strong>You can not rate him!!</strong></h5>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <p class="opacity_4-s">You confirm that jamele did not played this match.</p>
+                            </div>
+                            <!--modal text end-->
+                        </div>
+                        <div class="row px-3 pt-2 pb-5">
+                            <!--close button-->
+                            <div class="col-12">
+                                <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" data-dismiss="modal"><strong>Close</strong></button>
+                            </div>
+                            <!--close button end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+
+    <!-- ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+</body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <title>HirePlayer</title>
+    <style></style>
+</head>
+
+<body class="bg_img-s">
+    <!-- .................Home Page Start ......................... -->
+    <div class="container-fluid px-0 mx-0 ">
+        <!-- .................Home Page NavBar Start ......................... -->
+
+        <nav class="navbar navbar-expand-md navbar-light pt-5 pb-3">
+            <div class="container-fluid px-xl-4 px-0">
+                <div class="row w-100">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-2">
+                        <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item ml-xl-4 ml-2">
+                                    <a class="nav-link" href="Home/home.html">
+                                        <span><img src="assets/images/home.svg" class="img-fluid" alt="navbar_home"/></span> Home <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="chat.html">
+                                        <span><img src="assets/images/chat.svg" class="img-fluid" alt="navbar_chat" /></span> Chat
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="favorite_player.html">
+                                        <span><img src="assets/images/favrticon.svg" class="img-fluid" alt="navbar_fvrt" /> </span> Favorites
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="game_invitation.html">
+                                        <span> <img src="assets/images/GameInvitation.svg" class="img-fluid" alt="navbar_home" /> </span> Game Invitations
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <span> <img src="assets/images/moreoption.svg" class="img-fluid" alt="navbar_home" /> </span> More
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-10 pt-2 text-right">
+                        <div class="">
+                            <a>
+                                <img src="assets/images/Location.svg" class="img-fluid nav_location_img" alt="navbar_home" />
+                                <span> Adailiya </span>
+                            </a>
+                            <img src="assets/images/Group 24.png" class="img-fluid nav_profile" alt="Navbar_profile" />
+                            <img src="assets/images/notification.svg" class="img-fluid nav_notification_img" alt="navbar_home" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- .................Home Page NavBar End ......................... -->
+
+        <!-- -------heading container - start -->
+        <div class="container-fluid">
+            <div class="row py-5 px-xl-5 justify-content-between">
+                <div class="col-md-5 col-12 align-self-center">
+                    <h1 class="ft_3rem-s">
+                        <Strong>Game Invitation</Strong>
+                    </h1>
+                    <h3>Send or accept game invitations.</h3>
+                </div>
+                <div class="col-md-7 col-12 justify-content-md-end mt-md-0 mt-4 d-flex align-self-center">
+                    <a href="game_invitation.html" class="btn bg-white br_10px-s mr-2 br_green_on_hover-s fg_light_grey-s py-4 w_216px-s"><strong><h3>Invitation</h3></strong></a>
+                    <a href="javascript:void(0)" class="btn bg-white br_10px-s ml-2 br_green_on_hover-s fg_light_grey-s py-4 w_216px-s" data-toggle="modal" data-target="#cancel_invitation_modal-d"><strong><h3>Hire Players</h3></strong></a>
+                </div>
+            </div>
+        </div>
+        <!-- ------heading container - end -->
+
+        <!-- container for hired players - start -->
+        <div class="container-fluid bg-white mt-5 br_47px-s">
+            <div class="row pt-5 px-xl-5">
+                <div class="col-12 d-flex fg_green-s">
+                    <h3 class="mr-2">Today,</h3>
+                    <h3 class="mx-2">26 December 2020</h3>
+                    <h3 class="ml-2"><strong>></strong></h3>
+                </div>
+            </div>
+            <div class="row py-5 pr-xl-5 pr-3">
+                <div class="col-6 pl-0 d-flex">
+                    <div class="">
+                        <div class="bg_green-s py-3 w_42px-s br_right_10px-s"></div>
+
+                    </div>
+                    <div class="pl-2">
+                        <h4>03:00 pm</h4>
+                    </div>
+                </div>
+                <div class="col-6 text-right">
+                    <h3 class="fg_light_grey-s">Upcoming Matches</h3>
+                </div>
+            </div>
+            <div class="row px-xl-4 py-3 px-xl-5 px-2">
+
+                <div class="col-12 col-md-6 col-lg-4 py-2">
+
+                    <div class="card home_card">
+                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s">
+                            <h3>Accepted</h3>
+                        </div>
+                        <div class="heart_icon">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-2 col-3">
+                                    <img src="assets/images/Group 24.png" alt="" />
+                                </div>
+                                <div class="col-xl-10 col-9 px-0">
+                                    <div class="row px-5">
+                                        <div class="col-xl-5 col-12 px-0">
+                                            <div class="text-white">
+                                                <h4>Thamer</h4>
+                                                <h5 class=" opacity_4-s">@thamermd</h5>
+                                                <p class="fg_yellow-s">
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i> 5.0
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-7 col-12 px-0 d-flex justify-content-between">
+                                            <div class="">
+                                                <h4 class="text-white"> $10 </h4>
+                                                <h5 class="opacity_4-s text-white">Match Amount</h5>
+                                            </div>
+                                            <div class="text-right">
+                                                <h4 class="text-white">Defender</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="goalkeeper_margin_b" />
+
+                            <div class="aditya_location">
+                                <p class="mb-0 pb-0">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <span>Jaber Al-Ahmad International Stadium</span>
+                                </p>
+                                <span class="opacity_4-s">Sami Al-Ahmad Al Munayes St, Al Kuwayt, Kuwait</span>
+                            </div>
+
+                            <div class="row py-4">
+                                <div class="col-12">
+                                    <button type="button" class="btn bg-white br_10px-s fg_green-s py-3 w-100"><strong>Send Message</strong></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 py-2">
+
+                    <div class="card home_card">
+                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s">
+                            <h3>Accepted</h3>
+                        </div>
+                        <div class="heart_icon">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-2 col-3">
+                                    <img src="assets/images/Group 24.png" alt="" />
+                                </div>
+                                <div class="col-xl-10 col-9 px-0">
+                                    <div class="row px-5">
+                                        <div class="col-xl-5 col-12 px-0">
+                                            <div class="text-white">
+                                                <h4>Thamer</h4>
+                                                <h5 class=" opacity_4-s">@thamermd</h5>
+                                                <p class="fg_yellow-s">
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i> 5.0
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-7 col-12 px-0 d-flex justify-content-between">
+                                            <div class="">
+                                                <h4 class="text-white"> $10 </h4>
+                                                <h5 class="opacity_4-s text-white">Match Amount</h5>
+                                            </div>
+                                            <div class="text-right">
+                                                <h4 class="text-white">Defender</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="goalkeeper_margin_b" />
+
+                            <div class="aditya_location">
+                                <p class="mb-0 pb-0">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <span>Jaber Al-Ahmad International Stadium</span>
+                                </p>
+                                <span class="opacity_4-s">Sami Al-Ahmad Al Munayes St, Al Kuwayt, Kuwait</span>
+                            </div>
+
+                            <div class="row py-4">
+                                <div class="col-12 ">
+                                    <button type="button" class="btn bg-white br_10px-s fg_green-s py-3 w-100"><strong>Send Message</strong></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 py-2">
+
+                    <div class="card home_card">
+                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s">
+                            <h3>Declined</h3>
+                        </div>
+                        <div class="heart_icon">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-2 col-3">
+                                    <img src="assets/images/Group 24.png" alt="" />
+                                </div>
+                                <div class="col-xl-10 col-9 px-0">
+                                    <div class="row px-5">
+                                        <div class="col-xl-5 col-12 px-0">
+                                            <div class="text-white">
+                                                <h4>Thamer</h4>
+                                                <h5 class=" opacity_4-s">@thamermd</h5>
+                                                <p class="fg_yellow-s">
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i> 5.0
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-7 col-12 px-0 d-flex justify-content-between">
+                                            <div class="">
+                                                <h4 class="text-white"> $10 </h4>
+                                                <h5 class="opacity_4-s text-white">Match Amount</h5>
+                                            </div>
+                                            <div class="text-right">
+                                                <h4 class="text-white">Defender</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="goalkeeper_margin_b" />
+
+                            <div class="aditya_location">
+                                <p class="mb-0 pb-0">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <span>Jaber Al-Ahmad International Stadium</span>
+                                </p>
+                                <span class="opacity_4-s">Sami Al-Ahmad Al Munayes St, Al Kuwayt, Kuwait</span>
+                            </div>
+
+                            <div class="row py-4 invisible">
+                                <div class="col-12">
+                                    <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100"><strong>Send Message</strong></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-5 pr-xl-5 pr-3">
+                <div class="col-6 pl-0 d-flex">
+                    <div class="">
+                        <div class="bg_green-s py-3 w_42px-s br_right_10px-s"></div>
+
+                    </div>
+                    <div class="pl-2">
+                        <h4>03:00 pm</h4>
+                    </div>
+                </div>
+                <div class="col-6 text-right">
+                    <h3 class="fg_light_grey-s">Match Finished</h3>
+                </div>
+            </div>
+
+            <div class="row px-xl-4 py-3 px-xl-5 px-2">
+
+                <div class="col-12 col-md-6 col-lg-4 py-2">
+
+                    <div class="card home_card">
+                        <div class="br_15px-s position-absolute bg-white fg_green-s px-5 shadow card_ticker-s">
+                            <h3>Accepted</h3>
+                        </div>
+                        <div class="heart_icon">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-2 col-3">
+                                    <img src="assets/images/Group 24.png" alt="" />
+                                </div>
+                                <div class="col-xl-10 col-9 px-0">
+                                    <div class="row px-5">
+                                        <div class="col-xl-5 col-12 px-0">
+                                            <div class="text-white">
+                                                <h4>Thamer</h4>
+                                                <h5 class=" opacity_4-s">@thamermd</h5>
+                                                <p class="fg_yellow-s">
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i> 5.0
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-7 col-12 px-0 d-flex justify-content-between">
+                                            <div class="">
+                                                <h4 class="text-white"> $10 </h4>
+                                                <h5 class="opacity_4-s text-white">Match Amount</h5>
+                                            </div>
+                                            <div class="text-right">
+                                                <h4 class="text-white">Defender</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="goalkeeper_margin_b" />
+
+                            <div class="aditya_location">
+                                <p class="mb-0 pb-0">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <span>Jaber Al-Ahmad International Stadium</span>
+                                </p>
+                                <span class="opacity_4-s">Sami Al-Ahmad Al Munayes St, Al Kuwayt, Kuwait</span>
+                            </div>
+
+                            <div class="row py-4">
+                                <div class="col-6 pr-2">
+                                    <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100"><strong>RATE</strong></button>
+                                </div>
+                                <!--CANCEL button end-->
+
+                                <!--SUBMIT button-->
+                                <div class="col-6 pl-2">
+                                    <button type="submit" class="btn bg-white br_10px-s py-3 fg_green-s w-100"><strong>MESSAGE</strong></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- container for hired players - end -->
+    </div>
+    <!-- .................Home Page End ......................... -->
+    <!-- cancel invitation modal -->
+    <div class="modal fade" id="cancel_invitation_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content br_10px-s border-0">
+                <div class="container-fluid">
+                    <!--header image-->
+                    <div class="row modal-header border-0 mt-5">
+                        <div class="col-12 text-center">
+                            <img src="assets/images/invitation.svg" width="130" alt="send invitation">
+                        </div>
+                    </div>
+                    <!--header image end-->
+
+                    <div class="row modal-body ">
+                        <!--modal text-->
+                        <div class="col-12 text-center">
+                            <h4 class="fg_green-s">CANCEL INVITATION</h4>
+                            <h6><strong>Are you sure you want to cancel this invitation?</strong></h6>
+                        </div>
+                        <!--modal text end-->
+
+                        <!--player info-->
+                        <div class="mt-3 col-12">
+                            <span class="opacity_4-s"><strong>Player</strong></span>
+                            <div class="d-flex justify-content-between border px-2 py-3 br_10px-s">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <img src="assets/images/user_img.png" class="rounded-circle" width="60" alt="player img">
+                                    </div>
+                                    <div class="ml-2 text-left">
+                                        <h6 class="fg_green-s mb-0">Thamer</h6>
+                                        <span class="opacity_4-s">@thamedmd</span>
+                                        <div class="">
+                                            <img class="star_img-s" src="assets/images/yellow_star.svg" alt="star img">
+                                            <img class="star_img-s" src="assets/images/yellow_star.svg" alt="star img">
+                                            <img class="star_img-s" src="assets/images/yellow_star.svg" alt="star img">
+                                            <img class="star_img-s" src="assets/images/half_star.svg" alt="star img">
+                                            <img class="star_img-s" src="assets/images/grey_star.svg" alt="star img">
+                                            <span class="rating_star-d fs_10px-s fg_yellow-s">3.5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-right align-self-center">
+                                    <h6 class=""><strong>Goalkeeper</strong></h6>
+                                    <span class="opacity_4-s">Position</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--player info-->
+
+                        <!--amount pay-->
+                        <div class="col-12 mt-4">
+                            <div class="d-flex justify-content-between">
+                                <div class="opacity_4-s">Amount to pay</div>
+                                <div>
+                                    <img src="" alt="">
+                                    <span><strong>$12.5</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--amount pay end-->
+                    </div>
+                    <div class="row px-3 pt-3 pb-5">
+                        <!--NO button-->
+                        <div class="col-6 pr-2">
+                            <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" data-dismiss="modal"><strong>No</strong></button>
+                        </div>
+                        <!--NO button end-->
+
+                        <!--YES button-->
+                        <div class="col-6 pl-2">
+                            <button type="button" class="btn bg_green-s br_10px-s py-3 text-white w-100" data-dismiss="modal"><strong>Yes</strong></button>
+                        </div>
+                        <!--YES button end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+
+</html>

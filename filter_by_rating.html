@@ -7,7 +7,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
     <title>Filter by Rating</title>
 </head>
@@ -24,12 +24,13 @@
                 <h5 class="modal-title" id="view-head">Filter By Rating</h5>
             </div>
             <div class="modal-body">
-            <fieldset>
-                <div class="price-field">
-                    <input type="range"  min="100" max="500" value="100" id="lower">
+            <form action="">
+                <div class="price-field ">
+                    <input type="range"  min="100" max="500" value="100" name="foo" id="lower">
+                    <output for="foo" onforminput="value = foo.valueAsNumber;"></output>
                     <input type="range" min="100" max="500" value="500" id="upper">
                   </div>
-            </fieldset>
+            </form>
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

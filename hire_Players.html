@@ -87,7 +87,7 @@
                 </div>
                 <div class="col-md-7 col-12 justify-content-md-end mt-md-0 mt-4 d-flex align-self-center">
                     <a href="game_invitation.html" class="btn bg-white br_10px-s mr-2 br_green_on_hover-s fg_light_grey-s py-4 w_216px-s"><strong><h3>Invitation</h3></strong></a>
-                    <a href="javascript:void(0)" class="btn bg-white br_10px-s ml-2 br_green_on_hover-s fg_light_grey-s py-4 w_216px-s" data-toggle="modal" data-target="#cancel_invitation_modal-d"><strong><h3>Hire Players</h3></strong></a>
+                    <a href="javascript:void(0)" class="btn bg-white br_10px-s ml-2 br_green_on_hover-s fg_light_grey-s py-4 w_216px-s"><strong><h3>Hire Players</h3></strong></a>
                 </div>
             </div>
         </div>
@@ -373,7 +373,9 @@
 
                             <div class="row py-4">
                                 <div class="col-6 pr-2">
-                                    <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100"><strong>RATE</strong></button>
+                                    <a href="rating_player.html">
+                                        <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100"><strong>RATE</strong></button>
+                                    </a>
                                 </div>
                                 <!--CANCEL button end-->
 
@@ -390,85 +392,7 @@
         <!-- container for hired players - end -->
     </div>
     <!-- .................Home Page End ......................... -->
-    <!-- cancel invitation modal -->
-    <div class="modal fade" id="cancel_invitation_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered ">
-            <div class="modal-content br_10px-s border-0">
-                <div class="container-fluid">
-                    <!--header image-->
-                    <div class="row modal-header border-0 mt-5">
-                        <div class="col-12 text-center">
-                            <img src="assets/images/invitation.svg" width="130" alt="send invitation">
-                        </div>
-                    </div>
-                    <!--header image end-->
 
-                    <div class="row modal-body ">
-                        <!--modal text-->
-                        <div class="col-12 text-center">
-                            <h4 class="fg_green-s">CANCEL INVITATION</h4>
-                            <h6><strong>Are you sure you want to cancel this invitation?</strong></h6>
-                        </div>
-                        <!--modal text end-->
-
-                        <!--player info-->
-                        <div class="mt-3 col-12">
-                            <span class="opacity_4-s"><strong>Player</strong></span>
-                            <div class="d-flex justify-content-between border px-2 py-3 br_10px-s">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <img src="assets/images/user_img.png" class="rounded-circle" width="60" alt="player img">
-                                    </div>
-                                    <div class="ml-2 text-left">
-                                        <h6 class="fg_green-s mb-0">Thamer</h6>
-                                        <span class="opacity_4-s">@thamedmd</span>
-                                        <div class="">
-                                            <img class="star_img-s" src="assets/images/yellow_star.svg" alt="star img">
-                                            <img class="star_img-s" src="assets/images/yellow_star.svg" alt="star img">
-                                            <img class="star_img-s" src="assets/images/yellow_star.svg" alt="star img">
-                                            <img class="star_img-s" src="assets/images/half_star.svg" alt="star img">
-                                            <img class="star_img-s" src="assets/images/grey_star.svg" alt="star img">
-                                            <span class="rating_star-d fs_10px-s fg_yellow-s">3.5</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-right align-self-center">
-                                    <h6 class=""><strong>Goalkeeper</strong></h6>
-                                    <span class="opacity_4-s">Position</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!--player info-->
-
-                        <!--amount pay-->
-                        <div class="col-12 mt-4">
-                            <div class="d-flex justify-content-between">
-                                <div class="opacity_4-s">Amount to pay</div>
-                                <div>
-                                    <img src="" alt="">
-                                    <span><strong>$12.5</strong></span>
-                                </div>
-                            </div>
-                        </div>
-                        <!--amount pay end-->
-                    </div>
-                    <div class="row px-3 pt-3 pb-5">
-                        <!--NO button-->
-                        <div class="col-6 pr-2">
-                            <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" data-dismiss="modal"><strong>No</strong></button>
-                        </div>
-                        <!--NO button end-->
-
-                        <!--YES button-->
-                        <div class="col-6 pl-2">
-                            <button type="button" class="btn bg_green-s br_10px-s py-3 text-white w-100" data-dismiss="modal"><strong>Yes</strong></button>
-                        </div>
-                        <!--YES button end-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <script src="assets/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>

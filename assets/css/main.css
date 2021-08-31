@@ -122,7 +122,6 @@
 }
 
 
-}
 .carousel-indicators li {
     background-color: #006400;
 }
@@ -232,8 +231,6 @@
 }
 .fa-heart {
     position: relative;
-    top: -11px;
-    right: -4%;
     background-color: #ffffff;
     height: 3rem;
     width: 3rem;
@@ -681,8 +678,9 @@ sup {
 .fg_light_grey-s {
     color: #bdc5bf;
 }
-.w_216px-s {
+.w_h_216px_x_63px-s{
     width: 216px;
+    height: 63px;
 }
 .br_green_on_hover-s:hover {
     border: 2px solid #006400;
@@ -694,15 +692,16 @@ sup {
 .bg_green-s {
     background-color: #006400;
 }
-.br_right_10px-s {
+.br_right_top_bottom_10px-s {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.w_42px-s {
-    width: 42px;
+.w_54px-s {
+    width: 54px;
 }
 .card_ticker-s {
     left: -14px;
+    top: 30px;
 }
 .br_15px-s {
     border-radius: 15px;
@@ -908,6 +907,19 @@ input:checked+.slider:before {
     cursor: pointer;
     background: #006400;
     border-radius: 5px;
+}
+
+.br_1_5rem-s{
+    border-radius: 1.5rem;
+    border: 1px solid grey;
+}
+
+.fs_32px-s{
+    font-size: 32px;
+}
+
+.fs_12px-s{
+    font-size: 12px;
 }
 
 /*notification button end*/

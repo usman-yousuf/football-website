@@ -119,7 +119,7 @@
 }
 
 @media screen and (max-width:1024px) {
-    .navbar-collapse{
+    .navbar_collapse-s{
         background-color: black !important;
     }
 }

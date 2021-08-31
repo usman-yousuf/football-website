@@ -582,10 +582,10 @@ sup {
 /* ----- USMAN WORK - START ----- */
 
 .bg_img-s {
-    background-image: url(../images/background_img.png);
-    background-size: 53%;
+    background-image: url(../images/half_fb.png);
+    background-size: 44%;
     background-repeat: no-repeat;
-    background-position: 113% 116%;
+    background-position: right top;
     background-blend-mode: overlay;
     background-color: #E5EEE7;
     overflow-x: hidden;
@@ -625,10 +625,10 @@ sup {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .bg_img-s {
-        background-image: url(../images/background_img.png);
-        background-size: 47%;
+        background-image: url(../images/half_fb.png);
+        background-size: auto;
         background-repeat: no-repeat;
-        background-position: 107% -32%;
+        background-position: right top;
         background-blend-mode: overlay;
         background-color: #E5EEE7;
     }
@@ -636,10 +636,10 @@ sup {
 
 @media screen and (min-width: 320px) and (max-width: 760px) {
     .bg_img-s {
-        background-image: url(../images/background_img.png);
-        background-size: 41%;
+        background-image: url(../images/half_fb.png);
+        background-size: 79%;
         background-repeat: no-repeat;
-        background-position: 93% 4%;
+        background-position: right top;
         background-blend-mode: overlay;
         background-color: #E5EEE7;
     }
@@ -1164,7 +1164,24 @@ output:after {
     margin-top: -1px;
 }
 
+.bg_filter_img-s{
+    background-image: url(../images/filter_img.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-blend-mode: overlay;
+    background-size: 79%;
+    opacity: .4;
+}
 
+.br_up_left_right_10px-s{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.w_h_48_x_63px-s{
+    width: 48%;
+    height: 63px;
+}
 /*notification button end*/
 
 

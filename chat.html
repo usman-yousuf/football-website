@@ -22,15 +22,15 @@
     <div class="container-fluid px-0 mx-0 ">
         <!-- .................Home Page NavBar Start ......................... -->
 
-        <nav class="navbar navbar-expand-md navbar-light pt-5 pb-3">
+        <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3">
             <div class="container-fluid px-0">
                 <div class="row w-100">
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-2">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-2 pt-2">
                         <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <ul class="navbar-nav mt-2 mt-lg-0 w-100 justify-content-around">
                                 <li class="nav-item ml-2">
                                     <a class="nav-link" href="Home/home.html">
                                         <span><img src="assets/images/home.svg" class="img-fluid" alt="navbar_home"/></span> Home <span class="sr-only">(current)</span>
@@ -63,12 +63,12 @@
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-10 pt-2 text-right">
                         <div class="">
-                            <a>
+                            <a class="pr-3">
                                 <img src="assets/images/Location.svg" class="img-fluid nav_location_img" alt="navbar_home" />
                                 <span> Adailiya </span>
                             </a>
-                            <img src="assets/images/Group 24.png" class="img-fluid nav_profile" alt="Navbar_profile" />
-                            <img src="assets/images/notification.svg" class="img-fluid nav_notification_img" alt="navbar_home" />
+                            <img src="assets/images/user_img.png" class="img-fluid rounded-circle border_green-s" width="37" alt="Navbar_profile" />
+                            <img src="assets/images/notification.svg" class="ml-3 img-fluid nav_notification_img" alt="navbar_home" />
                         </div>
                     </div>
                 </div>
@@ -78,23 +78,47 @@
 
         <!-- -------heading container - start -->
         <div class="container-fluid">
-            <!-- <div class="row py-3">
-                <div class="col-12">
-                    <h1 class="ft_3rem-s">Chat</h1>
-                    <p class="ft_2rem-s">Send messages to other players.</p>
+            <div class="row py-3 px-xl-5">
+                <div class="col-5 pt-4">
+                    <h1 class="">Chat</h1>
+                    <h4 class="">Send messages to other players.</h4>
                 </div>
-            </div> -->
+                <div class="col-6 align-self-end">
+                    <div class="row d-flex justify-content-end">
+
+                        <div class="profile_img-s mx-3">
+                            <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                        </div>
+
+
+                        <div class="profile_img-s mx-3">
+                            <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                        </div>
+
+
+                        <div class="profile_img-s mx-3">
+                            <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                        </div>
+
+
+                        <div class="profile_img-s mx-3">
+                            <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- ------heading container - end -->
 
         <!-- container for chat - start -->
         <div class="container-fluid bg-white br_47px-s">
-            <div class="row py-3">
+            <div class="row py-3 px-xl-5">
                 <div class="col-12 min_h_340px-s">
                     <div class="row">
 
                         <!-- ----- chat member list - start ----- -->
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-4 border-0">
+                        <div class="col-xl-4 col-lg-4 col-md-12 col-12 border-0">
 
                             <div class="row">
                                 <div class="col-12 ml-xl-5 mt-xl-5 mb-xl-3">
@@ -103,9 +127,9 @@
                             </div>
 
                             <div class="row d-flex justify-content-center h_450px-s">
-                                <div class="col-10 br_fg-s br_10px-s my-2">
+                                <div class="col-10 col-lg-11 br_10px-s my-2 br_on_hover-s">
                                     <div class="row border br_10px-s py-1 bg-greenish_grey-s">
-                                        <div class="col-3 col-md-3 col-lg-3 col-xl-3 align-self-center">
+                                        <div class="col-3 col-md-3 col-lg-3 col-xl-3 align-self-center pl-lg-2 pl-xl-3 pl-1 pl-md-5">
                                             <div class="profile_img-s">
                                                 <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
                                             </div>
@@ -130,16 +154,16 @@
                                                 <span>2 Hours</span>
                                             </div>
                                             <div class="message_count-s text-center ml-4">
-                                                <p class="fg_white-s mt-4 pt-2">2</p>
+                                                <p class="fg_white-s mt-3 pt-1">12</p>
                                             </div>
 
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-10 br_fg-s br_10px-s my-2">
+                                <div class="col-10 col-lg-11 br_10px-s my-2 br_on_hover-s">
                                     <div class="row border br_10px-s py-1 bg-greenish_grey-s">
-                                        <div class="col-3 col-md-3 col-lg-3 col-xl-3 align-self-center">
+                                        <div class="col-3 col-md-3 col-lg-3 col-xl-3 align-self-center pl-lg-2 pl-xl-3 pl-1 pl-md-5">
                                             <div class="profile_img-s">
                                                 <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
                                             </div>
@@ -161,19 +185,19 @@
                                         </div>
                                         <div class="col-3 col-md-3 col-lg-3 col-xl-3">
                                             <div class="mt-3 ft_size_12px-s text-center">
-                                                <span>2 Hours</span>
+                                                <span>yesterday</span>
                                             </div>
                                             <div class="message_count-s text-center ml-4">
-                                                <p class="fg_white-s mt-4 pt-2">2</p>
+                                                <p class="fg_white-s mt-3 pt-1">2</p>
                                             </div>
 
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-10 br_fg-s br_10px-s my-2">
+                                <div class="col-10 col-lg-11 br_10px-s my-2 br_on_hover-s">
                                     <div class="row border br_10px-s py-1 bg-greenish_grey-s">
-                                        <div class="col-3 col-md-3 col-lg-3 col-xl-3 align-self-center">
+                                        <div class="col-3 col-md-3 col-lg-3 col-xl-3 align-self-center pl-lg-2 pl-xl-3 pl-1 pl-md-5">
                                             <div class="profile_img-s">
                                                 <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
                                             </div>
@@ -195,19 +219,19 @@
                                         </div>
                                         <div class="col-3 col-md-3 col-lg-3 col-xl-3">
                                             <div class="mt-3 ft_size_12px-s text-center">
-                                                <span>2 Hours</span>
+                                                <span>02/08/21</span>
                                             </div>
                                             <div class="message_count-s text-center ml-4">
-                                                <p class="fg_white-s mt-4 pt-2">2</p>
+                                                <p class="fg_white-s mt-3 pt-1">1</p>
                                             </div>
 
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="col-10 br_fg-s br_10px-s my-2">
+                                <div class="col-10 col-lg-11 br_10px-s my-2 br_on_hover-s">
                                     <div class="row border br_10px-s py-1 bg-greenish_grey-s">
-                                        <div class="col-3 col-md-3 col-lg-3 col-xl-3 align-self-center">
+                                        <div class="col-3 col-md-3 col-lg-3 col-xl-3 align-self-center pl-lg-2 pl-xl-3 pl-1 pl-md-5">
                                             <div class="profile_img-s">
                                                 <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
                                             </div>
@@ -229,10 +253,10 @@
                                         </div>
                                         <div class="col-3 col-md-3 col-lg-3 col-xl-3">
                                             <div class="mt-3 ft_size_12px-s text-center">
-                                                <span>2 Hours</span>
+                                                <span>04/05/21</span>
                                             </div>
                                             <div class="message_count-s text-center ml-4">
-                                                <p class="fg_white-s mt-4 pt-2">2</p>
+                                                <p class="fg_white-s mt-3 pt-1">3</p>
                                             </div>
 
                                         </div>
@@ -245,7 +269,7 @@
                         <!-- ----- chat member list - end ----- -->
 
                         <!-- ----- chat room - start ----- -->
-                        <div class="col-8 col-md-8 col-lg-8 col-xl-8 border border-top-0 w-100">
+                        <div class="d-lg-block d-none col-12 col-md-12 col-lg-8 col-xl-8 border border-top-0 w-100">
 
                             <!-- profile detail of next person in chat - start -->
                             <div class="row">

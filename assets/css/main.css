@@ -833,9 +833,9 @@ sup {
 .bg_grey-s {
     background-color: #E5EEE7;
 }
-
-.w_184px-s {
+.w_h_184px_x_63px-s{
     width: 184px;
+    height: 63px;
 }
 
 
@@ -914,8 +914,8 @@ input:checked+.slider:before {
 }
 
 .logo_text-s {
-    top: 31%;
-    left: 42px;
+    top: 37%;
+    left: 39px;
 }
 
 .fs_18px-s {
@@ -931,7 +931,7 @@ input:checked+.slider:before {
 }
 
 .mh_86vh-s {
-    min-height: 86vh;
+    min-height: 89vh;
 }
 
 .footer-s {
@@ -1083,6 +1083,18 @@ input:checked+.slider:before {
     font-size: 12px;
 }
 
+.fs_14px-s{
+    font-size: 14px;
+}
+
+.code_border-s {
+    border: 1px solid #E5EEE7;
+    border-radius: 5px;
+    border-bottom: 2px solid #006400;
+    width: 77px;
+    height: 77px;
+    background-color: #E5EEE7;
+}
 
 /*notification button end*/
 

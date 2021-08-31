@@ -647,6 +647,10 @@ sup {
     border-radius: 47px 47px 0px 0px;
 }
 
+.br_25px-s {
+    border-radius: 25px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .bg_img-s {
         background-image: url(../images/background_img.png);

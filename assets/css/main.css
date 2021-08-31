@@ -833,7 +833,8 @@ sup {
 .bg_grey-s {
     background-color: #E5EEE7;
 }
-.w_h_184px_x_63px-s{
+
+.w_h_184px_x_63px-s {
     width: 184px;
     height: 63px;
 }
@@ -1023,7 +1024,7 @@ input:checked+.slider:before {
 
 .w_439px_h_633px-s {
     width: 349px;
-    height: 439px;
+    height: 313px;
     overflow-y: auto;
 }
 
@@ -1083,7 +1084,7 @@ input:checked+.slider:before {
     font-size: 12px;
 }
 
-.fs_14px-s{
+.fs_14px-s {
     font-size: 14px;
 }
 
@@ -1095,6 +1096,7 @@ input:checked+.slider:before {
     height: 77px;
     background-color: #E5EEE7;
 }
+
 
 /*notification button end*/
 

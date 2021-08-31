@@ -119,3 +119,10 @@ $("#password_success_modal-d").click(function() {
 });
 
 /**  --------------- jquery of switch modals for new password ----------- */
+
+/**-------------------- switch modal for rating or not -------------------- */
+
+$("#switch_to_no_rating_modal").click(function() {
+    $("#player_played_modal-d").modal('hide');
+    $("#player_not_played_modal-d").modal('show');
+});

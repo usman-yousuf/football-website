@@ -5,28 +5,7 @@
 }
 
 
-/* html {
-    font-size: 62.5%;
-} */
-
-
 /* .................Home Page CSS Start .........................  */
-
-
-/* 
-.social-part .fa img {
-  padding-right: 20px;
-} */
-
-
-/* ul li a {
-  margin-right: 20px;
-} */
-
-
-/* .navbar-expand-md {
-  padding: 2.5rem 0rem 0rem 0rem;
-} */
 
 .home_bg {
     overflow-x: hidden;
@@ -35,13 +14,6 @@
 .nav-item img {
     margin-top: -0.4rem;
 }
-
-
-/* .navbar-nav li {
-    font-size: 1.8rem;
-    color: #212121;
-    margin-left: 5rem;
-} */
 
 .social-part a {
     margin-right: 1rem;
@@ -197,9 +169,6 @@
 }
 
 .home_card {
-    /* background-image: url(../assets/images/green\ bg.svg);
-  background-repeat: no-repeat;
-  background-size: cover; */
     background-color: #006400;
 }
 
@@ -255,11 +224,6 @@
     border-radius: 0rem 1.5rem 0rem 3rem;
     color: #006400 !important;
 }
-
-
-/* .fa-heart-o:hover {
-  background-color: red;
-} */
 
 .goalkeeper_margin_b {
     border-bottom: 1px solid #ffffff;
@@ -624,6 +588,14 @@ sup {
     background-position: 113% 116%;
     background-blend-mode: overlay;
     background-color: #E5EEE7;
+    overflow-x: hidden;
+}
+
+.card_bg_img-s {
+    background-image: url(../images/card_bg_img.svg);
+    background-size: 86%;
+    background-repeat: no-repeat;
+    background-position: center;
     overflow-x: hidden;
 }
 

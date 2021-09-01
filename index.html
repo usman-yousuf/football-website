@@ -68,7 +68,64 @@
                                 <span class="text-dark"> <strong>Adailiya </strong> </span>
                             </a>
                             <img src="assets/images/user_img.png" class="img-fluid rounded-circle border_green-s" width="37" alt="Navbar_profile" />
-                            <img src="assets/images/notification.svg" class="ml-3 img-fluid nav_notification_img" alt="navbar_home" />
+
+                            <!-- notification drop down -->
+                            <a href="javasccript:void(0)" role="button" class="" data-toggle="dropdown">
+                                <img src="assets/images/notification.svg" class="ml-3 img-fluid nav_notification_img" alt="navbar_home" />
+                            </a>
+                            <div class="col-4 dropdown-menu bg_lightgrey-s border-0 shadow br_15px-s min_w_315px-s ml-xl-5">
+                                <h4 class="ml-5 mt-3 mb-5">
+                                    <strong class="fg_green-s">Notification</strong>
+                                </h4>
+
+                                <h5 class="ml-5">
+                                    <strong>Today</strong>
+                                </h5>
+                                <a class="dropdown-item bg-white py-4" href="#">
+                                    <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                        <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                        <strong class="fg_green-s ml-2">Themer</strong> <span> invite you to join the game.</span>
+                                        </br><span class="ml-5">1m ago</span>
+                                    </div>
+                                </a>
+
+                                <hr class="goalkeeper_margin_b mt-0 mb-0" />
+
+                                <a class="dropdown-item bg-white py-4" href="#">
+                                    <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                        <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                        <strong class="fg_green-s ml-2">Themer</strong> <span> accepted your invitation.</span>
+                                        </br><span class="ml-5">1m ago</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item py-4" href="#">
+                                    <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                        <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                        <strong class="fg_green-s ml-2">Themer</strong> <span> sent you a message.</span>
+                                        </br><span class="ml-5">2m ago</span>
+                                    </div>
+                                </a>
+                                <h5 class="ml-5">
+                                    <strong>Today</strong>
+                                </h5>
+                                <a class="dropdown-item py-4" href="#">
+                                    <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                        <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                        <strong class="fg_green-s ml-2">Themer</strong> <span> sent you a message.</span>
+                                        </br><span class="ml-5">6:00 pm</span>
+                                    </div>
+                                </a>
+
+                                <div class="dropdown-divider"></div>
+
+                                <a class="dropdown-item py-4" href="#">
+                                    <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                        <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                        <strong class="fg_green-s ml-2">Themer</strong> <span> invite you to join the game.</span>
+                                        </br><span class="ml-5">2:00 pm</span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -129,6 +186,16 @@
                     <div class="row">
                         <div class="col-12 text-left py-2">
                             <h2>Players <span> (50) </span> </h2>
+                            <div class="pull-right position-absolute filter_img d-flex flex-wrap">
+                                <img src="../assets/images/filter.svg" alt="" />
+                                <span>Filter by:
+                                    <span class="rating_text"> 
+                                        <a class="td_none-s text-dark" role="button" data-toggle="modal" data-target="#filter_by_rating_modal-d" href=""> Rating </a>
+                                        | <a class="td_none-s text-dark" role="button" data-toggle="modal" data-target="#filter_by_price_modal-d" href=""> price </a>
+                                        | <a class="td_none-s text-dark" role="button" data-toggle="modal" data-target="#filter_by_rating_modal-d" href=""> Nearest Location </a>
+                                    </span>
+                                </span>
+                            </div>
                         </div>
 
                         <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-2">
@@ -856,6 +923,55 @@
         <!-- container for list of players - end -->
     </div>
     <!-- .................Home Page End ......................... -->
+
+    <!-- rating filter modal  -->
+    <div class="modal fade" id="filter_by_rating_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content br_10px-s border-0">
+                <div class="modal-header bg_grey-s bg_filter_img-s border-0 br_up_left_right_10px-s">
+                    <h5 class="modal-title" id="view-head">Filter By Rating</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="price-field ">
+                            <input type="range" min="100" max="500" value="100" name="foo" id="lower">
+                            <output for="foo" onforminput="value = foo.valueAsNumber;"></output>
+                            <input type="range" min="100" max="500" value="500" id="upper">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- rating filter modal  -->
+    <div class="modal fade" id="filter_by_price_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content br_10px-s border-0">
+                <div class="modal-header bg_grey-s bg_filter_img-s border-0 br_up_left_right_10px-s">
+                    <h5 class="modal-title" id="view-head">Filter By Price</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="price-field ">
+                            <input type="range" min="100" max="500" value="100" name="foo" id="lower">
+                            <output for="foo" onforminput="value = foo.valueAsNumber;"></output>
+                            <input type="range" min="100" max="500" value="500" id="upper">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>

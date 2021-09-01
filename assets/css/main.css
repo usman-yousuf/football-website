@@ -687,9 +687,9 @@ sup {
 }
 
 .message_count-s {
-    width: 49%;
+    width: 31px;
     background-color: green;
-    height: 34%;
+    height: 31px;
     border-radius: 20px;
 }
 
@@ -727,16 +727,33 @@ sup {
 }
 
 .br_right_10px-s {
-    border-radius: 0px 10px 0px 10px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .h_450px-s {
-    height: 450px;
-    overflow: auto;
+    height: 410px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.h_580px-s {
+    height: 580px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .br_on_hover-s:hover {
     border: 1px solid #006400;
+}
+
+.min_w_315px-s {
+    min-width: 453px !important;
+    right: 0 !important;
+    left: auto;
+}
+
+.bg_lightgrey-s {
+    background-color: #F3F3F3;
 }
 
 
@@ -1003,6 +1020,10 @@ input:checked+.slider:before {
 .br_left_10px-s {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+}
+
+.br_5px-s {
+    border-radius: 5px;
 }
 
 .h_50px-s {

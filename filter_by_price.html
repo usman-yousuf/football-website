@@ -9,24 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
-    <title>Filter by Rating</title>
+    <title>Filter by Price</title>
 </head>
 <body>
-    <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#filter_by_rating_modal-d">
-        FIlter By Rating
+    <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#filter_by_price_modal-d">
+        FIlter By Price
     </button>
 
     <!-- Modal -->
-    <div class="modal fade" id="filter_by_rating_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
+    <div class="modal fade" id="filter_by_price_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered ">
             <div class="modal-content br_10px-s border-0">
                 <div class="modal-header bg_grey-s bg_filter_img-s border-0 br_up_left_right_10px-s">
-                    <h5 class="modal-title text-dark" id="view-head"><strong>Filter By Rating</strong></h5>
+                    <h5 class="modal-title text-dark" id="view-head"><strong>Filter By Price</strong></h5>
                 </div>
                 <div class="modal-body">
+                    <h6>Price</h6>
                     <form action="">
                         <div class="row py-5">
                             <div class="col-12">
+                                
                                 <div class="price-field ">
                                     <input type="range"  min="100" max="500" value="100" name="foo" id="lower">
                                     <output for="foo" onforminput="value = foo.valueAsNumber;"></output>

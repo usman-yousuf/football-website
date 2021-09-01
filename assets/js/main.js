@@ -126,3 +126,11 @@ $("#switch_to_no_rating_modal").click(function() {
     $("#player_played_modal-d").modal('hide');
     $("#player_not_played_modal-d").modal('show');
 });
+
+
+/** -------------- for add stadium modal --------------- */
+
+$("#switch_to_add_stadium_modal-d").click(function() {
+    $("#send_invitation_modal-d").modal('hide');
+    $("#add_stadium_modal-d").modal('show');
+});

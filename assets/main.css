@@ -47,6 +47,18 @@
     text-decoration: none;
 }
 
+.opacity_4-s {
+    opacity: .4;
+}
+
+.fg_yellow-s {
+    color: #EAC600;
+}
+
+.ft_size_14px-s {
+    font-size: 14px;
+}
+
 .social-part {
     margin-right: 4rem;
 }

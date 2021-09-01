@@ -1188,6 +1188,66 @@ output:after {
         width: 100% !important;
     }
 }
+
+.resize_none-s{
+    resize: none;
+}
+
+.w_inherit-s{
+    width: inherit;
+}
+
+.upload_pic-s{
+    width: 114px;
+    height: 114px;
+    border-radius: 10px;
+    filter: brightness(0.5);
+}
+
+.remove_img-s{
+    width: 27px;
+    height: 27px;
+    top: 41px;
+    left: 56px;
+    z-index: 1;
+}
+
+.picture_border-s{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 507px;
+    width: 569px;
+}
+
+@media screen and (max-width:1024px) {
+    .picture_border-s{
+        height: 561px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .picture_border-s{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+        height: 314px;
+    }
+}
+
+.td_none-s{
+    text-decoration: none;
+}
+
+.textarea_h_w-s:focus{
+    border: none;
+    overflow: auto;
+    outline: none;
+    box-shadow: none;
+}
+
+.post-s{
+    border-bottom-right-radius: 10px;
+}
 /*notification button end*/
 
 

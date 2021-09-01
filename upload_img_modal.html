@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
+    <title>Upload Img</title>
+</head>
+<body>
+    <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#upload_img_modal-d">
+        Upload image
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="upload_img_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered ">
+            <div class="modal-content br_10px-s border-0">
+                <div class="modal-header bg_grey-s border-0 br_up_left_right_10px-s">
+                    <h5 class="modal-title px-3  text-dark" id="view-head"><strong>Upload</strong></h5>
+                </div>
+                <div class="container-fluid">
+                    <div class="modal-body">
+                        
+                        <form action="">
+                            <div class="row pb-3">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="caption-d"><Strong>CAPTION</Strong></label>
+                                        <textarea class="form-control resize_none-s rounded" id="caption-d" placeholder="write here" rows="1"></textarea>
+                                      </div>
+                                </div>
+                                <div class="col-12 mt-3">
+                                    <h6><strong>PHOTO/VIDEO</strong></h6>
+                                    <div class="w-100 ">
+                                        <img src="assets/images/upload_img.svg" class="w_inherit-s" alt="upload img">
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <img src="assets/images/close.svg" class="remove_img-s position-absolute" alt="remove img">
+                                    <div class="">
+                                        <img src="assets/images/picture.jpg" class="upload_pic-s" alt="uplaod img">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </form>
+                        <div class="row py-3">
+                            <div class="col-12 d-flex justify-content-center">
+                                <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 px-5 mr-md-2 w-100"><strong>CANCEL</strong></button>
+                                <button type="submit" class="btn bg_green-s br_10px-s py-3 text-white px-5 ml-2 w-100"><strong>UPLOAD</strong></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+
+    <!-- ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+</body>
+</html>

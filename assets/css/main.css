@@ -1185,7 +1185,7 @@ output:after {
     margin-top: -1px;
 }
 
-.bg_filter_img-s{
+.bg_filter_img-s {
     background-image: url(../images/filter_img.svg);
     background-repeat: no-repeat;
     background-position: right top;
@@ -1194,21 +1194,23 @@ output:after {
     opacity: .4;
 }
 
-.br_up_left_right_10px-s{
+.br_up_left_right_10px-s {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.w_h_48_x_63px-s{
+.w_h_48_x_63px-s {
     width: 48%;
     height: 63px;
 }
 
 @media screen and (max-width:425px) {
-    .w_100_on_sm-s{
+    .w_100_on_sm-s {
         width: 100% !important;
     }
 }
+
+
 /*notification button end*/
 
 

@@ -638,9 +638,9 @@ sup {
 }
 
 .usercard {
-    margin-top: 14rem;
+    margin-top: 11rem;
     background-color: #006400;
-    border-radius: 15px;
+    border-radius: 31px;
 }
 
 .userp_hearticon {
@@ -649,13 +649,13 @@ sup {
 
 .userp_hearticon i {
     position: absolute;
-    top: -1%;
-    right: -0.1%;
+    top: 0%;
+    right: 0%;
     background-color: #ffffff;
     height: 3rem;
     width: 3rem;
     padding: 1rem 3rem 3rem 1rem;
-    border-radius: 0rem 1.5rem 0rem 3rem;
+    border-radius: 0rem 2rem 0rem 3rem;
     color: #006400 !important;
     float: right;
     font-size: 2rem;

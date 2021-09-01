@@ -1236,14 +1236,15 @@ output:after {
 .picture_border-s{
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    height: 507px;
+    height: 643px;
     width: 569px;
 }
 
 @media screen and (max-width:1024px) {
     .picture_border-s{
-        height: 561px;
+        height: 661px;
     }
+
 }
 
 @media screen and (max-width:768px) {
@@ -1253,9 +1254,14 @@ output:after {
         border-bottom-left-radius: 0;
         height: 314px;
     }
+
+    
+    .comment-s{
+        border-bottom-left-radius: 10px;
+    }
 }
 
-.td_none-s{
+.td_none-s:hover{
     text-decoration: none;
 }
 
@@ -1268,6 +1274,16 @@ output:after {
 
 .post-s{
     border-bottom-right-radius: 10px;
+}
+
+.h_346px-s{
+    height: 346px;
+}
+
+.close_modal-s{
+    right: 16px;
+    top: 18px;
+    z-index: 1;
 }
 /*notification button end*/
 

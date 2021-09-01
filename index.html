@@ -932,6 +932,9 @@
                     <h5 class="modal-title" id="view-head">Filter By Rating</h5>
                 </div>
                 <div class="modal-body">
+                    <div class="mb-5">
+                        <span class="text-dark"> RATING </span>
+                    </div>
                     <form action="">
                         <div class="price-field ">
                             <input type="range" min="100" max="500" value="100" name="foo" id="lower">
@@ -940,15 +943,26 @@
                         </div>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-footer border-top-0">
+                    <div class="row px-3 pt-3 pb-5 w-100">
+                        <!--NO button-->
+                        <div class="col-6 pr-2">
+                            <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" data-dismiss="modal"><strong>cancel</strong></button>
+                        </div>
+                        <!--NO button end-->
+
+                        <!--YES button-->
+                        <div class="col-6 pl-2">
+                            <button type="button" class="btn bg_green-s br_10px-s py-3 text-white w-100"><strong>Apply</strong></button>
+                        </div>
+                        <!--YES button end-->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- rating filter modal  -->
+    <!-- price filter modal  -->
     <div class="modal fade" id="filter_by_price_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered ">
             <div class="modal-content br_10px-s border-0">
@@ -956,6 +970,9 @@
                     <h5 class="modal-title" id="view-head">Filter By Price</h5>
                 </div>
                 <div class="modal-body">
+                    <div class="mb-5">
+                        <span class="text-dark"> PRICE ($) </span>
+                    </div>
                     <form action="">
                         <div class="price-field ">
                             <input type="range" min="100" max="500" value="100" name="foo" id="lower">
@@ -964,9 +981,58 @@
                         </div>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-footer border-top-0">
+                    <div class="row px-3 pt-3 pb-5 w-100">
+                        <!--NO button-->
+                        <div class="col-6 pr-2">
+                            <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" data-dismiss="modal"><strong>cancel</strong></button>
+                        </div>
+                        <!--NO button end-->
+
+                        <!--YES button-->
+                        <div class="col-6 pl-2">
+                            <button type="button" class="btn bg_green-s br_10px-s py-3 text-white w-100"><strong>Apply</strong></button>
+                        </div>
+                        <!--YES button end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- price filter modal  -->
+    <div class="modal fade" id="filter_by_price_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content br_10px-s border-0">
+                <div class="modal-header bg_grey-s bg_filter_img-s border-0 br_up_left_right_10px-s">
+                    <h5 class="modal-title" id="view-head">Filter By Price</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-5">
+                        <span class="text-dark"> PRICE ($) </span>
+                    </div>
+                    <form action="">
+                        <div class="price-field ">
+                            <input type="range" min="100" max="500" value="100" name="foo" id="lower">
+                            <output for="foo" onforminput="value = foo.valueAsNumber;"></output>
+                            <input type="range" min="100" max="500" value="500" id="upper">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-top-0">
+                    <div class="row px-3 pt-3 pb-5 w-100">
+                        <!--NO button-->
+                        <div class="col-6 pr-2">
+                            <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" data-dismiss="modal"><strong>cancel</strong></button>
+                        </div>
+                        <!--NO button end-->
+
+                        <!--YES button-->
+                        <div class="col-6 pl-2">
+                            <button type="button" class="btn bg_green-s br_10px-s py-3 text-white w-100"><strong>Apply</strong></button>
+                        </div>
+                        <!--YES button end-->
+                    </div>
                 </div>
             </div>
         </div>

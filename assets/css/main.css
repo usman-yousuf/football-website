@@ -731,12 +731,29 @@ sup {
 }
 
 .h_450px-s {
-    height: 450px;
-    overflow: auto;
+    height: 410px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.h_580px-s {
+    height: 580px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .br_on_hover-s:hover {
     border: 1px solid #006400;
+}
+
+.min_w_315px-s {
+    min-width: 453px !important;
+    right: 0 !important;
+    left: auto;
+}
+
+.bg_lightgrey-s {
+    background-color: #F3F3F3;
 }
 
 

@@ -90,7 +90,7 @@
 }
 
 .w_500px-s {
-    max-width: 500px;
+    width: 500px;
 }
 
 .carousel-indicators li {
@@ -1181,6 +1181,12 @@ output:after {
 .w_h_48_x_63px-s{
     width: 48%;
     height: 63px;
+}
+
+@media screen and (max-width:425px) {
+    .w_100_on_sm-s{
+        width: 100% !important;
+    }
 }
 /*notification button end*/
 

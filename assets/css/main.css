@@ -785,10 +785,16 @@ sup {
     height: 63px;
 }
 
+.br_green_on_hover-s:active ,
 .br_green_on_hover-s:hover {
     border: 2px solid #006400;
     color: black !important;
 }
+
+/* .br_green_on_hover-s:active{
+    border: 2px solid #006400;
+    color: black !important;
+} */
 
 .fg_green-s {
     color: #006400;
@@ -808,7 +814,7 @@ sup {
 }
 
 .card_ticker-s {
-    left: -14px;
+    left: -15px;
     top: 30px;
 }
 
@@ -978,6 +984,7 @@ input:checked+.slider:before {
         bottom: 0;
         left: 57%;
     }
+
 }
 
 .focus_none-s:focus {
@@ -1215,7 +1222,107 @@ output:after {
     }
 }
 
+.resize_none-s{
+    resize: none;
+}
 
+.w_inherit-s{
+    width: inherit;
+}
+
+.upload_pic-s{
+    width: 114px;
+    height: 114px;
+    border-radius: 10px;
+    filter: brightness(0.5);
+}
+
+.remove_img-s{
+    width: 27px;
+    height: 27px;
+    top: 41px;
+    left: 56px;
+    z-index: 1;
+}
+
+.picture_border-s{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 643px;
+    width: 569px;
+}
+
+@media screen and (max-width:1024px) {
+    .picture_border-s{
+        height: 661px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .picture_border-s{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+        height: 314px;
+    }
+
+    
+    .comment-s{
+        border-bottom-left-radius: 10px;
+    }
+}
+
+.td_none-s:hover{
+    text-decoration: none;
+}
+
+.textarea_h_w-s:focus{
+    border: none;
+    overflow: auto;
+    outline: none;
+    box-shadow: none;
+}
+
+.post-s{
+    border-bottom-right-radius: 10px;
+}
+
+.h_346px-s{
+    height: 346px;
+}
+
+.close_modal-s{
+    right: 16px;
+    top: 18px;
+    z-index: 1;
+}
+
+.font_family_roboto-s{
+    font-family: roboto;
+}
+
+.fs_11px-s{
+    font-size: 11px;
+}
+
+.outline_none-s:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+@media screen and (max-width:425px) {
+    .chat_button-s{
+        right: -24px;
+        bottom: -33px;
+    }
+
+    .wrapper{
+        right: 11px;
+        bottom: 97px;
+    }
+}
 /*notification button end*/
 
 

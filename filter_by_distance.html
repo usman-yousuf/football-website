@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <title>Filter by Distance</title>
+</head>
+<body>
+    <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#filter_by_distance_modal-d">
+        FIlter By Distance
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="filter_by_distance_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered ">
+            <div class="modal-content br_10px-s border-0">
+                <div class="modal-header bg_grey-s bg_filter_location_img-s border-0 br_up_left_right_10px-s">
+                    <h5 class="modal-title text-dark" id="view-head"><strong>Filter By Distance</strong></h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-12 pr-lg-5">
+                            <div class="row py-3">
+                                <div class="col-12">
+                                    <h6 class="opacity_4-s">DISTANCE(KILOMETERS)</h6>
+                                </div>
+                            </div>
+                            <form action="">
+                                <div class="row pt-3 pb-5">
+                                    <div class="col-12">
+                                        <div class="price-field ">
+                                            <input type="range"  min="100" max="500" value="100" name="foo" id="lower">
+                                            <input type="range" min="100" max="500" value="500" id="upper">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="row w-100 mx-auto pt-lg-0 pt-3 postion_absolute_on_lg-s">
+                                <div class="col-12 d-md-flex pr-lg-5 px-0 w-100">
+                                    <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 px-5 mr-md-2 w-100"><strong>CANCEL</strong></button>
+                                    <button type="submit" class="btn bg_green-s br_10px-s py-3 text-white px-5 ml-md-2 mt-md-0 mt-2  w-100"><strong>APPLY</strong></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6  col-lg-6 col-12 mt-lg-0 mt-4">
+                            <!-- <div class="col-lg-4 col-md-6 mb-3"> -->
+                                
+                                    <div class="container filter_location-s d-flex ">
+                                        <div class=" location_card-s d-flex align-self-end pb-3 w-100">
+                                            <div class="card w-100 br_10px-s">
+                                                <div class="heart_icon py-2">
+                                                    <i class="fa fa-heart-o bg_green-s location_heart-s text-center py-2 " aria-hidden="true"></i>
+                                                </div>
+                                                <div class="container-fluid px-1 ">
+                                                    <div class="row mx-auto">
+                                                        <div class="col-lg-2 col-md-3 col-3">
+                                                            <img src="assets/images/Group 24.png" width="40" alt="" />
+                                                        </div>
+                                                        <div class="col-lg-10 col-md-9 col-9 d-flex pr-4 justify-content-between">
+                                                            <div class="text-dark d-inline-block">
+                                                                <h6 class="mb-0 pb-0 fs_12px-s "><strong>Thamer <br><span class=" opacity_4-s fs_8px-s">@thamermd</span></strong></h6>
+                                                                
+                                                                <p class="fg_yellow-s fs_8px-s">
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i> 5.0
+                                                                </p>
+                                                            </div>
+                                                            <div class="align-self-center d-flex">
+                                                                <h6 class="fg_green-s"> $10 </h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mx-auto text-dark ">
+                                                        <div class="col-3   fs_12px-s">
+                                                            <span class="opacity_4-s fs_9px-s">Age(years)</span>
+                                                            <br>
+                                                            <span class="fs_11px-s"><strong>28</strong></span>
+                                                        </div>
+                                                        <div class="col-3   fs_12px-s">
+                                                            <span class="opacity_4-s">Matches</span>
+                                                            <br>
+                                                            <span class="fs_11px-s"><strong>15</strong></span>
+                                                        </div>
+                                                        <div class="col-3   fs_12px-s">
+                                                            <span class="opacity_4-s">Missed</span>
+                                                            <br>
+                                                            <span class="fs_11px-s"><strong>2</strong></span>
+                                                        </div>
+                                                        <div class="col-3   fs_12px-s">
+                                                            <span class="opacity_4-s">Missed</span>
+                                                            <br>
+                                                            <span class="fs_11px-s"><strong>Defender</strong></span>
+                                                        </div>
+                                                    </div>
+                                                    <hr class="goalkeeper_margin_b mx-3 my-2" />
+                
+                                                    <div class="row mx-auto aditya_location">
+                                                        <div class="col-6">
+                                                            <p class="fs_11px-s mb-0 text-dark">
+                                                                <strong><i class=" fa fa-map-marker text-dark fs_11px-s" aria-hidden="true"></i> Aditya</strong>
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <a class="td_none-s fs_11px-s" href="Home/home-sent-invitation.html">
+                                                                <span class="pull-right text-dark  fs_11px-s"><strong>send invitation >></strong></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+
+    <!-- ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+</body>
+</html>

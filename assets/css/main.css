@@ -1347,6 +1347,10 @@ output:after {
     top: 0 ;
     right: 0 ;
 }
+
+.fs_8px-s{
+    font-size: 8px;
+}
 /*notification button end*/
 
 

@@ -789,6 +789,10 @@ sup {
     border: 2px solid green;
 }
 
+.player_position_button-s:hover span {
+    opacity: 1 !important;
+}
+
 @media screen and (max-width: 425px) {
     .mb_25px-s {
         margin-bottom: 15px;
@@ -799,15 +803,20 @@ sup {
     color: black !important;
 }
 
+.w_chat_read_icon-s {
+    width: 10px;
+}
 
-/* 
-.list-group-flush>.list-group-item>img {
-    filter: invert(0%) sepia(79%) saturate(0%) hue-rotate(112deg) brightness(161%) contrast(100%)
+
+/* .change_color_of_nav_icon-s img {
+    filter: invert(0%) grayscale(10%) sepia(79%) saturate(0%) hue-rotate(112deg) brightness(161%) contrast(100%);
 } */
 
-.change_color_of_nav_icon-s span img {
-    filter: invert(0%) sepia(79%) saturate(0%) hue-rotate(112deg) brightness(161%) contrast(100%)
-}
+
+/* .change_color_of_nav_icon-s img {
+    -webkit-filter: grayscale(10%);
+    filter: grayscale(10%);
+} */
 
 
 /* ----- USMAN WORK - END ----- */

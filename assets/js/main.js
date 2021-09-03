@@ -6,17 +6,16 @@ var Container = document.getElementById("nav_bar-d");
 var items = Container.getElementsByClassName("nav_link_active-d");
 
 //loop for all nav link items to active them on click
-for (var i = 0; i < items.length; i++) {
+$(document).ready(function() {
+    // console.log('test');
+    // console.log('window.location.hostname: ', (window.location.href.substring(window.location.href.lastIndexOf('/'))).replace('/', ''));
 
-    if (document.links[i].href == document.URL) {
+    // let url = (Window.location.href.substring(window.location.href.lastIndexOf('/'))).replace('/', '');
+    // console.log('url: ', url);
+    $(`a[href$="#"]`).addClass('active').addClass('change_color_of_nav_icon-s');
 
-        items[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-        });
-    }
-}
+
+});
 
 
 document.addEventListener('DOMContentLoaded', function() {

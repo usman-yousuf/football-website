@@ -24,20 +24,23 @@
                     <h5 class="modal-title text-dark" id="view-head"><strong>Filter By Price</strong></h5>
                 </div>
                 <div class="modal-body">
-                    <h6>Price</h6>
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <h6 class="opacity_4-s">PRICE <span>($)</span></h6>
+                        </div>
+                    </div>
                     <form action="">
-                        <div class="row py-5">
+                        <div class="row pt-3 pb-5">
                             <div class="col-12">
                                 
                                 <div class="price-field ">
                                     <input type="range"  min="100" max="500" value="100" name="foo" id="lower">
-                                    <output for="foo" onforminput="value = foo.valueAsNumber;"></output>
                                     <input type="range" min="100" max="500" value="500" id="upper">
                                 </div>
                             </div>
                         </div>
                     </form>
-                    <div class="row">
+                    <div class="row pt-5">
                         <div class="col-12 d-flex justify-content-center">
                             <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 px-5 mr-md-2 w_h_48_x_63px-s"><strong>CANCEL</strong></button>
                             <button type="submit" class="btn bg_green-s br_10px-s py-3 text-white px-5 ml-2 w_h_48_x_63px-s"><strong>APPLY</strong></button>

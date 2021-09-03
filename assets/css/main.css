@@ -999,12 +999,22 @@ input:checked+.slider:before {
         bottom: 0;
         left: 54%;
     }
+
+    .bg_filter_location_img-s{
+        background-size: 79% !important;
+    /* opacity: .4; */
+    }
 }
 
 @media screen and (max-width:425px) {
     .edit_profile-s {
         bottom: 0;
         left: 57%;
+    }
+
+    .bg_filter_location_img-s{
+        background-size: 98% !important;
+    /* opacity: .4; */
     }
 }
 
@@ -1335,6 +1345,7 @@ output:after {
         right: -24px;
         bottom: -33px;
     }
+
     .wrapper {
         right: 11px;
         bottom: 97px;
@@ -1346,7 +1357,7 @@ output:after {
     background-image: url("../images/map_footbal.png");
     background-repeat: no-repeat;
     height: 532px;
-    max-width: 326px;
+    background-size: 100%;
     border-radius: 15px;
 }
 
@@ -1367,6 +1378,46 @@ output:after {
 
 .fs_8px-s{
     font-size: 8px;
+}
+
+.fs_9px-s{
+    font-size: 9px;
+}
+
+.mt_-29px-s{
+    margin-top: -43px;
+}
+
+.location_heart-s{
+    position: absolute !important;
+    right: 0;
+    top: 0;
+    height: 38px;
+    width: 48px;
+    padding: 0;
+    border-radius: 0px 10px 0px 48px;
+    color: white !important;
+}
+
+.fs_20px-s{
+    font-size: 20px;
+}
+
+
+@media screen and (min-width:1024px) {
+    .postion_absolute_on_lg-s{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.bg_filter_location_img-s{
+    background-image: url(../images/filter_img.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-blend-mode: overlay;
+    background-size: 48%;
+    /* opacity: .4; */
 }
 /*notification button end*/
 

@@ -795,6 +795,20 @@ sup {
     }
 }
 
+.active {
+    color: black !important;
+}
+
+
+/* 
+.list-group-flush>.list-group-item>img {
+    filter: invert(0%) sepia(79%) saturate(0%) hue-rotate(112deg) brightness(161%) contrast(100%)
+} */
+
+.change_color_of_nav_icon-s span img {
+    filter: invert(0%) sepia(79%) saturate(0%) hue-rotate(112deg) brightness(161%) contrast(100%)
+}
+
 
 /* ----- USMAN WORK - END ----- */
 

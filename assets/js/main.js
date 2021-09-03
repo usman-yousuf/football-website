@@ -1,4 +1,26 @@
+// Get the container element
+var Container = document.getElementById("nav_bar-d");
+
+// Get all nav items with class="nav_link_active-d" inside the container
+
+var items = Container.getElementsByClassName("nav_link_active-d");
+
+//loop for all nav link items to active them on click
+for (var i = 0; i < items.length; i++) {
+
+    if (document.links[i].href == document.URL) {
+
+        items[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+}
+
+
 document.addEventListener('DOMContentLoaded', function() {
+
 
     $(`.button_click-s`).click(function() {
         let img = $(this).find(`.img_div-s`).find(`.dropdown_img-s`).attr('src');

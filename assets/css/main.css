@@ -219,7 +219,7 @@
     background-color: #ffffff;
     height: 3rem;
     width: 3rem;
-    padding: 1rem 3rem 3rem 1rem;
+    padding: 1rem 2.5rem 2.5rem 1rem;
     border-radius: 0rem 1.5rem 0rem 3rem;
     color: #006400 !important;
 }
@@ -502,6 +502,14 @@ sup {
     background-repeat: no-repeat;
 }
 
+.fs_32px_heart-s {
+    font-size: 23px;
+}
+
+.mt_30px-s {
+    margin-top: -30px;
+}
+
 
 /* .................Home Page Sent invitation CSS End .........................  */
 
@@ -771,7 +779,7 @@ sup {
 .player_position_button-s {
     width: 223px !important;
     font-size: 18px !important;
-    color: #E5EEE7;
+    color: #212121;
 }
 
 .player_position_button-s:hover {

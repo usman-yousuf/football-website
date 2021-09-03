@@ -17,12 +17,12 @@
     <style></style>
 </head>
 
-<body class="bg_img-s">
+<body class="bg_img-s font_family_roboto-s">
     <!-- .................Home Page Start ......................... -->
     <div class="container-fluid px-0 mx-0 ">
         <!-- .................Home Page NavBar Start ......................... -->
 
-        <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3">
+        <nav class="navbar navbar-expand-lg navbar-light pt-3">
             <div class="container-fluid px-0">
                 <div class="row w-100">
                     <div class="col-xl-8 col-lg-8 col-md-8 col-2 pt-2">
@@ -68,7 +68,64 @@
                                 <span class="text-dark"> <strong>Adailiya </strong> </span>
                             </a>
                             <img src="assets/images/user_img.png" class="img-fluid rounded-circle border_green-s" width="37" alt="Navbar_profile" />
-                            <img src="assets/images/notification.svg" class="ml-3 img-fluid nav_notification_img" alt="navbar_home" />
+
+                            <!-- notification drop down -->
+                            <a href="javasccript:void(0)" role="button" class="" data-toggle="dropdown">
+                                <img src="assets/images/notification.svg" class="ml-3 img-fluid nav_notification_img" alt="navbar_home" />
+                            </a>
+                            <div class="col-4 dropdown-menu bg_lightgrey-s border-0 shadow br_15px-s min_w_315px-s ml-xl-5">
+                                <h4 class="ml-5 mt-3 mb-5">
+                                    <strong class="fg_green-s">Notification</strong>
+                                </h4>
+
+                                <h5 class="ml-5">
+                                    <strong>Today</strong>
+                                </h5>
+                                <a class="dropdown-item bg-white py-4" href="#">
+                                    <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                        <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                        <strong class="fg_green-s ml-2">Themer</strong> <span> invite you to join the game.</span>
+                                        </br><span class="ml-5">1m ago</span>
+                                    </div>
+                                </a>
+
+                                <hr class="goalkeeper_margin_b mt-0 mb-0" />
+
+                                <a class="dropdown-item bg-white py-4" href="#">
+                                    <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                        <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                        <strong class="fg_green-s ml-2">Themer</strong> <span> accepted your invitation.</span>
+                                        </br><span class="ml-5">1m ago</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item py-4" href="#">
+                                    <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                        <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                        <strong class="fg_green-s ml-2">Themer</strong> <span> sent you a message.</span>
+                                        </br><span class="ml-5">2m ago</span>
+                                    </div>
+                                </a>
+                                <h5 class="ml-5">
+                                    <strong>Yesterday</strong>
+                                </h5>
+                                <a class="dropdown-item py-4" href="#">
+                                    <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                        <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                        <strong class="fg_green-s ml-2">Themer</strong> <span> sent you a message.</span>
+                                        </br><span class="ml-5">6:00 pm</span>
+                                    </div>
+                                </a>
+
+                                <div class="dropdown-divider"></div>
+
+                                <a class="dropdown-item py-4" href="#">
+                                    <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                        <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                        <strong class="fg_green-s ml-2">Themer</strong> <span> invite you to join the game.</span>
+                                        </br><span class="ml-5">2:00 pm</span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -78,12 +135,12 @@
 
         <!-- -------heading container - start -->
         <div class="container-fluid">
-            <div class="row py-3 px-xl-5">
+            <div class="row pb-4 pl-xl-5 mb-4">
                 <div class="col-12 col-md-5 pt-4">
                     <h1 class=""><strong>Chat</strong></h1>
                     <h4 class="">Send messages to other players.</h4>
                 </div>
-                <div class="col-12 col-md-6 align-self-end">
+                <div class="col-12 col-md-7 align-self-end pr-5">
                     <div class="row d-flex justify-content-center justify-content-md-end">
 
                         <div class="profile_img-s mx-3">
@@ -122,7 +179,7 @@
 
                             <div class="row">
                                 <div class="col-12 ml-xl-2 mt-xl-2 mb-xl-2">
-                                    <span class="ft_2rem-s">Chats</span>
+                                    <h6 class="">Chats</h6>
                                 </div>
                             </div>
 
@@ -154,7 +211,7 @@
                                                 <span>2 Hours</span>
                                             </div>
                                             <div class="message_count-s text-center ml-xl-4 ml-lg-3 ml-md-5">
-                                                <p class="fg_white-s mt-3 pt-1">12</p>
+                                                <p class="fg_white-s mt-3 pt-2 ft_11px-s">12</p>
                                             </div>
 
                                         </div>
@@ -188,7 +245,7 @@
                                                 <span>yesterday</span>
                                             </div>
                                             <div class="message_count-s text-center ml-xl-4 ml-lg-3 ml-md-5">
-                                                <p class="fg_white-s mt-3 pt-1">2</p>
+                                                <p class="fg_white-s mt-3 pt-2 ft_11px-s">2</p>
                                             </div>
 
                                         </div>
@@ -222,7 +279,7 @@
                                                 <span>02/08/21</span>
                                             </div>
                                             <div class="message_count-s text-center ml-xl-4 ml-lg-3 ml-md-5">
-                                                <p class="fg_white-s mt-3 pt-1">1</p>
+                                                <p class="fg_white-s mt-3 pt-2 ft_11px-s">1</p>
                                             </div>
 
                                         </div>
@@ -256,7 +313,7 @@
                                                 <span>04/05/21</span>
                                             </div>
                                             <div class="message_count-s text-center ml-xl-4 ml-lg-3 ml-md-5">
-                                                <p class="fg_white-s mt-3 pt-1">3</p>
+                                                <p class="fg_white-s mt-3 pt-2 ft_11px-s">3</p>
                                             </div>
 
                                         </div>
@@ -289,7 +346,7 @@
                                                 <span>2 Hours</span>
                                             </div>
                                             <div class="message_count-s text-center ml-xl-4 ml-lg-3 ml-md-5">
-                                                <p class="fg_white-s mt-3 pt-1">12</p>
+                                                <p class="fg_white-s mt-3 pt-2 ft_11px-s">12</p>
                                             </div>
 
                                         </div>
@@ -323,7 +380,7 @@
                                                 <span>yesterday</span>
                                             </div>
                                             <div class="message_count-s text-center ml-xl-4 ml-lg-3 ml-md-5">
-                                                <p class="fg_white-s mt-3 pt-1">2</p>
+                                                <p class="fg_white-s mt-3 pt-2 ft_11px-s">2</p>
                                             </div>
 
                                         </div>
@@ -357,7 +414,7 @@
                                                 <span>02/08/21</span>
                                             </div>
                                             <div class="message_count-s text-center ml-xl-4 ml-lg-3 ml-md-5">
-                                                <p class="fg_white-s mt-3 pt-1">1</p>
+                                                <p class="fg_white-s mt-3 pt-2 ft_11px-s">1</p>
                                             </div>
 
                                         </div>
@@ -391,7 +448,7 @@
                                                 <span>04/05/21</span>
                                             </div>
                                             <div class="message_count-s text-center ml-xl-4 ml-lg-3 ml-md-5">
-                                                <p class="fg_white-s mt-3 pt-1">3</p>
+                                                <p class="fg_white-s ft_11px-s mt-3 pt-2">3</p>
                                             </div>
 
                                         </div>
@@ -416,7 +473,7 @@
                                             </div>
                                             <div class="ml-3 align-self-center">
                                                 <strong class="ft_17px-s fg_green-s">Thamer</strong>
-                                                <p class="fg_darkgrey_s">@Thamermd</p>
+                                                <p class="fg_darkgrey_s fs_12px-s">@Thamermd</p>
                                             </div>
                                         </div>
                                         <div class="col-2 text-right align-self-center">
@@ -435,7 +492,7 @@
 
                                     <!-- timeline of chat -->
                                     <div class="row">
-                                        <div class="col-12 d-flex justify-content-center ft_12px-s mt-3">
+                                        <div class="col-12 d-flex justify-content-center fs_12px-s mt-3">
                                             <span class=""> Today <span>01/01/21</span> </span>
                                         </div>
                                     </div>
@@ -454,7 +511,7 @@
                                             </p>
                                         </div>
                                         <div class="col-xl-8 col-lg-8 col-md-8 col-8 pl-0 offset-lg-1 offset-1 offset-xl-1 offset-md-1">
-                                            <span class="ft_12px-s ml-3 ml-lg-4 ml-xl-2"> 12:43 pm</span>
+                                            <span class="ft_11px-s ml-3 ml-lg-4 ml-xl-2"> 12:43 PM</span>
                                         </div>
                                     </div>
                                     <!-- next person in chat -->
@@ -466,9 +523,14 @@
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum justo at magna pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum justo at magna pulvinar
                                             </p>
                                         </div>
+                                        <div class="col-xl-1 col-lg-1 col-md-1 col-1 px-0 px-lg-0 px-xl-0 px-md-0 align-self-end">
+                                            <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                                <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                            </div>
+                                        </div>
 
-                                        <div class="col-12 text-right">
-                                            <span class="ft_12px-s"> 12:43 pm</span>
+                                        <div class="col-12 mr-xl-5 pr-xl-5 mr-lg-5 text-right">
+                                            <span class="ft_11px-s"> 12:43 AM</span>
                                         </div>
                                     </div>
                                     <!-- first person in chat -->
@@ -485,7 +547,7 @@
                                             </p>
                                         </div>
                                         <div class="col-xl-8 col-lg-8 col-md-8 col-8 pl-0 offset-lg-1 offset-1 offset-xl-1 offset-md-1">
-                                            <span class="ft_12px-s ml-3 ml-lg-4 ml-xl-2"> 12:43 pm</span>
+                                            <span class="ft_11px-s ml-3 ml-lg-4 ml-xl-2"> 12:43 PM</span>
                                         </div>
                                     </div>
                                     <!-- next person in chat -->
@@ -503,9 +565,14 @@
                                             <p class="mt-2">Lorem ipsum dolor sit amet,
                                             </p>
                                         </div>
+                                        <div class="col-xl-1 col-lg-1 col-md-1 col-1 px-0 px-lg-0 px-xl-0 px-md-0 align-self-end">
+                                            <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                                <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                            </div>
+                                        </div>
 
-                                        <div class="col-12 text-right">
-                                            <span class="ft_12px-s"> 12:43 pm</span>
+                                        <div class="col-12 mr-xl-5 pr-xl-5 mr-lg-5 text-right">
+                                            <span class="ft_11px-s"> 12:43 PM</span>
                                         </div>
                                     </div>
                                     <!-- first person in chat -->
@@ -528,9 +595,9 @@
         <!-- container for chat - end -->
     </div>
     <!-- .................Home Page End ......................... -->
-    <script src="assets/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

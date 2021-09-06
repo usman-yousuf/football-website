@@ -93,111 +93,115 @@
                 </div>
                 <!--palyer rating end-->
             </div>
-            <div class="row px-xl-4 px-3">
-                <div class="fg_green-s col-12 text-center">
-                    <h4>GIVE YOUR RATING</h4>
-                </div>
-                <div class="col-12">
-                    <form action="">
-                        <div class="row">
-                            <!--ability rating-->
-                            <div class="col-lg-4 col-md-6 col-12 mt-2">
-                                <div class="d-flex justify-content-between">
-                                    <h6><strong>AGILITY</strong></h6>
-                                    <h6 class="ability-d">0</h6>
-                                </div>
-                                <div class="form-group rating_filed-s border">
-                                    <input type="range" min="0.0" max="5.0" step="0.1" value="0" id="rating" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" data-parent='ability-d'>
-                                </div>
-                            </div>
-                            <!--ability rating end-->
-
-                            <!--stamina rating-->
-                            <div class="col-lg-4 col-md-6 col-12 mt-2">
-                                <div class="d-flex justify-content-between">
-                                    <h6><strong>STAMINA</strong></h6>
-                                    <h6 id="ability-d" class="stamina-d">0</h6>
-                                </div>
-                                <div class="form-group rating_filed-s border">
-                                    <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" data-parent='stamina-d'>
-                                </div>
-                            </div>
-                            <!--stamina rating end-->
-
-                            <!--strength rating-->
-                            <div class="col-lg-4 col-md-6 col-12 mt-2">
-                                <div class="d-flex justify-content-between">
-                                    <h6><strong>STRENGTH</strong></h6>
-                                    <h6 class="strength-d">0</h6>
-                                </div>
-                                <div class="form-group rating_filed-s border">
-                                    <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="strength-d">
-                                </div>
-                            </div>
-                            <!--strength rating end-->
-
-                            <!--passes rating-->
-                            <div class="col-lg-4 col-md-6 col-12 mt-2">
-                                <div class="d-flex justify-content-between">
-                                    <h6><strong>PASSES</strong></h6>
-                                    <h6 class="passes-d">0</h6>
-                                </div>
-                                <div class="form-group rating_filed-s border">
-                                    <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="passes-d">
-                                </div>
-                            </div>
-                            <!--passes rating end-->
-
-                            <!--shoots rating-->
-                            <div class="col-lg-4 col-md-6 col-12 mt-2">
-                                <div class="d-flex justify-content-between">
-                                    <h6><strong>SHOOTS</strong></h6>
-                                    <h6 class="shoots-d">0</h6>
-                                </div>
-                                <div class="form-group rating_filed-s border">
-                                    <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="shoots-d">
-                                </div>
-                            </div>
-                            <!--shoots rating end-->
-
-                            <!--appearance rating-->
-                            <div class="col-lg-4 col-md-6 col-12 mt-2">
-                                <div class="d-flex justify-content-between">
-                                    <h6><strong>APPEARANCE</strong></h6>
-                                    <h6 class="appearance-d">0</h6>
-                                </div>
-                                <div class="form-group rating_filed-s border">
-                                    <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="appearance-d">
-                                </div>
-                            </div>
-                            <!--appearance rating end-->
-
-                            <!--pace rating-->
-                            <div class="col-lg-4 col-md-6 col-12 mt-2">
-                                <div class="d-flex justify-content-between">
-                                    <h6><strong>PACE</strong></h6>
-                                    <h6 class="pace-d">0</h6>
-                                </div>
-                                <div class="form-group rating_filed-s border">
-                                    <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="pace-d">
-                                </div>
-                            </div>
-                            <!--pace rating end-->
+            <div class="row rating_bg-s br_20px-s mx-xl-4 mx-3">
+                <div class="col-xl-8 col-lg-7 col-12">
+                    <div class="row px-3 py-4">
+                        <div class=" col-12 d-flex justify-content-between">
+                            <h5 class="fg_green-s">GIVE YOUR RATING</h5>
+                            <h6 class="text-right opacity_4-s">YOUR RATING IS <span>4.5</span></h6>
                         </div>
-                    </form>
-
+                        <div class="col-12">
+                            <form action="">
+                                <div class="row">
+                                    <!--ability rating-->
+                                    <div class="col-md-6 col-12 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6><strong>AGILITY</strong></h6>
+                                            <h6 class="ability-d">0</h6>
+                                        </div>
+                                        <div class="form-group rating_filed-s br_8px-s bg-white border">
+                                            <input type="range" min="0.0" max="5.0" step="0.1" value="0" id="rating" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" data-parent='ability-d'>
+                                        </div>
+                                    </div>
+                                    <!--ability rating end-->
+        
+                                    <!--stamina rating-->
+                                    <div class="col-md-6 col-12 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6><strong>STAMINA</strong></h6>
+                                            <h6 id="ability-d" class="stamina-d">0</h6>
+                                        </div>
+                                        <div class="form-group rating_filed-s br_8px-s bg-white border">
+                                            <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" data-parent='stamina-d'>
+                                        </div>
+                                    </div>
+                                    <!--stamina rating end-->
+        
+                                    <!--strength rating-->
+                                    <div class="col-md-6 col-12 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6><strong>STRENGTH</strong></h6>
+                                            <h6 class="strength-d">0</h6>
+                                        </div>
+                                        <div class="form-group rating_filed-s br_8px-s bg-white border">
+                                            <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="strength-d">
+                                        </div>
+                                    </div>
+                                    <!--strength rating end-->
+        
+                                    <!--passes rating-->
+                                    <div class="col-md-6 col-12 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6><strong>PASSES</strong></h6>
+                                            <h6 class="passes-d">0</h6>
+                                        </div>
+                                        <div class="form-group rating_filed-s br_8px-s bg-white border">
+                                            <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="passes-d">
+                                        </div>
+                                    </div>
+                                    <!--passes rating end-->
+        
+                                    <!--shoots rating-->
+                                    <div class="col-md-6 col-12 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6><strong>SHOOTS</strong></h6>
+                                            <h6 class="shoots-d">0</h6>
+                                        </div>
+                                        <div class="form-group rating_filed-s br_8px-s bg-white border">
+                                            <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="shoots-d">
+                                        </div>
+                                    </div>
+                                    <!--shoots rating end-->
+        
+                                    <!--appearance rating-->
+                                    <div class="col-md-6 col-12 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6><strong>APPEARANCE</strong></h6>
+                                            <h6 class="appearance-d">0</h6>
+                                        </div>
+                                        <div class="form-group rating_filed-s br_8px-s bg-white border">
+                                            <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="appearance-d">
+                                        </div>
+                                    </div>
+                                    <!--appearance rating end-->
+        
+                                    <!--pace rating-->
+                                    <div class="col-md-6 col-12 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6><strong>PACE</strong></h6>
+                                            <h6 class="pace-d">0</h6>
+                                        </div>
+                                        <div class="form-group rating_filed-s br_8px-s bg-white border">
+                                            <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="pace-d">
+                                        </div>
+                                    </div>
+                                    <!--pace rating end-->
+                                    <div class="col-md-6 col-12 mt-2">
+                                        <button type="submit" class="br_10px-s bg_green-s  text-white w-100 h_79px-s fs_20px-s border-0" data-toggle="modal" data-target="#player_played_modal-d"><strong>SUBMIT</strong></button>
+                                    </div>
+                                </div>
+                            </form>
+        
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!--submit button start-->
-            <div class="row px-xl-4 px-3 pt-3 pb-4">
-                <div class="col-12">
-                    <div class="d-flex float-right">
-                        <h5 class="mb-0 align-self-center"><strong>YOUR RATING IS <span>4.5</span></strong></h5>
-                        <button type="submit" class=" ml-3 br_10px-s bg_green-s text-white w_h_184px_x_63px-s py-3 border-0" data-toggle="modal" data-target="#player_played_modal-d"><strong>SUBMIT</strong></button>
+                <div class="col-xl-4 col-lg-5 col-12">
+                    <div class="text-center performance_img py-4 px-3">
+                        <img src="assets/images/graph.svg" class="img-fluid h_100-s" alt="" />
                     </div>
                 </div>
             </div>
-            <!--submit button end-->
+            
         </div>
     </div>
 

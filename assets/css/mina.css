@@ -17,6 +17,18 @@
 
 }
 
+@media screen and (max-width:1440px) {
+    .background_img-s{
+        background-image:url(../images/Football.svg), url(../images/Black_Bg.svg);
+        /* Full height */
+        height: 90vh;
+        /* Center and scale the image nicely */
+        background-position:top left, right;
+        background-size:33%, 75%;
+        background-repeat: no-repeat, repeat-y;
+    
+    }
+}
 
 @media screen and (max-width:1024px) {
     .background_img-s{
@@ -52,7 +64,7 @@
         /* Center and scale the image nicely */
         background-position:left top, left top, right ;
         background-size:55%, 33%,  133%;
-        background-repeat:no-repeat, no-repeat, repeat-y;
+        background-repeat:no-repeat, no-repeat, repeat;
     }
     .text_sm_white-s{
         color: white !important;
@@ -157,9 +169,13 @@
     position: absolute;
 }
 
-
+@media screen and (max-width:425px) {
+    .fs_39px_on_sm-s{
+        font-size: 39px !important;
+    }
+}
 @media screen and (max-width:375px) {
-    .fs_33px_on_sm-s{
+    .fs_39px_on_sm-s{
         font-size: 33px !important;
     }
 }
@@ -186,4 +202,14 @@
     font-size: 30px;
 }
 
+.placeholder_color-s::-webkit-input-placeholder {
+    opacity: 0.4 !important;
+}
 
+.placeholder_color-s:-moz-placeholder {
+    opacity: 0.4 !important;
+}
+
+.font_family_roboto-s{
+    font-family: roboto;
+}

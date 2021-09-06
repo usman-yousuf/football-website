@@ -1347,8 +1347,8 @@ output:after {
     border-bottom-right-radius: 10px;
 }
 
-.h_346px-s {
-    height: 346px;
+.h_452px-s {
+    height: 452px;
 }
 
 .close_modal-s {
@@ -1497,5 +1497,43 @@ output:after {
 
 .br_20px-s{
     border-radius: 20px;
+}
+
+.h_79px-s{
+    height: 79px;
+}
+
+.h_100-s{
+    height: 100%;
+}
+
+.caption-s{
+    bottom: 0;
+}
+
+.post_footer-s{
+    bottom: 0;
+    width: 94%;
+}
+
+@media screen and (max-width:1024px) {
+    .post_footer-s{
+        bottom: 0;
+        width: 92%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .post_footer-s{
+        bottom: 0;
+        width: 94%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .post_footer-s{
+        bottom: 0;
+        width: 92%;
+    }
 }
 /* ----- MINA WORK - END ----- */

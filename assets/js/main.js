@@ -1,9 +1,9 @@
 // Get the container element
-var Container = document.getElementById("nav_bar-d");
+// var Container = document.getElementById("nav_bar-d");
 
 // Get all nav items with class="nav_link_active-d" inside the container
 
-var items = Container.getElementsByClassName("nav_link_active-d");
+// var items = Container.getElementsByClassName("nav_link_active-d");
 
 //loop for all nav link items to active them on click
 $(document).ready(function() {
@@ -16,6 +16,24 @@ $(document).ready(function() {
 
 
 });
+
+$(`.player_position_button-s`).click(function() {
+    $(`.active_position-s`).removeClass(`active_position-s`).find('.child').addClass(`opacity_4-s`);
+    $(this).addClass('active_position-s');
+    $(this).find(`.opacity_4-s`).removeClass(`opacity_4-s`);
+});
+
+
+// $('.player_position_button-s').click(function() {
+//     $('.active_position-s').removeClass(".active_position-s");
+//     $(this).find(`.opacity_4-s`).removeClass(`opacity_4-s`);
+//     $(this).addClass("active_position-s");
+// });
+
+// $(document).on('click', '.btn-grp button', function(e) {
+//     $(".active_position-s").not($(this).addClass('active_position-s')).removeClass();
+// });
+
 
 
 document.addEventListener('DOMContentLoaded', function() {

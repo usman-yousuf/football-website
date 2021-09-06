@@ -140,7 +140,7 @@
                 <div class="col-md-5 col-12 pt-4">
                     <h1 class=""><strong>Hello, Ahmad</strong></h1>
                     <h4 class="">Find a player for your team.</h4>
-                    <h4 class="fg_green-s">Thursday, 24 December 2020</h4>
+                    <h5 class="fg_green-s mt-3"><strong>Thursday, 24 December 2020</strong></h5>
                 </div>
                 <div class="col-md-7 col-12 pt-4 d-flex justify-content-end">
                     <div class="w_500px-s">
@@ -181,11 +181,11 @@
         <!-- .................Home Page Button Group Section End ......................... -->
 
         <div class="btn_grp pt-5 d-md-flex justify-content-between pb-0 mx-5 mb_25px-s">
-            <button class="btn btn-lg mb-0 mt-3 mx-1 player_position_button-s w_100_on_sm-s"><span class="opacity_4-s">All positions</span> </button>
-            <button class="btn btn-lg mb-0 mt-3 mx-1 player_position_button-s w_100_on_sm-s"><span class="opacity_4-s">Goalkeeper</span></button>
-            <button class="btn btn-lg mb-0 mt-3 mx-1 player_position_button-s w_100_on_sm-s"><span class="opacity_4-s">Defender</span></button>
-            <button class="btn btn-lg mb-0 mt-3 mx-1 player_position_button-s w_100_on_sm-s"><span class="opacity_4-s">Midfielder</span></button>
-            <button class="btn btn-lg mb-0 mt-3 mx-1 player_position_button-s w_100_on_sm-s"><span class="opacity_4-s">Forward</span></button>
+            <button class="btn btn-lg mb-0 mt-3 mx-1 player_position_button-s active_position-s w_100_on_sm-s"><span class="opacity_4-s child">All positions</span> </button>
+            <button class="btn btn-lg mb-0 mt-3 mx-1 player_position_button-s w_100_on_sm-s"><span class="opacity_4-s child">Goalkeeper</span></button>
+            <button class="btn btn-lg mb-0 mt-3 mx-1 player_position_button-s w_100_on_sm-s"><span class="opacity_4-s child">Defender</span></button>
+            <button class="btn btn-lg mb-0 mt-3 mx-1 player_position_button-s w_100_on_sm-s"><span class="opacity_4-s child">Midfielder</span></button>
+            <button class="btn btn-lg mb-0 mt-3 mx-1 player_position_button-s w_100_on_sm-s"><span class="opacity_4-s child">Forward</span></button>
         </div>
         <!-- .................Home Page Button Group Section End ......................... -->
         <!-- container for list of players - start -->
@@ -198,14 +198,16 @@
                         </div>
                         <div class="col-12 col-md-12 col-lg-9 col-xl-9">
                             <div class="float-xl-right float-lg-right filter_img d-flex flex-wrap">
-                                <img class="mb-2" src="assets/images/filter.svg" alt="" />
-                                <h5 class="opacity_4-s mx-2"><strong>Filter by :</strong>
+                                <a href="" data-toggle="modal" data-target="#option_of_filter_modal-d">
+                                    <img class="mb-2" src="assets/images/filter.svg" alt="" />
+                                </a>
+                                <!-- <h5 class="opacity_4-s mx-2"><strong>Filter by :</strong>
                                     <h5 class="rating_text">
                                         <a class="td_none-s text-dark" role="button" data-toggle="modal" data-target="#filter_by_rating_modal-d" href=""> <strong>Rating </strong></a> |
                                         <a class="td_none-s text-dark" role="button" data-toggle="modal" data-target="#filter_by_price_modal-d" href=""> <strong>Price</strong> </a> |
                                         <a class="td_none-s text-dark" role="button" data-toggle="modal" data-target="#filter_by_distance_modal-d" href=""> <strong>Nearest Location</strong> </a>
                                     </h5>
-                                </h5>
+                                </h5> -->
                             </div>
                         </div>
                     </div>
@@ -213,7 +215,7 @@
 
 
                         <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-2 px-1">
-                            <div class="card home_card br_25px-s">
+                            <div class="card home_card card_bg_img-s br_25px-s">
                                 <div class="heart_icon">
                                     <i class="fa fa-heart fs_32px_heart-s" aria-hidden="true"></i>
                                 </div>
@@ -227,11 +229,11 @@
                                                 <h6 class="mb-0">Thamer</h6>
                                                 <span class=" opacity_4-s fs_11px-s">@thamermd</span>
                                                 <p class="fg_yellow-s fs_11px-s mb-1">
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i> 5.0
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i> 5.0
                                                     <span class="rating_textt"> $10 </span>
                                                 </p>
                                             </div>
@@ -292,11 +294,11 @@
                                                 <h6 class="mb-0">Thamer</h6>
                                                 <span class=" opacity_4-s fs_12px-s">@thamermd</span>
                                                 <p class="fg_yellow-s fs_11px-s mb-1">
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i> 5.0
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i> 5.0
                                                     <span class="rating_textt"> $10 </span>
                                                 </p>
                                             </div>
@@ -358,11 +360,11 @@
                                                 <h6 class="mb-0">Thamer</h6>
                                                 <span class=" opacity_4-s fs_12px-s">@thamermd</span>
                                                 <p class="fg_yellow-s fs_11px-s mb-1">
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i> 5.0
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i> 5.0
                                                     <span class="rating_textt"> $10 </span>
                                                 </p>
                                             </div>
@@ -424,11 +426,11 @@
                                                 <h6 class="mb-0">Thamer</h6>
                                                 <span class=" opacity_4-s fs_11px-s fs_12px-s">@thamermd</span>
                                                 <p class="fg_yellow-s fs_11px-s mb-1">
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i> 5.0
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i> 5.0
                                                     <span class="rating_textt"> $10 </span>
                                                 </p>
                                             </div>
@@ -489,77 +491,11 @@
                                                 <h6 class="mb-0">Thamer</h6>
                                                 <span class=" opacity_4-s fs_12px-s">@thamermd</span>
                                                 <p class="fg_yellow-s fs_11px-s mb-1">
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i> 5.0
-                                                    <span class="rating_textt"> $10 </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row mx-auto pt-3">
-                                        <div class="col-3 text-white text-center px-0 fs_12px-s">
-                                            <span class="opacity_4-s">Age(years)</span>
-                                            <br>
-                                            <span class="fs_12px-s">28</span>
-                                        </div>
-                                        <div class="col-3 text-white text-center px-0 fs_12px-s">
-                                            <span class="opacity_4-s">Matches</span>
-                                            <br>
-                                            <span class="fs_12px-s">15</span>
-                                        </div>
-                                        <div class="col-3 text-white text-center px-0 fs_12px-s">
-                                            <span class="opacity_4-s">Missed</span>
-                                            <br>
-                                            <span class="fs_12px-s">2</span>
-                                        </div>
-                                        <div class="col-3 text-white text-center px-0 fs_12px-s">
-                                            <span class="opacity_4-s">Missed</span>
-                                            <br>
-                                            <span class="fs_12px-s">Defender</span>
-                                        </div>
-                                    </div>
-                                    <hr class="goalkeeper_margin_b mx-1" />
-
-                                    <div class="row mx-auto aditya_location">
-                                        <div class="col-6">
-                                            <p class="fs_12px-s mb-0">
-                                                <i class=" fa fa-map-marker" aria-hidden="true"></i> Aditya
-                                            </p>
-                                        </div>
-                                        <div class="col-6 pl-0">
-                                            <a class="td_none-s text-white fs_12px-s" href="Home/home-sent-invitation.html">
-                                                <span class="pull-right text-white"> send invitation >> </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-2 px-1">
-                            <div class="card home_card br_25px-s">
-                                <div class="heart_icon">
-                                    <i class="fa fa-heart fs_32px_heart-s" aria-hidden="true"></i>
-                                </div>
-                                <div class="container mt_30px-s">
-                                    <div class="row mx-auto">
-                                        <div class="col-lg-3 col-md-3 col-3 pl-0">
-                                            <img src="assets/images/Group 24.png" alt="" />
-                                        </div>
-                                        <div class="col-lg-9 col-md-9 col-9 pl-0">
-                                            <div class="text-white">
-                                                <h6 class="mb-0">Thamer</h6>
-                                                <span class=" opacity_4-s fs_12px-s">@thamermd</span>
-                                                <p class="fg_yellow-s fs_11px-s mb-1">
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i> 5.0
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i> 5.0
                                                     <span class="rating_textt"> $10 </span>
                                                 </p>
                                             </div>
@@ -621,11 +557,11 @@
                                                 <h6 class="mb-0">Thamer</h6>
                                                 <span class=" opacity_4-s fs_12px-s">@thamermd</span>
                                                 <p class="fg_yellow-s fs_11px-s mb-1">
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i> 5.0
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i> 5.0
                                                     <span class="rating_textt"> $10 </span>
                                                 </p>
                                             </div>
@@ -687,11 +623,11 @@
                                                 <h6 class="mb-0">Thamer</h6>
                                                 <span class=" opacity_4-s fs_12px-s">@thamermd</span>
                                                 <p class="fg_yellow-s fs_11px-s mb-1">
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i> 5.0
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i> 5.0
                                                     <span class="rating_textt"> $10 </span>
                                                 </p>
                                             </div>
@@ -753,11 +689,77 @@
                                                 <h6 class="mb-0">Thamer</h6>
                                                 <span class=" opacity_4-s fs_12px-s">@thamermd</span>
                                                 <p class="fg_yellow-s fs_11px-s mb-1">
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i>
-                                                    <i class="fa fa-star-o fs_11px-s" aria-hidden="true"></i> 5.0
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i> 5.0
+                                                    <span class="rating_textt"> $10 </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-auto pt-3">
+                                        <div class="col-3 text-white text-center px-0 fs_12px-s">
+                                            <span class="opacity_4-s">Age(years)</span>
+                                            <br>
+                                            <span class="fs_12px-s">28</span>
+                                        </div>
+                                        <div class="col-3 text-white text-center px-0 fs_12px-s">
+                                            <span class="opacity_4-s">Matches</span>
+                                            <br>
+                                            <span class="fs_12px-s">15</span>
+                                        </div>
+                                        <div class="col-3 text-white text-center px-0 fs_12px-s">
+                                            <span class="opacity_4-s">Missed</span>
+                                            <br>
+                                            <span class="fs_12px-s">2</span>
+                                        </div>
+                                        <div class="col-3 text-white text-center px-0 fs_12px-s">
+                                            <span class="opacity_4-s">Missed</span>
+                                            <br>
+                                            <span class="fs_12px-s">Defender</span>
+                                        </div>
+                                    </div>
+                                    <hr class="goalkeeper_margin_b mx-1" />
+
+                                    <div class="row mx-auto aditya_location">
+                                        <div class="col-6">
+                                            <p class="fs_12px-s mb-0">
+                                                <i class=" fa fa-map-marker" aria-hidden="true"></i> Aditya
+                                            </p>
+                                        </div>
+                                        <div class="col-6 pl-0">
+                                            <a class="td_none-s text-white fs_12px-s" href="Home/home-sent-invitation.html">
+                                                <span class="pull-right text-white"> send invitation >> </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 py-2 px-1">
+                            <div class="card home_card br_25px-s">
+                                <div class="heart_icon">
+                                    <i class="fa fa-heart fs_32px_heart-s" aria-hidden="true"></i>
+                                </div>
+                                <div class="container mt_30px-s">
+                                    <div class="row mx-auto">
+                                        <div class="col-lg-3 col-md-3 col-3 pl-0">
+                                            <img src="assets/images/Group 24.png" alt="" />
+                                        </div>
+                                        <div class="col-lg-9 col-md-9 col-9 pl-0">
+                                            <div class="text-white">
+                                                <h6 class="mb-0">Thamer</h6>
+                                                <span class=" opacity_4-s fs_12px-s">@thamermd</span>
+                                                <p class="fg_yellow-s fs_11px-s mb-1">
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i>
+                                                    <i class="fa fa-star fs_11px-s" aria-hidden="true"></i> 5.0
                                                     <span class="rating_textt"> $10 </span>
                                                 </p>
                                             </div>
@@ -812,7 +814,57 @@
         <!-- container for list of players - end -->
     </div>
     <!-- .................Home Page End ......................... -->
+    <!-- option for filter modal -->
 
+    <div class="modal fade" id="option_of_filter_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content br_10px-s border-0">
+                <div class="modal-header bg_grey-s bg_filter_img-s border-0 br_up_left_right_10px-s">
+                    <h5 class="modal-title text-dark" id="view-head"><strong>FILTER</strong></h5>
+                </div>
+                <div class="modal-body">
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <h6 class="opacity_4-s">SELECT FILTER OPTION</h6>
+                        </div>
+                    </div>
+                    <!-- <a class="td_none-s text-dark" role="button" data-toggle="modal" data-target="#filter_by_rating_modal-d" href=""> <strong>Rating </strong></a> | -->
+                    <!-- <a class="td_none-s text-dark" role="button" data-toggle="modal" data-target="#filter_by_price_modal-d" href=""> <strong>Price</strong> </a> | -->
+                    <!-- <a class="td_none-s text-dark" role="button" data-toggle="modal" data-target="#filter_by_distance_modal-d" href=""> <strong>Nearest Location</strong> </a> -->
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <a class="td_none-s text-dark" role="button" data-toggle="modal" data-target="#filter_by_rating_modal-d" href="#">
+                                <h4 class="border-bottom py-3">Rating </h4>
+                            </a>
+                            <!-- <h6></h6> -->
+                        </div>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <a class="td_none-s text-dark" role="button" data-toggle="modal" data-target="#filter_by_price_modal-d" href="#">
+                                <h4 class="border-bottom py-3">Price </h4>
+                            </a>
+                            <!-- <h6></h6> -->
+                        </div>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <a class="td_none-s text-dark" role="button" data-toggle="modal" data-target="#filter_by_distance_modal-d" href="#">
+                                <h4 class="py-3">Nearest Location </h4>
+                            </a>
+                            <!-- <h6></h6> -->
+                        </div>
+                    </div>
+
+                    <div class="row pt-5">
+                        <div class="col-12 d-flex justify-content-center">
+                            <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 px-5 mr-md-2 w-100" data-dismiss="modal"><strong>CLOSE</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- rating filter modal  -->
     <div class="modal fade" id="filter_by_rating_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered ">
@@ -882,7 +934,7 @@
         </div>
     </div>
 
-    <!-- price filter modal  -->
+    <!-- location filter modal  -->
     <div class="modal fade" id="filter_by_distance_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered ">
             <div class="modal-content br_10px-s border-0">

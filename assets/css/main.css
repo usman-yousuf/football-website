@@ -1458,6 +1458,7 @@ output:after {
 /*notification button end*/
 
 
+<<<<<<< HEAD
 /* ----- MINA WORK - END ----- */
 
 
@@ -1610,3 +1611,35 @@ output:after {
 .w_10px-s {
     width: 10px !important;
 }
+=======
+.border_grey-s{
+    border: 2px solid rgba(0 ,0 , 0 ,18%);
+}
+
+.h_444px-s{
+    height: 444px;
+}
+
+.fs_10px-s{
+    font-size: 10px
+}
+
+
+.w_90-s{
+    width: 90%;
+}
+
+.invitation_location-s{
+    background-color: #006400;
+    background-image: url("../images/map_footbal.png");
+    background-repeat: no-repeat;
+    height: 674px;
+    background-size: 100%;
+    border-radius: 15px;
+}
+
+.h_674px-s{
+    height: 674px;
+}
+/* ----- MINA WORK - END ----- */
+>>>>>>> 240405072819c6c1ef9c4e490f60e30773c7e20d

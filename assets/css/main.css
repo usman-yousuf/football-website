@@ -1482,4 +1482,20 @@ output:after {
 .h_674px-s{
     height: 674px;
 }
+
+.stadium_img{
+    height: 100%;
+}
+
+.br_8px-s{
+    border-radius: 8px;
+}
+
+.rating_bg-s{
+    background-color: #f8f8f8;
+}
+
+.br_20px-s{
+    border-radius: 20px;
+}
 /* ----- MINA WORK - END ----- */

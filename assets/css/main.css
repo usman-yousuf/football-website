@@ -810,6 +810,20 @@ sup {
     border: 2px solid green;
 }
 
+@media screen and (max-width:425px) {
+    .player_position_button-s {
+        width: 100% !important;
+        font-size: 18px !important;
+        color: #212121;
+    }
+    .player_position_button-s:hover {
+        width: 100% !important;
+        font-size: 18px !important;
+        color: #212121;
+        border: 2px solid green;
+    }
+}
+
 .player_position_button-s:hover span {
     opacity: 1 !important;
 }
@@ -1708,55 +1722,3 @@ output:after {
 
 
 /* ----- MINA WORK - END ----- */
-
-
-/* testing purpose */
-
-nav>.nav.nav-tabs {
-    border: none;
-    color: #fff;
-    background: #272e38;
-    border-radius: 0;
-}
-
-nav>div a.nav-item.nav-link,
-nav>div a.nav-item.nav-link.active {
-    border: none;
-    padding: 18px 25px;
-    color: #fff;
-    background: #272e38;
-    border-radius: 0;
-}
-
-nav>div a.nav-item.nav-link.active:after {
-    content: "";
-    position: relative;
-    bottom: -60px;
-    left: -10%;
-    border: 15px solid transparent;
-    /* border-top-color: #e74c3c; */
-}
-
-.tab-content {
-    background: #fdfdfd;
-    line-height: 25px;
-    border: 1px solid #ddd;
-    /* border-top: 5px solid #e74c3c; */
-    /* border-bottom: 5px solid #e74c3c; */
-    padding: 30px 25px;
-}
-
-nav>div a.nav-item.nav-link:hover,
-nav>div a.nav-item.nav-link:focus {
-    border: none;
-    /* background: #e74c3c; */
-    color: #fff;
-    border-radius: 0;
-    transition: background 0.20s linear;
-}
-
-.position_video_play_icon-s {
-    position: absolute;
-    right: 145px;
-    top: 119px;
-}

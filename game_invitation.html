@@ -21,7 +21,15 @@
 
 
     <title>gameInvitation.html</title>
-    <style></style>
+    <style>
+        .year-label {
+            font-size: 21px !important;
+        }
+        
+        .month-label {
+            font-size: 21px !important;
+        }
+    </style>
 </head>
 
 <body class="bg_img-s font_family_roboto-s">
@@ -32,37 +40,37 @@
         <nav class="navbar navbar-expand-lg navbar-light pt-3 pb-3">
             <div class="container-fluid px-0">
                 <div class="row w-100 pr-xl-3">
-                    <div class="col-xl-8 col-lg-8 col-md-8 col-6 px-md-2 pr-0 pt-2">
+                    <div class="col-xl-8 col-lg-8 col-md-8 col-2 pt-2">
                         <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                            <ul class="navbar-nav mt-2 mt-lg-0 w-100 justify-content-around" id="nav_bar-d">
-                                <li class="nav-item ml-2">
-                                    <a class="nav-link nav_link_active-d" href="index.html">
-                                        <img src="assets/images/home_icon.svg" class="img-fluid" alt="navbar_home" /> Home
+                            <ul class="navbar-nav mt-2 mt-lg-0 w-100 justify-content-around">
+                                <li class="nav-item ml-lg-0 ml-2">
+                                    <a class="nav-link pl-lg-0" href="index.html">
+                                        <span><img src="assets/images/home_icon.svg" class="img-fluid" alt="navbar_home"/></span> Home <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav_link_active-d" href="chat.html">
-                                        <img src="assets/images/chat_icon.svg" class="img-fluid" alt="navbar_chat" /> Chat
-                                    </a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link nav_link_active-d" href="favorite_player.html">
-                                        <img src="assets/images/favrticon.svg" class="img-fluid" alt="navbar_fvrt" /> Favorites
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link nav_link_active-d" href="#">
-                                        <img src="assets/images/GameInvitation.svg" class="img-fluid" alt="navbar_home" /> Game Invitations
+                                    <a class="nav-link" href="chat.html">
+                                        <span><img src="assets/images/chat_icon.svg" class="img-fluid" alt="navbar_chat" /></span> Chat
                                     </a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link nav_link_active-d" href="more.html">
-                                        <img src="assets/images/moreoption.svg" class="img-fluid" alt="navbar_home" /> More
+                                    <a class="nav-link" href="favorite_player.html">
+                                        <span><img src="assets/images/favrticon.svg" class="img-fluid" alt="navbar_fvrt" /> </span> Favorites
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="game_invitation.html">
+                                        <span> <img src="assets/images/GameInvitation.svg" class="img-fluid" alt="navbar_home" /> </span> Game Invitations
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="more.html">
+                                        <span> <img src="assets/images/moreoption.svg" class="img-fluid" alt="navbar_home" /> </span> More
                                     </a>
                                 </li>
                             </ul>
@@ -161,9 +169,14 @@
         <div class="container-fluid bg-white br_47px-s">
             <div class="row pt-5 px-xl-5">
                 <div class="col-12 d-flex fg_green-s">
-                    <span> <h6 class="mb-0 fs_18px-s"> Today, </h6> </span>
-                    <span> <h6 class="mb-0 fs_18px-s ml-2">26 December 2020</h6> </span>
-                    <a href="javascript:void(0)" class="td_none-s d-flex align-self-center mx-2" data-toggle="modal" data-target="#slected_date_calander_modal-d"><img src="assets/images/arrow_green.svg" class="img-fluid" width="10" alt="arrow button"></a>
+                    <h6 class="mb-0 fs_18px-s"><strong>Today,</strong></h6>&nbsp;
+                    <h6 class="mb-0 fs_18px-s"><strong>26 December 2020</strong></h6>
+                    <a href="javascript:void(0)" class="td_none-s d-flex align-self-center mx-2 "><img src="assets/images/arrow_green.svg" class="img-fluid change_img-d" width="10" alt="arrow button"></a>
+                </div>
+                <div class="col-12 d-none mb-4 mt-3" id="toggle_calendar-d">
+                    <main>
+                        <div class="calendar-wrapper" id="calendar-wrapper"></div>
+                    </main>
                 </div>
             </div>
             <div class="row pt-4 pb-3 pr-xl-5 pr-3">
@@ -460,7 +473,12 @@
 
                             <div class="row pt-3 pb-2 px-4">
                                 <div class="col-6 pr-2">
-                                    <a href="rating_player.html"><button type="button" class="btn fs_11px-s bg_grey-s br_10px-s fg_green-s py-3 w-100"><strong>Rate</strong></button></a>
+                                    <<<<<<< HEAD <a href="rating_player.html"><button type="button" class="btn fs_11px-s bg_grey-s br_10px-s fg_green-s py-3 w-100"><strong>Rate</strong></button></a>
+                                        =======
+                                        <a href="rating_player.html">
+                                            <button type="button" class="btn fs_11px-s bg_grey-s br_10px-s fg_green-s py-3 w-100"><strong>Rate</strong></button>
+                                        </a>
+                                        >>>>>>> 1c2432ae0f88e91722312d64ca4d5d30ede3de1a
                                 </div>
 
                                 <!--SUBMIT button-->
@@ -492,7 +510,7 @@
                     <div class="row modal-body ">
                         <!--modal text-->
                         <div class="col-12 text-center">
-                            <h4 class="fg_green-s">ACCEPT INVITATION</h4>
+                            <h4 class="fg_green-s"><strong>ACCEPT INVITATION</strong></h4>
                             <h6 class="mb-3"><strong>Are you sure you want to accept invitation?</strong></h6>
                             <span class="opacity_4-s pt-2">Once you accept this invitation, all invitations will be declined during this time limit.</span>
                         </div>
@@ -611,7 +629,7 @@
                     <div class="row modal-body ">
                         <!--modal text-->
                         <div class="col-12 text-center">
-                            <h4 class="fg_green-s">CANCEL INVITATION</h4>
+                            <h4 class="fg_green-s"><strong>CANCEL INVITATION</strong></h4>
                             <h6 class="mb-3"><strong>Are you sure you want to cancel invitation?</strong></h6>
                             <p class="opacity_4-s">Once you cancel this invitation, you can not revert this action.</p>
                         </div>

@@ -173,3 +173,33 @@ $("#switch_to_add_stadium_modal-d").click(function() {
     $("#send_invitation_modal-d").modal('hide');
     $("#add_stadium_modal-d").modal('show');
 });
+
+// filter modals switch
+
+
+$('.modal').on('click', '.trigger_rating-d', function(e) {
+    // console.log('fefefefe');
+    $("#option_of_filter_modal-d").modal('hide');
+    $("#filter_by_rating_modal-d").modal('show');
+});
+
+$('.modal').on('click', '.trigger_price-d', function(e) {
+    $(".option_of_filter_modal-d").modal('hide');
+    $("#filter_by_price_modal-d").modal('show');
+});
+
+
+$('.modal').on('click', '.trigger_location-d', function(e) {
+    $(".option_of_filter_modal-d").modal('hide');
+    $("#filter_by_distance_modal-d").modal('show');
+});
+
+$(`.p_tab`).click(function() {
+    $(`.nav-tabs`).find(`.performance_text`).removeClass('performance_text');
+    $(this).addClass('performance_text');
+    $(`.tab-content`).find('.active').removeClass('active').removeClass('show');
+    $(`#${$(this).attr('href').replace('#','')}`).addClass('active').addClass('show');
+
+
+
+})

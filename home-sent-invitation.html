@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' />
 
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/page.css" />
@@ -17,7 +18,16 @@
     <link rel="stylesheet" href="assets/css/theme.css" />
 
     <title>Sent Invitation</title>
-    <style></style>
+    <style>
+        .year-label {
+            font-size: 21px !important;
+        }
+        
+        .month-label {
+            font-size: 21px !important;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -27,7 +37,7 @@
             <div class="container-fluid px-xl-5 px-3">
                 <div class="row pt-4 pb-3">
                     <div class="col-xl-8 col-lg-8 col-md-8 col-12 d-flex order-md-1 order-2">
-                        <a class="td_none-s" href="more.html">
+                        <a class="td_none-s" href="index.html">
                             <h4 class="pr-2 text-dark">Home</h4>
                         </a>
                         <h4 class="px-2"><strong>/</strong></h4>
@@ -132,7 +142,9 @@
                                 <div class="col-12 mt-5">
                                     <div class="d-flex justify-content-between">
                                         <h5 class="opacity_4-s fs_18px-s">Stadium</h5>
-                                        <span class="fg_green-s fs_11px-s">+ Add New Stadium</span>
+                                        <a href="#" data-toggle="modal" data-target="#add_stadium_modal-d">
+                                            <span class="fg_green-s fs_11px-s">+ Add New Stadium</span>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-12 mt-2">
@@ -293,22 +305,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                    <div class="col-xl-4 col-lg-6 col-md-7 col-12">
                         <div class="container invitation_location-s d-flex ">
                             <div class=" location_card-s d-flex align-self-end pb-3 w-100">
                                 <div class="card w-100 br_10px-s">
                                     <div class="container-fluid px-0">
                                         <div class="row">
                                             <div class="col-4">
-                                                <img src="assets/images/Mask Group 3.svg" class="stadium_img" alt="" />
+                                                <img src="assets/images/Mask Group 3.svg" class="stadium_img mt-1" alt="" />
                                             </div>
                                             <div class="col-8 pl-xl-4 my-3">
                                                 <span class="fs_12px-s fg_green-s">Jaber Al-Ahmad INternational Stadium</span>
-                                                <div class="fs_9px-s pt-3">
+                                                <div class="fs_9px-s pt-1">
                                                     <img src="assets/images/Location.svg" class="img-fluid" alt="">
                                                     <span>Sami Ahmad Al Munayes St, Al kuyawt, Kuwait.</span>
                                                 </div>
-                                                <button class="btn fg_green-s w_90-s bg_grey-s mt-4 fs_10px-s">SELECT</button>
+                                                <button class="btn fg_green-s w_90-s bg_grey-s mt-2 fs_10px-s">SELECT</button>
                                             </div>
                                         </div>
                                     </div>
@@ -326,6 +338,62 @@
     </div>
     <!-- .................Home Page Sent Invitation  End ......................... -->
 
+    <!-- Modal -->
+    <div class="modal fade" id="add_stadium_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content br_10px-s border-0">
+                <div class="container-fluid">
+                    <!--modal header-->
+                    <div class="row modal-header br_up_left_right_10px-s border-0 bg_grey-s">
+                        <div class="col-12 mt-2">
+                            <h4><strong>ADD STADIUM</strong></h4>
+                        </div>
+                    </div>
+                    <!--modal header end-->
+                    <div class="row modal-body justify-content-center pt-5 pb-0">
+                        <div class="col-12">
+                            <form action="">
+                                <!--add stadium-->
+                                <div class="form-group">
+                                    <!--ADD STADIUM-->
+                                    <label for="" class=""><strong>STADIUM NAME</strong></label>
+                                    <input type="text" name="stadium_name" placeholder="Write Stadium Name" class="form-control rounded form-control-xl py-4 ">
+                                </div>
+                                <!--add stadium end-->
+
+                                <!--Add LOCATION-->
+                                <div class="form-group pt-3">
+                                    <label for="" class=""><strong>LOCATION</strong></label>
+                                    <input type="text" name="stadium_Location" placeholder="Write Address of Stadium" class="form-control rounded form-control-xl py-4">
+                                </div>
+                                <!--Add LOCATION end-->
+                            </form>
+                        </div>
+
+                        <!--suggested stadium text-->
+                        <div class="col-9 mt-5 text-center">
+                            <p class="opacity_4-s"><strong>Your suggested stadium will be listed once it is approved.</strong></p>
+                        </div>
+                        <!--suggested stadium text end-->
+                    </div>
+
+                    <div class="row px-3  pb-5">
+                        <!--CANCEL button-->
+                        <div class="col-6 pr-2">
+                            <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" data-dismiss="modal"><strong>CANCEL</strong></button>
+                        </div>
+                        <!--CANCEL button end-->
+
+                        <!--SUBMIT button-->
+                        <div class="col-6 pl-2">
+                            <button type="submit" class="btn bg_green-s br_10px-s py-3 text-white w-100"><strong>SUBMIT</strong></button>
+                        </div>
+                        <!--SUBMIT button end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

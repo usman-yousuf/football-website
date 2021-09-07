@@ -71,6 +71,22 @@
     }
 }
 
+@media screen and (max-width:320px) {
+    .background_img-s{
+        background: url(../images/fb.png), url(../images/White_bg.svg), url(../images/Black_Bg.svg);
+        /* Full height */
+        height: 100vh;
+        /* Center and scale the image nicely */
+        background-position:left top, left top, right ;
+        background-size:61%, 33%,  133%;
+        background-repeat:no-repeat, no-repeat, repeat;
+    }
+
+    .fs_15px-s{
+        font-size: 15px;
+    }
+}
+
 .fs_19px-s{
     font-size: 19px;
 }
@@ -171,12 +187,18 @@
 
 @media screen and (max-width:425px) {
     .fs_39px_on_sm-s{
-        font-size: 39px !important;
+        font-size: 38px !important;
     }
 }
 @media screen and (max-width:375px) {
     .fs_39px_on_sm-s{
-        font-size: 33px !important;
+        font-size: 32px !important;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .fs_39px_on_sm-s{
+        font-size: 27px !important;
     }
 }
 

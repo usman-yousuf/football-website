@@ -797,6 +797,8 @@ sup {
     border: 2px solid green !important;
 }
 
+
+
 .player_position_button-s:focus {
     outline: none;
     border: none;
@@ -808,6 +810,21 @@ sup {
     font-size: 18px !important;
     color: #212121;
     border: 2px solid green;
+}
+
+@media screen and (max-width:425px) {
+    .player_position_button-s {
+        width: 100% !important;
+        font-size: 18px !important;
+        color: #212121;
+    }
+
+    .player_position_button-s:hover {
+        width: 100% !important;
+        font-size: 18px !important;
+        color: #212121;
+        border: 2px solid green;
+    }
 }
 
 .player_position_button-s:hover span {
@@ -1711,6 +1728,7 @@ output:after {
         width: 92%;
     }
 }
+
 
 
 /* ----- MINA WORK - END ----- */

@@ -76,6 +76,28 @@ document.addEventListener('DOMContentLoaded', function() {
         $(`.${$(this).attr('data-parent')}`).text($(this).val());
     });
 
+    let img = document.getElementsByClassName("change_img-d");
+    if(img != null){
+        Array.from(img).forEach( elm => {
+            elm.addEventListener( "click" , toggleCalendar);
+        });
+        function toggleCalendar() {
+            let calendar = document.getElementById("toggle_calendar-d");
+            if( this.src == "assets/images/arrow_green.svg" || calendar.classList.contains("d-none") ){
+                this.setAttribute("width", 18);
+                this.src = "assets/images/up_arrow.svg";
+                calendar.classList.remove("d-none");
+            }
+           
+            else {
+                this.setAttribute("width", 10);
+                this.src = "assets/images/arrow_green.svg";
+                calendar.classList.add("d-none");
+            }
+            
+        }
+    }
+
 });
 
 // ------ For game invitation switch modals ----->

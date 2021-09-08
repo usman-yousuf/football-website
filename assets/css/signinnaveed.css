@@ -1,0 +1,119 @@
+.two_s{
+    background-color: black;
+    height: 90px;
+    width: 90px;
+    border-radius: 45px;
+    color: white;
+}
+.signin_welcome-s{
+    color: green;
+}
+.sign_up-s{
+    width: 220px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    border-radius: 10px !important;
+}
+
+.side_div-s{
+    background-color: white;
+    width: 750px;
+    height: 600px;
+    border-radius: 80px 0px 0px 80px;
+    border: 1px solid blue;
+    background-image: url('../images/arrow_black.svg\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: right top 5px;
+    background-size: 450px;
+
+}
+.welcome_tag-s{
+    color: green;
+}
+.fields {position: relative;
+    margin-bottom: 20px;
+    width: 100px;
+}
+.field label {
+    margin-bottom: 0;
+    font-size: 11px;
+    font-family: 'SFProText-Medium';
+    background: #fff;
+    color: #9EAFAF;
+    position: absolute;
+    top: -7px;
+    left: 16px;
+  
+    padding: 0 10px 0 3px;
+}
+.label_signin-s{
+    color: green !important;
+}
+::placeholder{
+    font-size: 11px;
+    opacity: 0.5;
+}
+.sign-s{
+    width: 180px;
+    background-color: green;
+    color: white;
+    border-radius: 10px !important;
+    
+}
+.bg_body-s{
+    background-color: #e8e4e3;
+}
+.a_tag-s{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.a_tag-s:hover{
+     color: black;
+     text-decoration: none;
+}
+.bnt{
+    /* border: 1px solid black; */
+    margin-top: 150px;
+}
+.bg_color-s{
+    background-color: #e9f5f2;
+}
+ /* .container{
+     border: 1px solid green;
+}
+.row{
+    border: 1px solid yellow;
+}
+.col{
+    border: 1px solid red;
+}  */
+.reg_btn-s{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.reg_btn-s:hover{
+    color: black;
+    text-decoration: none;
+}
+@media screen and (min-width:200px) and (max-width:800px){
+    .side_div-s{
+        border: none;
+        background-size: 300px;
+        /* border-radius: 0px; */
+    }
+}
+@media screen and (min-width:300px) and (max-width:430px){
+    .sign-s{
+        width: 120px;
+        
+    }
+}
+/* @media screem and (min-width:300px) and (max-width:430px){
+    .side_div-s{
+        border-radius: right 20px top 20px
+    } 
+} */
+

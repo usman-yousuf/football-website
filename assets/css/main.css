@@ -1489,8 +1489,9 @@ output:after {
 /* sultan work necessary */
 
 .performance_text {
-    border-bottom: 2px solid #212121 !important;
-    opacity: 0.4;
+    border-bottom: 2px solid #006400 !important;
+    color: black !important;
+    font-weight: bold !important;
 }
 
 .tab_text {
@@ -1499,13 +1500,14 @@ output:after {
 }
 
 .performance_text a {
-    color: #212121;
+    color: dark;
     font-family: Roboto;
     text-transform: capitalize;
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 2px solid #006400;
+    /* opacity: 0.4 !important; */
+    /* border-bottom: 2px solid #006400; */
 }
 
 .performance_text p {
@@ -1785,3 +1787,33 @@ output:after {
 
 
 /* ----- MINA WORK - END ----- */
+
+@media screen and (max-width: 786px) {
+    .ft_on_sm_screen-s {
+        font-size: 15px !important;
+    }
+    .carousel-inner {
+        position: relative;
+        overflow: hidden;
+        left: 22%;
+        top: 7px;
+        width: 60%;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 7%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .ft_on_sm_screen-s {
+        font-size: 9px !important;
+    }
+    .image_width_for_profile_card-s {
+        width: 50px;
+    }
+}
+
+.mt_68px-s {
+    margin-top: 68px;
+}

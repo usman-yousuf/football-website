@@ -23,6 +23,13 @@ $(`.player_position_button-s`).click(function() {
     $(this).find(`.opacity_4-s`).removeClass(`opacity_4-s`);
 });
 
+$(`.chat_parent`).click(function() {
+    $(`.list_member_parent-d`).find('.br_on_active-s').removeClass('br_on_active-s');
+    $(this).addClass(`br_on_active-s`);
+    $(`.chat_module_parent`).find('.d-lg-block').removeClass('d-lg-block').addClass('d-none');
+    $(`#${$(this).attr('data-parent-chat')}`).removeClass('d-none').addClass('d-lg-block');
+});
+
 
 // $('.player_position_button-s').click(function() {
 //     $('.active_position-s').removeClass(".active_position-s");
@@ -77,37 +84,43 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     let img = document.getElementsByClassName("change_img-d");
-    if(img != null){
-        Array.from(img).forEach( elm => {
-            elm.addEventListener( "click" , toggleCalendar);
+    if (img != null) {
+        Array.from(img).forEach(elm => {
+            elm.addEventListener("click", toggleCalendar);
         });
+
         function toggleCalendar() {
             let calendar = document.getElementById("toggle_calendar-d");
-            if( this.src == "assets/images/arrow_green.svg" || calendar.classList.contains("d-none") ){
+            if (this.src == "assets/images/arrow_green.svg" || calendar.classList.contains("d-none")) {
                 this.setAttribute("width", 18);
                 this.src = "assets/images/up_arrow.svg";
                 calendar.classList.remove("d-none");
-            }
-           
-            else {
+            } else {
                 this.setAttribute("width", 10);
                 this.src = "assets/images/arrow_green.svg";
                 calendar.classList.add("d-none");
             }
-            
+
         }
     }
 
 });
 
 // ------ For game invitation switch modals ----->
-$("#switch_to_select_date-d").click(function() {
-    $("#accept_invitation_modal-d").modal('hide');
-    $("#select_date_modal-d").modal('show');
+$('.modal').on('click', `#switch_to_select_date-d`, function(e) {
+    // $(`#accept_invitation_modal-d`).modal().hide();
+    // $(`#accept_invitation_modal-d`).modal('hide', 500);
+    // $(`#select_date_modal-d`).modal('show');
+
+    switchModal('accept_invitation_modal-d', 'select_date_modal-d');
 });
-$(`#cal`).click(function() {
+$(`#cancel_modal-d`).click(function() {
     window.location.href = "hire_Players.html";
 });
+// $(`#cancel_modal-d`).click(function() {
+//     alert('text');
+//     window.location.href = "game_invitation.html";
+// });
 
 /**  --------------- jquery of switch modals for new phone number ----------- */
 

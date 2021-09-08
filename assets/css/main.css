@@ -608,7 +608,7 @@ sup {
 
 .card_bg_img-s {
     background-image: url(../images/card_bg_img.svg);
-    background-size: 60%;
+    /* background-size: 60%; */
     background-repeat: no-repeat;
     background-position: center;
     overflow-x: hidden;
@@ -761,6 +761,10 @@ sup {
     border: 1px solid #006400;
 }
 
+.br_on_active-s {
+    border: 1px solid #006400;
+}
+
 .min_w_315px-s {
     min-width: 453px !important;
     right: 0 !important;
@@ -787,7 +791,7 @@ sup {
 .player_position_button-s {
     width: 223px !important;
     font-size: 18px !important;
-    color: #212121;
+    color: #212121 !important;
 }
 
 .active_position-s {
@@ -1722,3 +1726,19 @@ output:after {
 
 
 /* ----- MINA WORK - END ----- */
+
+
+/* further work   */
+
+.position_video_play_icon-s {
+    position: absolute;
+    top: 38%;
+    left: 37%;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}

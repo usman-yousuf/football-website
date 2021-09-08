@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' />
+
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Rating Player</title>
 </head>
@@ -27,12 +29,69 @@
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-12 text-right order-md-2 order-1">
                     <div class="">
-                        <a class="pr-3">
-                            <img src="assets/images/Location.svg" class="img-fluid nav_location_img " alt="navbar_home" />
-                            <span class="text-dark"> <strong>Adailiya </strong></span>
+                        <a class="pr-3 td_none-s" href="user_profile.html">
+                            <img src="assets/images/Location.svg" class="img-fluid nav_location_img" alt="navbar_home" />
+                            <span class="text-dark"> <strong>Adailiya </strong> </span>
                         </a>
                         <img src="assets/images/user_img.png" class="img-fluid rounded-circle border_green-s" width="37" alt="Navbar_profile" />
-                        <img src="assets/images/notification.svg" class="ml-3 img-fluid nav_notification_img" alt="navbar_home" />
+
+                        <!-- notification drop down -->
+                        <a href="javasccript:void(0)" role="button" class="" data-toggle="dropdown">
+                            <img src="assets/images/notification.svg" class="ml-3 img-fluid nav_notification_img" alt="navbar_home" />
+                        </a>
+                        <div class="col-4 dropdown-menu bg_lightgrey-s border-0 shadow br_15px-s min_w_315px-s ml-xl-5">
+                            <h4 class="ml-5 mt-3 mb-5">
+                                <strong class="fg_green-s">Notification</strong>
+                            </h4>
+
+                            <h5 class="ml-5">
+                                <strong>Today</strong>
+                            </h5>
+                            <a class="dropdown-item bg-white py-4" href="#">
+                                <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                    <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                    <strong class="fg_green-s ml-2">Themer</strong> <span> invite you to join the game.</span>
+                                    </br><span class="ml-5">1m ago</span>
+                                </div>
+                            </a>
+
+                            <hr class="goalkeeper_margin_b mx-1 mt-0 mb-0" />
+
+                            <a class="dropdown-item bg-white py-4" href="#">
+                                <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                    <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                    <strong class="fg_green-s ml-2">Themer</strong> <span> accepted your invitation.</span>
+                                    </br><span class="ml-5">1m ago</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item py-4" href="#">
+                                <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                    <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                    <strong class="fg_green-s ml-2">Themer</strong> <span> sent you a message.</span>
+                                    </br><span class="ml-5">2m ago</span>
+                                </div>
+                            </a>
+                            <h5 class="ml-5">
+                                <strong>Yesterday</strong>
+                            </h5>
+                            <a class="dropdown-item py-4" href="#">
+                                <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                    <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                    <strong class="fg_green-s ml-2">Themer</strong> <span> sent you a message.</span>
+                                    </br><span class="ml-5">6:00 pm</span>
+                                </div>
+                            </a>
+
+                            <div class="dropdown-divider"></div>
+
+                            <a class="dropdown-item py-4" href="#">
+                                <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                    <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                    <strong class="fg_green-s ml-2">Themer</strong> <span> invite you to join the game.</span>
+                                    </br><span class="ml-5">2:00 pm</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,10 +137,10 @@
                 <!--palyer rating-->
                 <div class="col-lg-4 col-12 text-right">
                     <p class="fg_yellow-s fs_27px-s mb-0">
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
                         <i class="fa fa-star-o" aria-hidden="true"></i>
                     </p>
                     <div>
@@ -93,111 +152,115 @@
                 </div>
                 <!--palyer rating end-->
             </div>
-            <div class="row px-xl-4 px-3">
-                <div class="fg_green-s col-12 text-center">
-                    <h4>GIVE YOUR RATING</h4>
-                </div>
-                <div class="col-12">
-                    <form action="">
-                        <div class="row">
-                            <!--ability rating-->
-                            <div class="col-lg-4 col-md-6 col-12 mt-2">
-                                <div class="d-flex justify-content-between">
-                                    <h6><strong>AGILITY</strong></h6>
-                                    <h6 class="ability-d">0</h6>
-                                </div>
-                                <div class="form-group rating_filed-s border">
-                                    <input type="range" min="0.0" max="5.0" step="0.1" value="0" id="rating" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" data-parent='ability-d'>
-                                </div>
-                            </div>
-                            <!--ability rating end-->
-
-                            <!--stamina rating-->
-                            <div class="col-lg-4 col-md-6 col-12 mt-2">
-                                <div class="d-flex justify-content-between">
-                                    <h6><strong>STAMINA</strong></h6>
-                                    <h6 id="ability-d" class="stamina-d">0</h6>
-                                </div>
-                                <div class="form-group rating_filed-s border">
-                                    <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" data-parent='stamina-d'>
-                                </div>
-                            </div>
-                            <!--stamina rating end-->
-
-                            <!--strength rating-->
-                            <div class="col-lg-4 col-md-6 col-12 mt-2">
-                                <div class="d-flex justify-content-between">
-                                    <h6><strong>STRENGTH</strong></h6>
-                                    <h6 class="strength-d">0</h6>
-                                </div>
-                                <div class="form-group rating_filed-s border">
-                                    <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="strength-d">
-                                </div>
-                            </div>
-                            <!--strength rating end-->
-
-                            <!--passes rating-->
-                            <div class="col-lg-4 col-md-6 col-12 mt-2">
-                                <div class="d-flex justify-content-between">
-                                    <h6><strong>PASSES</strong></h6>
-                                    <h6 class="passes-d">0</h6>
-                                </div>
-                                <div class="form-group rating_filed-s border">
-                                    <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="passes-d">
-                                </div>
-                            </div>
-                            <!--passes rating end-->
-
-                            <!--shoots rating-->
-                            <div class="col-lg-4 col-md-6 col-12 mt-2">
-                                <div class="d-flex justify-content-between">
-                                    <h6><strong>SHOOTS</strong></h6>
-                                    <h6 class="shoots-d">0</h6>
-                                </div>
-                                <div class="form-group rating_filed-s border">
-                                    <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="shoots-d">
-                                </div>
-                            </div>
-                            <!--shoots rating end-->
-
-                            <!--appearance rating-->
-                            <div class="col-lg-4 col-md-6 col-12 mt-2">
-                                <div class="d-flex justify-content-between">
-                                    <h6><strong>APPEARANCE</strong></h6>
-                                    <h6 class="appearance-d">0</h6>
-                                </div>
-                                <div class="form-group rating_filed-s border">
-                                    <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="appearance-d">
-                                </div>
-                            </div>
-                            <!--appearance rating end-->
-
-                            <!--pace rating-->
-                            <div class="col-lg-4 col-md-6 col-12 mt-2">
-                                <div class="d-flex justify-content-between">
-                                    <h6><strong>PACE</strong></h6>
-                                    <h6 class="pace-d">0</h6>
-                                </div>
-                                <div class="form-group rating_filed-s border">
-                                    <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="pace-d">
-                                </div>
-                            </div>
-                            <!--pace rating end-->
+            <div class="row rating_bg-s br_20px-s mx-xl-4 mx-3">
+                <div class="col-xl-8 col-lg-7 col-12">
+                    <div class="row px-3 py-4">
+                        <div class=" col-12 d-flex justify-content-between">
+                            <h5 class="fg_green-s">GIVE YOUR RATING</h5>
+                            <h6 class="text-right opacity_4-s">YOUR RATING IS <span>4.5</span></h6>
                         </div>
-                    </form>
+                        <div class="col-12">
+                            <form action="">
+                                <div class="row">
+                                    <!--ability rating-->
+                                    <div class="col-md-6 col-12 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6><strong>AGILITY</strong></h6>
+                                            <h6 class="ability-d">0</h6>
+                                        </div>
+                                        <div class="form-group rating_filed-s br_8px-s bg-white border">
+                                            <input type="range" min="0.0" max="5.0" step="0.1" value="0" id="rating" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" data-parent='ability-d'>
+                                        </div>
+                                    </div>
+                                    <!--ability rating end-->
 
+                                    <!--stamina rating-->
+                                    <div class="col-md-6 col-12 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6><strong>STAMINA</strong></h6>
+                                            <h6 id="ability-d" class="stamina-d">0</h6>
+                                        </div>
+                                        <div class="form-group rating_filed-s br_8px-s bg-white border">
+                                            <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" data-parent='stamina-d'>
+                                        </div>
+                                    </div>
+                                    <!--stamina rating end-->
+
+                                    <!--strength rating-->
+                                    <div class="col-md-6 col-12 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6><strong>STRENGTH</strong></h6>
+                                            <h6 class="strength-d">0</h6>
+                                        </div>
+                                        <div class="form-group rating_filed-s br_8px-s bg-white border">
+                                            <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="strength-d">
+                                        </div>
+                                    </div>
+                                    <!--strength rating end-->
+
+                                    <!--passes rating-->
+                                    <div class="col-md-6 col-12 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6><strong>PASSES</strong></h6>
+                                            <h6 class="passes-d">0</h6>
+                                        </div>
+                                        <div class="form-group rating_filed-s br_8px-s bg-white border">
+                                            <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="passes-d">
+                                        </div>
+                                    </div>
+                                    <!--passes rating end-->
+
+                                    <!--shoots rating-->
+                                    <div class="col-md-6 col-12 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6><strong>SHOOTS</strong></h6>
+                                            <h6 class="shoots-d">0</h6>
+                                        </div>
+                                        <div class="form-group rating_filed-s br_8px-s bg-white border">
+                                            <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="shoots-d">
+                                        </div>
+                                    </div>
+                                    <!--shoots rating end-->
+
+                                    <!--appearance rating-->
+                                    <div class="col-md-6 col-12 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6><strong>APPEARANCE</strong></h6>
+                                            <h6 class="appearance-d">0</h6>
+                                        </div>
+                                        <div class="form-group rating_filed-s br_8px-s bg-white border">
+                                            <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="appearance-d">
+                                        </div>
+                                    </div>
+                                    <!--appearance rating end-->
+
+                                    <!--pace rating-->
+                                    <div class="col-md-6 col-12 mt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6><strong>PACE</strong></h6>
+                                            <h6 class="pace-d">0</h6>
+                                        </div>
+                                        <div class="form-group rating_filed-s br_8px-s bg-white border">
+                                            <input type="range" min="0.0" max="5.0" value="0" step="0.1" class="form-control-range py-4 ratig_slider-s mx-auto slider-d" id="" data-parent="pace-d">
+                                        </div>
+                                    </div>
+                                    <!--pace rating end-->
+                                    <div class="col-md-6 col-12 mt-2 align-self-center">
+                                        <button type="submit" class="br_10px-s bg_green-s  text-white w-100 h_58px-s fs_20px-s border-0" data-toggle="modal" data-target="#player_played_modal-d"><strong>SUBMIT</strong></button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!--submit button start-->
-            <div class="row px-xl-4 px-3 pt-3 pb-4">
-                <div class="col-12">
-                    <div class="d-flex float-right">
-                        <h5 class="mb-0 align-self-center"><strong>YOUR RATING IS <span>4.5</span></strong></h5>
-                        <button type="submit" class=" ml-3 br_10px-s bg_green-s text-white w_h_184px_x_63px-s py-3 border-0" data-toggle="modal" data-target="#player_played_modal-d"><strong>SUBMIT</strong></button>
+                <div class="col-xl-4 col-lg-5 col-12">
+                    <div class="text-center performance_img py-4 px-3">
+                        <img src="assets/images/graph.svg" class="img-fluid h_100-s" alt="" />
                     </div>
                 </div>
             </div>
-            <!--submit button end-->
+
         </div>
     </div>
 

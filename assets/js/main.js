@@ -1,9 +1,9 @@
 // Get the container element
-var Container = document.getElementById("nav_bar-d");
+// var Container = document.getElementById("nav_bar-d");
 
 // Get all nav items with class="nav_link_active-d" inside the container
 
-var items = Container.getElementsByClassName("nav_link_active-d");
+// var items = Container.getElementsByClassName("nav_link_active-d");
 
 //loop for all nav link items to active them on click
 $(document).ready(function() {
@@ -17,9 +17,52 @@ $(document).ready(function() {
 
 });
 
+$(`.player_position_button-s`).click(function() {
+    $(`.active_position-s`).removeClass(`active_position-s`).find('.child').addClass(`opacity_4-s`);
+    $(this).addClass('active_position-s');
+    $(this).find(`.opacity_4-s`).removeClass(`opacity_4-s`);
+});
+
+$(`.chat_parent`).click(function() {
+    $(`.list_member_parent-d`).find('.br_on_active-s').removeClass('br_on_active-s');
+    $(this).addClass(`br_on_active-s`);
+    $(`.chat_module_parent`).find('.d-lg-block').removeClass('d-lg-block').addClass('d-none');
+    $(`#${$(this).attr('data-parent-chat')}`).removeClass('d-none').addClass('d-lg-block');
+});
+
+
+// $('.player_position_button-s').click(function() {
+//     $('.active_position-s').removeClass(".active_position-s");
+//     $(this).find(`.opacity_4-s`).removeClass(`opacity_4-s`);
+//     $(this).addClass("active_position-s");
+// });
+
+// $(document).on('click', '.btn-grp button', function(e) {
+//     $(".active_position-s").not($(this).addClass('active_position-s')).removeClass();
+// });
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
 
+    // $(`#lower,#upper`).on('input', function() {
+    //     let rating_Value = $(`#rating_value-d`);
+    //     let rating_Value_upper = $(`#rating_value-d2`);
+    //     let rating_slider = $(`#lower`);
+    //     let rating_slider_upper = $(`#upper`);
+
+    //     $(rating_Value_upper).text($(rating_slider_upper).val());
+    //     $(rating_Value).text($(rating_slider).val());
+
+    //     $(rating_Value).position() = ($(rating_slider).val() / 2) + `%`;
+    // });
+    // rating_slider.oninput = ( ()=> {
+    //     let value = rating_slider.value;
+    //     console.log(rating_Value.textContent);
+    //     rating_Value. textContent = value;
+
+    //     rating_Value.style.left =(value/2) + "%";
+    // });
 
     $(`.button_click-s`).click(function() {
         let img = $(this).find(`.img_div-s`).find(`.dropdown_img-s`).attr('src');
@@ -58,16 +101,46 @@ document.addEventListener('DOMContentLoaded', function() {
         $(`.${$(this).attr('data-parent')}`).text($(this).val());
     });
 
+    let img = document.getElementsByClassName("change_img-d");
+    if (img != null) {
+        Array.from(img).forEach(elm => {
+            elm.addEventListener("click", toggleCalendar);
+        });
+
+        function toggleCalendar() {
+            let calendar = document.getElementById("toggle_calendar-d");
+            if (this.src == "assets/images/arrow_green.svg" || calendar.classList.contains("d-none")) {
+                this.setAttribute("width", 18);
+                this.src = "assets/images/up_arrow.svg";
+                calendar.classList.remove("d-none");
+            } else {
+                this.setAttribute("width", 10);
+                this.src = "assets/images/arrow_green.svg";
+                calendar.classList.add("d-none");
+            }
+
+        }
+    }
+
+
+
 });
 
 // ------ For game invitation switch modals ----->
-$("#switch_to_select_date-d").click(function() {
-    $("#accept_invitation_modal-d").modal('hide');
-    $("#select_date_modal-d").modal('show');
+$('.modal').on('click', `#switch_to_select_date-d`, function(e) {
+    // $(`#accept_invitation_modal-d`).modal().hide();
+    // $(`#accept_invitation_modal-d`).modal('hide', 500);
+    // $(`#select_date_modal-d`).modal('show');
+
+    switchModal('accept_invitation_modal-d', 'select_date_modal-d');
 });
-$(`#cal`).click(function() {
+$(`#cancel_modal-d`).click(function() {
     window.location.href = "hire_Players.html";
 });
+// $(`#cancel_modal-d`).click(function() {
+//     alert('text');
+//     window.location.href = "game_invitation.html";
+// });
 
 /**  --------------- jquery of switch modals for new phone number ----------- */
 
@@ -155,3 +228,33 @@ $("#switch_to_add_stadium_modal-d").click(function() {
     $("#send_invitation_modal-d").modal('hide');
     $("#add_stadium_modal-d").modal('show');
 });
+
+// filter modals switch
+
+
+$('.modal').on('click', '.trigger_rating-d', function(e) {
+    // console.log('fefefefe');
+    $("#option_of_filter_modal-d").modal('hide');
+    $("#filter_by_rating_modal-d").modal('show');
+});
+
+$('.modal').on('click', '.trigger_price-d', function(e) {
+    // $(".option_of_filter_modal-d").modal('hide');
+    // $("#filter_by_price_modal-d").modal('show');
+    switchModal('option_of_filter_modal-d', 'filter_by_price_modal-d');
+
+});
+
+
+$('.modal').on('click', '.trigger_location-d', function(e) {
+    // $(".option_of_filter_modal-d").modal('hide');
+    // $("#filter_by_distance_modal-d").modal('show');
+    switchModal('option_of_filter_modal-d', 'filter_by_distance_modal-d');
+});
+
+$(`.p_tab`).click(function() {
+    $(`.nav-tabs`).find(`.performance_text`).removeClass('performance_text');
+    $(this).addClass('performance_text');
+    $(`.tab-content`).find('.active').removeClass('active').removeClass('show');
+    $(`#${$(this).attr('href').replace('#','')}`).addClass('active').addClass('show');
+})

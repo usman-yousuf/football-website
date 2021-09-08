@@ -10,11 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' />
 
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/mina.css">
+    <!-- <link rel="stylesheet" href="assets/css/page.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
 
     <title>HirePlayer</title>
-    <style></style>
+    <style>
+        .year-label {
+            font-size: 21px !important;
+        }
+        
+        .month-label {
+            font-size: 21px !important;
+        }
+    </style>
 </head>
 
 <body class="bg_img-s font_family_roboto-s">
@@ -33,12 +46,12 @@
                             <ul class="navbar-nav mt-2 mt-lg-0 w-100 justify-content-around">
                                 <li class="nav-item ml-lg-0 ml-2">
                                     <a class="nav-link pl-lg-0" href="index.html">
-                                        <span><img src="assets/images/home.svg" class="img-fluid" alt="navbar_home"/></span> Home <span class="sr-only">(current)</span>
+                                        <span><img src="assets/images/home_icon.svg" class="img-fluid" alt="navbar_home"/></span> Home <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="chat.html">
-                                        <span><img src="assets/images/chat.svg" class="img-fluid" alt="navbar_chat" /></span> Chat
+                                        <span><img src="assets/images/chat_icon.svg" class="img-fluid" alt="navbar_chat" /></span> Chat
                                     </a>
                                 </li>
 
@@ -63,11 +76,11 @@
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-10 pt-2 text-right">
                         <div class="">
-                            <a class="pr-3 td_none-s" href="user_profile.html">
-                                <img src="assets/images/Location.svg" class="img-fluid nav_location_img" alt="navbar_home" />
-                                <span class="text-dark"> <strong>Adailiya </strong> </span>
+                            <img src="assets/images/Location.svg" class="img-fluid nav_location_img" alt="navbar_home" />
+                            <span class="text-dark"> <strong>Adailiya </strong> </span>
+                            <a class="pl-3 td_none-s" href="user_profile.html">
+                                <img src="assets/images/user_img.png" class="img-fluid rounded-circle border_green-s" width="37" alt="Navbar_profile" />
                             </a>
-                            <img src="assets/images/user_img.png" class="img-fluid rounded-circle border_green-s" width="37" alt="Navbar_profile" />
 
                             <!-- notification drop down -->
                             <a href="javasccript:void(0)" role="button" class="" data-toggle="dropdown">
@@ -144,7 +157,7 @@
                 </div>
                 <div class="col-md-7 col-12 justify-content-md-end mt-md-0 mt-4 d-flex align-self-center">
                     <a href="game_invitation.html" role="button" class="btn bg-white br_10px-s mr-2 br_green_on_hover-s fs_18px-s fg_light_grey-s py-3 w_h_216px_x_63px-s"><strong>Invitations</strong></a>
-                    <a href="hire_Players.html" class="btn bg-white br_10px-s ml-2 br_green_on_hover-s fg_light_grey-s fs_18px-s py-3 w_h_216px_x_63px-s"><strong>Hire Players</strong></a>
+                    <a href="hire_Players.html" class="btn bg-white br_10px-s ml-2 br_green_on_hover_active-s fg_light_grey-s fs_18px-s py-3 w_h_216px_x_63px-s"><strong>Hire Players</strong></a>
                 </div>
             </div>
         </div>
@@ -154,9 +167,14 @@
         <div class="container-fluid bg-white br_47px-s">
             <div class="row pt-5 px-xl-5">
                 <div class="col-12 d-flex fg_green-s">
-                    <h6 class="mb-0 fs_18px-s">Today,</h6>
-                    <h6 class="mb-0 fs_18px-s">26 December 2020</h6>
-                    <a href="javascript:void(0)" class="td_none-s d-flex align-self-center mx-2"><img src="assets/images/arrow_green.svg" class="img-fluid" width="10" alt="arrow button"></a>
+                    <h6 class="mb-0 fs_18px-s"><strong>Today,</strong></h6>&nbsp;
+                    <h6 class="mb-0 fs_18px-s"><strong>26 December 2020</strong></h6>
+                    <a href="javascript:void(0)" class="td_none-s d-flex align-self-center mx-2"><img src="assets/images/arrow_green.svg" class="img-fluid change_img-d" width="10" alt="arrow button"></a>
+                </div>
+                <div class="col-12 d-none mb-4 mt-3" id="toggle_calendar-d">
+                    <main>
+                        <div class="calendar-wrapper" id="calendar-wrapper"></div>
+                    </main>
                 </div>
             </div>
             <div class="row pt-4 pb-3 pr-xl-5 pr-3">
@@ -166,7 +184,7 @@
 
                     </div>
                     <div class="pl-2">
-                        <h6 class="fs_18px-s">03:00 pm</h6>
+                        <h6 class="fs_18px-s"> <strong>03:00 pm</strong> </h6>
                     </div>
                 </div>
                 <div class="col-md-6 col-7 pr-md-3 pr-0  text-right">
@@ -198,11 +216,11 @@
                                                     <h6 class="mb-0">Thamer</h6>
                                                     <span class=" opacity_4-s fs_11px">@thamermd</span>
                                                     <p class="fg_yellow-s fs_11px-s">
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i> 5.0
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i> 5.0
                                                     </p>
                                                 </div>
                                             </div>
@@ -231,7 +249,7 @@
 
                             <div class="row pt-3 pb-2 px-4">
                                 <div class="col-12 ">
-                                    <button type="button" class="btn fs_12px-s bg-white br_10px-s fg_green-s py-3 w-100"><strong>Send Message</strong></button>
+                                    <a href="chat.html" type="button" role="button" class="btn fs_12px-s bg-white br_10px-s fg_green-s py-3 w-100"><strong>Send Message</strong></a>
                                 </div>
                             </div>
                         </div>
@@ -261,11 +279,11 @@
                                                     <h6 class="mb-0">Thamer</h6>
                                                     <span class=" opacity_4-s fs_11px">@thamermd</span>
                                                     <p class="fg_yellow-s fs_11px-s">
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i> 5.0
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i> 5.0
                                                     </p>
                                                 </div>
                                             </div>
@@ -294,7 +312,7 @@
 
                             <div class="row pt-3 pb-2 px-4">
                                 <div class="col-12 ">
-                                    <button type="button" class="btn fs_12px-s bg-white br_10px-s fg_green-s py-3 w-100"><strong>Send Message</strong></button>
+                                    <a href="chat.html" type="submit" role="button" class="btn fs_12px-s bg-white br_10px-s fg_green-s py-3 w-100"><strong>Send Message</strong></a>
                                 </div>
                             </div>
                         </div>
@@ -324,11 +342,11 @@
                                                     <h6 class="mb-0">Thamer</h6>
                                                     <span class=" opacity_4-s fs_11px">@thamermd</span>
                                                     <p class="fg_yellow-s fs_11px-s">
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i> 5.0
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i> 5.0
                                                     </p>
                                                 </div>
                                             </div>
@@ -357,7 +375,7 @@
 
                             <div class="row pt-3 pb-2 px-4 invisible">
                                 <div class="col-12 ">
-                                    <button type="button" class="btn fs_12px-s bg-white br_10px-s fg_green-s py-3 w-100"><strong>Send Message</strong></button>
+                                    <a href="chat.html" type="submit" role="button" class="btn fs_12px-s bg-white br_10px-s fg_green-s py-3 w-100"><strong>Send Message</strong></a>
                                 </div>
                             </div>
                         </div>
@@ -372,7 +390,7 @@
 
                     </div>
                     <div class="pl-2">
-                        <h6 class="fs_18px-s">09:15 am</h6>
+                        <h6 class="fs_18px-s"> <strong>09:15 am</strong> </h6>
                     </div>
                 </div>
                 <div class="col-md-6 col-7 pr-md-3 pr-0  text-right">
@@ -405,11 +423,11 @@
                                                     <h6 class="mb-0">Thamer</h6>
                                                     <span class=" opacity_4-s fs_11px">@thamermd</span>
                                                     <p class="fg_yellow-s fs_11px-s">
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                                                        <i class="fa fa-star-o" aria-hidden="true"></i> 5.0
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i> 5.0
                                                     </p>
                                                 </div>
                                             </div>
@@ -443,7 +461,7 @@
 
                                 <!--SUBMIT button-->
                                 <div class="col-6 pl-2">
-                                    <button type="submit" class="btn fs_11px-s bg-white br_10px-s py-3 fg_green-s w-100"><strong>Message</strong></button>
+                                    <a href="chat.html" role="button" type="submit" class="btn fs_11px-s bg-white br_10px-s py-3 fg_green-s w-100"><strong>Message</strong></a>
                                 </div>
                             </div>
                         </div>
@@ -455,9 +473,45 @@
     </div>
     <!-- .................Home Page End ......................... -->
 
-    <script src="assets/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="assets/js/calendar.js"></script>
+    <script src="assets/js/calendar.min.js"></script>
+    <script src="https://unpkg.com/codeflask/build/codeflask.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script type="text/javascript">
+        var config = `
+        function selectDate(date) {
+          $('#calendar-wrapper').updateCalendarOptions({
+            date: date
+          });
+          console.log(calendar.getSelectedDate());
+        }
+
+        var defaultConfig = {
+          weekDayLength: 1,
+          date: '08-05-2021',
+          onClickDate: selectDate,
+          showYearDropdown: true,
+          startOnMonday: true,
+        };
+
+        var calendar = $('#calendar-wrapper').calendar(defaultConfig);
+        console.log(calendar.getSelectedDate());
+`;
+        eval(config);
+        const flask = new CodeFlask("#editor", {
+            language: "js",
+            lineNumbers: true,
+        });
+        flask.updateCode(config);
+        flask.onUpdate((code) => {
+            try {
+                eval(code);
+            } catch (e) {}
+        });
+    </script>
 </body>
 
 </html>

@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' />
 
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/page.css" />
@@ -17,7 +18,16 @@
     <link rel="stylesheet" href="assets/css/theme.css" />
 
     <title>Sent Invitation</title>
-    <style></style>
+    <style>
+        .year-label {
+            font-size: 21px !important;
+        }
+        
+        .month-label {
+            font-size: 21px !important;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -27,20 +37,77 @@
             <div class="container-fluid px-xl-5 px-3">
                 <div class="row pt-4 pb-3">
                     <div class="col-xl-8 col-lg-8 col-md-8 col-12 d-flex order-md-1 order-2">
-                        <a class="td_none-s" href="more.html">
+                        <a class="td_none-s" href="index.html">
                             <h4 class="pr-2 text-dark">Home</h4>
                         </a>
                         <h4 class="px-2"><strong>/</strong></h4>
                         <h4 class="fg_green-s pl-2">Sent Invitations</h4>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 col-12 text-right order-md-2 order-1">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-10 pt-2 text-right order-md-2 order-1">
                         <div class="">
-                            <a class="pr-3">
-                                <img src="assets/images/Location.svg" class="img-fluid nav_location_img " alt="navbar_home" />
-                                <span class="text-dark"> <strong>Adailiya </strong></span>
+                            <img src="assets/images/Location.svg" class="img-fluid nav_location_img" alt="navbar_home" />
+                            <span class="text-dark"> <strong>Adailiya </strong> </span>
+                            <a class="pl-3 td_none-s" href="user_profile.html">
+                                <img src="assets/images/user_img.png" class="img-fluid rounded-circle border_green-s" width="37" alt="Navbar_profile" />
                             </a>
-                            <img src="assets/images/user_img.png" class="img-fluid rounded-circle border_green-s" width="37" alt="Navbar_profile" />
-                            <img src="assets/images/notification.svg" class="ml-3 img-fluid nav_notification_img" alt="navbar_home" />
+
+                            <!-- notification drop down -->
+                            <a href="javasccript:void(0)" role="button" class="" data-toggle="dropdown">
+                                <img src="assets/images/notification.svg" class="ml-3 img-fluid nav_notification_img" alt="navbar_home" />
+                            </a>
+                            <div class="col-4 dropdown-menu mt_68px-s bg_lightgrey-s border-0 shadow br_15px-s min_w_315px-s ml-xl-5">
+                                <h4 class="ml-5 mt-3 mb-5">
+                                    <strong class="fg_green-s">Notification</strong>
+                                </h4>
+
+                                <h5 class="ml-5">
+                                    <strong>Today</strong>
+                                </h5>
+                                <a class="dropdown-item bg-white py-4" href="#">
+                                    <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                        <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                        <strong class="fg_green-s ml-2">Themer</strong> <span> invite you to join the game.</span>
+                                        </br><span class="ml-5">1m ago</span>
+                                    </div>
+                                </a>
+
+                                <hr class="goalkeeper_margin_b mx-1 mt-0 mb-0" />
+
+                                <a class="dropdown-item bg-white py-4" href="#">
+                                    <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                        <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                        <strong class="fg_green-s ml-2">Themer</strong> <span> accepted your invitation.</span>
+                                        </br><span class="ml-5">1m ago</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item py-4" href="#">
+                                    <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                        <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                        <strong class="fg_green-s ml-2">Themer</strong> <span> sent you a message.</span>
+                                        </br><span class="ml-5">2m ago</span>
+                                    </div>
+                                </a>
+                                <h5 class="ml-5">
+                                    <strong>Yesterday</strong>
+                                </h5>
+                                <a class="dropdown-item py-4" href="#">
+                                    <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                        <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                        <strong class="fg_green-s ml-2">Themer</strong> <span> sent you a message.</span>
+                                        </br><span class="ml-5">6:00 pm</span>
+                                    </div>
+                                </a>
+
+                                <div class="dropdown-divider"></div>
+
+                                <a class="dropdown-item py-4" href="#">
+                                    <div class="profile_img_in_chat-s ml-xl-4 ml-lg-3 ml-md-2 ml-2">
+                                        <img class="img_set_to_div-s" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-tulips-blooming-in-field-royalty-free-image-1584131603.jpg" alt="">
+                                        <strong class="fg_green-s ml-2">Themer</strong> <span> invite you to join the game.</span>
+                                        </br><span class="ml-5">2:00 pm</span>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -49,8 +116,8 @@
             <!-- .................Home Page Sent Invitation Page NavBar End ......................... -->
             <!-- .................Home Page Sent Invitation Section One Start ......................... -->
             <div class="container-fluid bg-white br_47px-s mh_86vh-s">
-                <div class="row pt-5 px-xl-5 px-3 ">
-                    <div class="col-lg-4 col-md-6 h_674px-s border br_15px-s border_grey-s">
+                <div class="row pt-3 px-xl-5 px-3 ">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 h_674px-s border br_15px-s border_grey-s mt-3">
                         <div class="container">
                             <div class="row pt-4">
                                 <div class="col-12">
@@ -101,7 +168,7 @@
                                                 </div>
                                             </div>
                                             <hr class="goalkeeper_margin_b mx-1" />
-        
+
                                             <div class="row mx-auto aditya_location">
                                                 <div class="col-6">
                                                     <p class="fs_12px-s mb-0">
@@ -132,7 +199,9 @@
                                 <div class="col-12 mt-5">
                                     <div class="d-flex justify-content-between">
                                         <h5 class="opacity_4-s fs_18px-s">Stadium</h5>
-                                        <span class="fg_green-s fs_11px-s">+ Add New Stadium</span>
+                                        <a href="#" data-toggle="modal" data-target="#add_stadium_modal-d">
+                                            <span class="fg_green-s fs_11px-s">+ Add New Stadium</span>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-12 mt-2">
@@ -155,7 +224,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12 mt-3">
-                                    <button class="btn btn-lg my-0 btn_send w-100"><h5>SEND</h5></button>
+                                    <a href="index.html"><button class="btn btn-lg my-0 btn_send w-100"><h5>SEND</h5></button></a>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +274,7 @@
                                                 class="img-fluid"
                                                 alt=""
                                                 /> -->
-                                                <!-- <i class="fa fa-map-marker" aria-hidden="true"></i> Aditya
+                        <!-- <i class="fa fa-map-marker" aria-hidden="true"></i> Aditya
                                                 <span class="pull-right"> send message >> </span>
                                             </p>
                                         </div>
@@ -254,7 +323,7 @@
                             </div>
                         </div> -->
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-12 mt-3">
                         <div class="container">
                             <div class="row">
                                 <div class=" col-12 celender_bg">
@@ -266,8 +335,8 @@
                                     <div class="d-flex justify-content-between pt-4">
                                         <span class="fs_14px-s"><strong>Select Time</strong></span>
                                         <div>
-                                            <span class="badge bg-success fs_12px-s rounded-pill px-4">PM</span>
-                                            <span class="badge bg-successs fs_12px-s rounded-pill px-4">AM</span>
+                                            <span class="text-white bg_green-s fs_12px-s py-2 rounded-pill px-4">PM</span>
+                                            <span class=" fg_green-s bg_grey-s fs_12px-s py-2 rounded-pill px-4">AM</span>
                                         </div>
                                     </div>
                                     <div class="row pt-5 pb-3 ">
@@ -279,7 +348,7 @@
                                                 </div>
                                             </form>
                                         </div>
-        
+
                                         <div class="col-lg-6 col-md-6">
                                             <form action="">
                                                 <div class="form-group">
@@ -293,25 +362,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 ">
+                    <div class="col-xl-4 col-lg-6 col-md-7 col-12 mt-3">
                         <div class="container invitation_location-s d-flex ">
                             <div class=" location_card-s d-flex align-self-end pb-3 w-100">
                                 <div class="card w-100 br_10px-s">
-                                    <!-- <div class="container-fluid px-0"> -->
+                                    <div class="container-fluid px-0">
                                         <div class="row">
-                                            <div class="col-4">
-                                                <img src="assets/images/Mask Group 3.svg" class="stadium_img" alt="" />
+                                            <div class="col-md-4 col-6">
+                                                <img src="assets/images/Mask Group 3.svg" class="stadium_img mt-1" alt="" />
                                             </div>
-                                            <div class="col-8 my-3">
+                                            <div class="col-md-8 col-6 pl-xl-4 pl-2 pl-md-3 my-3">
                                                 <span class="fs_12px-s fg_green-s">Jaber Al-Ahmad INternational Stadium</span>
-                                                <div class="fs_9px-s pt-3">
-                                                    <img src="assets/images/Location.svg" alt="">
+                                                <div class="fs_9px-s pt-1">
+                                                    <img src="assets/images/Location.svg" class="img-fluid" alt="">
                                                     <span>Sami Ahmad Al Munayes St, Al kuyawt, Kuwait.</span>
                                                 </div>
-                                                <button class="btn fg_green-s w_90-s bg_grey-s mt-4 fs_10px-s">SELECT</button>
+                                                <button class="btn fg_green-s w_90-s bg_grey-s mt-2 fs_10px-s">SELECT</button>
                                             </div>
                                         </div>
-                                    <!-- </div> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -321,11 +390,67 @@
         </div>
         <!-- .................Home Page Sent Invitation  NavBar Start ......................... -->
 
-        
-    <!-- .................Home Page Sent Invitation Section One End ......................... -->
+
+        <!-- .................Home Page Sent Invitation Section One End ......................... -->
     </div>
     <!-- .................Home Page Sent Invitation  End ......................... -->
 
+    <!-- Modal -->
+    <div class="modal fade" id="add_stadium_modal-d" tabindex="-1" aria-labelledby="view-head" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content br_10px-s border-0">
+                <div class="container-fluid">
+                    <!--modal header-->
+                    <div class="row modal-header br_up_left_right_10px-s border-0 bg_grey-s">
+                        <div class="col-12 mt-2">
+                            <h4><strong>ADD STADIUM</strong></h4>
+                        </div>
+                    </div>
+                    <!--modal header end-->
+                    <div class="row modal-body justify-content-center pt-5 pb-0">
+                        <div class="col-12">
+                            <form action="">
+                                <!--add stadium-->
+                                <div class="form-group">
+                                    <!--ADD STADIUM-->
+                                    <label for="" class=""><strong>STADIUM NAME</strong></label>
+                                    <input type="text" name="stadium_name" placeholder="Write Stadium Name" class="form-control rounded form-control-xl py-4 ">
+                                </div>
+                                <!--add stadium end-->
+
+                                <!--Add LOCATION-->
+                                <div class="form-group pt-3">
+                                    <label for="" class=""><strong>LOCATION</strong></label>
+                                    <input type="text" name="stadium_Location" placeholder="Write Address of Stadium" class="form-control rounded form-control-xl py-4">
+                                </div>
+                                <!--Add LOCATION end-->
+                            </form>
+                        </div>
+
+                        <!--suggested stadium text-->
+                        <div class="col-9 mt-5 text-center">
+                            <p class="opacity_4-s"><strong>Your suggested stadium will be listed once it is approved.</strong></p>
+                        </div>
+                        <!--suggested stadium text end-->
+                    </div>
+
+                    <div class="row px-3  pb-5">
+                        <!--CANCEL button-->
+                        <div class="col-6 pr-2">
+                            <button type="button" class="btn bg_grey-s br_10px-s fg_green-s py-3 w-100" data-dismiss="modal"><strong>CANCEL</strong></button>
+                        </div>
+                        <!--CANCEL button end-->
+
+                        <!--SUBMIT button-->
+                        <div class="col-6 pl-2">
+                            <button type="submit" class="btn bg_green-s br_10px-s py-3 text-white w-100"><strong>SUBMIT</strong></button>
+                        </div>
+                        <!--SUBMIT button end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

@@ -45,22 +45,22 @@ $(`.chat_parent`).click(function() {
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    $(`#lower,#upper`).on('input',function () {
-    let rating_Value  = $(`#rating_value-d`);
-    let rating_Value_upper  = $(`#rating_value-d2`);
-    let rating_slider = $(`#lower`);
-    let rating_slider_upper = $(`#upper`);
+    // $(`#lower,#upper`).on('input', function() {
+    //     let rating_Value = $(`#rating_value-d`);
+    //     let rating_Value_upper = $(`#rating_value-d2`);
+    //     let rating_slider = $(`#lower`);
+    //     let rating_slider_upper = $(`#upper`);
 
-        $(rating_Value_upper).text($(rating_slider_upper).val());
-        $(rating_Value).text($(rating_slider).val());
+    //     $(rating_Value_upper).text($(rating_slider_upper).val());
+    //     $(rating_Value).text($(rating_slider).val());
 
-        $(rating_Value).position() = ($(rating_slider).val()/2)+`%`;
-    });
+    //     $(rating_Value).position() = ($(rating_slider).val() / 2) + `%`;
+    // });
     // rating_slider.oninput = ( ()=> {
     //     let value = rating_slider.value;
     //     console.log(rating_Value.textContent);
     //     rating_Value. textContent = value;
-        
+
     //     rating_Value.style.left =(value/2) + "%";
     // });
 
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    
+
 
 });
 
@@ -239,14 +239,17 @@ $('.modal').on('click', '.trigger_rating-d', function(e) {
 });
 
 $('.modal').on('click', '.trigger_price-d', function(e) {
-    $(".option_of_filter_modal-d").modal('hide');
-    $("#filter_by_price_modal-d").modal('show');
+    // $(".option_of_filter_modal-d").modal('hide');
+    // $("#filter_by_price_modal-d").modal('show');
+    switchModal('option_of_filter_modal-d', 'filter_by_price_modal-d');
+
 });
 
 
 $('.modal').on('click', '.trigger_location-d', function(e) {
-    $(".option_of_filter_modal-d").modal('hide');
-    $("#filter_by_distance_modal-d").modal('show');
+    // $(".option_of_filter_modal-d").modal('hide');
+    // $("#filter_by_distance_modal-d").modal('show');
+    switchModal('option_of_filter_modal-d', 'filter_by_distance_modal-d');
 });
 
 $(`.p_tab`).click(function() {

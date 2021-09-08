@@ -1721,4 +1721,41 @@ output:after {
 }
 
 
+/* .rating_value-s{
+    position: relative;
+    width: 100%;
+} */
+.lower_value-s{
+
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
+.lower_value-s .rating_value-s{
+    position: absolute;
+    top: -37px;
+}
+
+.lower_value-s .rating_value-s::after{
+    position: absolute;
+    content: "";
+    top: -37px;
+}
+
+.fs_30px-s{
+    font-size: 30px;
+}
+
+.bg_stadium_img-s{
+    background-image: url(../images/location_circle.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-blend-mode: overlay;
+    background-size: 11%;
+    /* opacity: .4; */
+}
 /* ----- MINA WORK - END ----- */

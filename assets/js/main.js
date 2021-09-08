@@ -38,6 +38,24 @@ $(`.player_position_button-s`).click(function() {
 
 document.addEventListener('DOMContentLoaded', function() {
 
+    $(`#lower,#upper`).on('input',function () {
+    let rating_Value  = $(`#rating_value-d`);
+    let rating_Value_upper  = $(`#rating_value-d2`);
+    let rating_slider = $(`#lower`);
+    let rating_slider_upper = $(`#upper`);
+
+        $(rating_Value_upper).text($(rating_slider_upper).val());
+        $(rating_Value).text($(rating_slider).val());
+
+        $(rating_Value).position() = ($(rating_slider).val()/2)+`%`;
+    });
+    // rating_slider.oninput = ( ()=> {
+    //     let value = rating_slider.value;
+    //     console.log(rating_Value.textContent);
+    //     rating_Value. textContent = value;
+        
+    //     rating_Value.style.left =(value/2) + "%";
+    // });
 
     $(`.button_click-s`).click(function() {
         let img = $(this).find(`.img_div-s`).find(`.dropdown_img-s`).attr('src');
@@ -97,6 +115,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
         }
     }
+
+    
 
 });
 
@@ -221,7 +241,4 @@ $(`.p_tab`).click(function() {
     $(this).addClass('performance_text');
     $(`.tab-content`).find('.active').removeClass('active').removeClass('show');
     $(`#${$(this).attr('href').replace('#','')}`).addClass('active').addClass('show');
-
-
-
 })

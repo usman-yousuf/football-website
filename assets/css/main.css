@@ -1582,3 +1582,15 @@ output:after {
 .mt_68px-s {
     margin-top: 68px;
 }
+
+@media screen and (max-width:320px) {
+    .fs_sm_21px-s{
+        font-size: 21px;
+    }
+ 
+}
+.btn:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}

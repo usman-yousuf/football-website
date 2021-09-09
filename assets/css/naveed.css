@@ -1,12 +1,3 @@
- /* .container{
-     border: 1px solid green;
-}
-.row{
-    border: 1px solid yellow;
-}
-.col{
-    border: 1px solid red;
-}  */
 .one_s{
     background-color: black;
     height: 90px;
@@ -17,24 +8,24 @@
 .sign_in-s{
     width: 220px;
     height: 50px;
-    background-color: green;
+    background-color: #006400;
     color: white;
     border-radius: 10px !important;
 }
 .sign_welcome-s{
-    color: green;
+    color: #006400;
 }
 .bg_blue_gray-s{
     background-color: #e9f5f2;
 }
 .account_tag-s{
-    color: green;
+    color: #006400;
 }
 .img_div-s{
     height: 70px;
     width: 70px;
     border-radius: 35px;
-    border: 1px solid green;
+    border: 2px solid #006400;
 }
 .fields {position: relative;
     margin-bottom: 20px;
@@ -49,20 +40,19 @@
     position: absolute;
     top: -7px;
     left: 16px;
-  
     padding: 0 10px 0 3px;
 }
-.input_field-s{
+/* .input_field-s{
     width: 400px;
     height: 40px;
-}
+} */
 .label-s{
     color: green !important;
 }
-.input_TAG-s{
+/* .input_TAG-s{
     width: 250px;
     height: 40px;
-}
+} */
 .sign_up_btn-s{
     width: 200px;
     height: 50px;
@@ -72,13 +62,13 @@
     
 }
 .gender-tag-s{
-    color: green;
+    color: #006400;
 }
 .position-tag-s{
-    color: green;
+    color: #006400;
 }
 .color-s{
-    color: green !important;
+    color: #006400 !important;
 }
 ::placeholder{
     font-size: 13px;
@@ -127,5 +117,43 @@
         /* border-radius: 0px; */
     }
 }
+/* .btn-sign-in{
+    border: 1px solid black;
+} */
+@media screen and (min-width:300px) and (max-width:430px){
+    .sign_up_btn-s{
+        width: 120px;
+        
+    }
+}
+.h6_tag-s{
+    color: #006400;
+    font-weight: bold;
+}
+.btn-sign-in {
+    background-color: #006400;
+    color: white;
+    width: 120px;
+}
+/* .col-sm-6{
+    border: 1px solid black;
+} */
+/* .container-fluid{
+    border: 1px solid black;
+}
+.row{
+    border: 1px solid red
+} */
 
+input:focus{
+    outline: none !important;
+    border: none;
+    box-shadow: none;
+}
+.main_div-s{
+    border-radius: 50px;
+}
+/* .app_class-m{
+    margin-left: 10px;
+} */
 

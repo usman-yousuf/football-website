@@ -26,8 +26,8 @@ $(`.player_position_button-s`).click(function() {
 $(`.chat_parent`).click(function() {
     $(`.list_member_parent-d`).find('.br_on_active-s').removeClass('br_on_active-s');
     $(this).addClass(`br_on_active-s`);
-    $(`.chat_module_parent`).find('.d-lg-block').removeClass('d-lg-block').addClass('d-none');
-    $(`#${$(this).attr('data-parent-chat')}`).removeClass('d-none').addClass('d-lg-block');
+    $(`.chat_module_parent`).find('.d-block').removeClass('d-block').addClass('d-none');
+    $(`#${$(this).attr('data-parent-chat')}`).removeClass('d-none').addClass('d-block');
 });
 
 
@@ -145,25 +145,38 @@ $(`#cancel_modal-d`).click(function() {
 /**  --------------- jquery of switch modals for new phone number ----------- */
 
 // ------ For verify code to phone update switch modals ----->
-$("#switch_to_phone_verify_code-d").click(function() {
-    $("#update_phone_num_modal-d").modal('hide');
-    $("#num_verification_modal-d").modal('show');
+$('.modal').on('click', `#switch_to_phone_verify_code-d`, function(e) {
+    switchModal('update_phone_num_modal-d', 'num_verification_modal-d');
+
 });
+// $("#switch_to_phone_verify_code-d").click(function() {
+// $("#update_phone_num_modal-d").modal('hide');
+// $("#num_verification_modal-d").modal('show');
 // $(`#cal`).click(function() {
 //     window.location.href = "hire_Players.html";
 // });
 
 // ------ For enter new phone verify code switch modals ----->
-$("#switch_to_new_phone_modal-d").click(function() {
-    $("#num_verification_modal-d").modal('hide');
-    $("#new_num_modal-d").modal('show');
+$('.modal').on('click', `#switch_to_new_phone_modal-d`, function(e) {
+    switchModal('num_verification_modal-d', 'new_num_modal-d');
+
 });
 
+// $("#switch_to_new_phone_modal-d").click(function() {
+//     $("#num_verification_modal-d").modal('hide');
+//     $("#new_num_modal-d").modal('show');
+// });
+
 // ------ For success new phone switch modals ----->
-$("#phone_success_modal-d").click(function() {
-    $("#new_num_modal-d").modal('hide');
-    $("#success_phone_num_modal-d").modal('show');
+$('.modal').on('click', `#phone_success_modal-d`, function(e) {
+    switchModal('new_num_modal-d', 'success_phone_num_modal-d');
+
 });
+
+// $("#phone_success_modal-d").click(function() {
+//     $("#new_num_modal-d").modal('hide');
+//     $("#success_phone_num_modal-d").modal('show');
+// });
 
 /**  --------------- jquery of switch modals for new phone number ----------- */
 
@@ -171,23 +184,38 @@ $("#phone_success_modal-d").click(function() {
 /**  --------------- jquery of switch modals for new email ----------- */
 
 // ------For enter verify code to update email switch modals ----->
-$("#switch_to_email_verify_code_modal-d").click(function() {
-    $("#update_email_modal-d").modal('hide');
-    $("#email_verification_modal-d").modal('show');
+$('.modal').on('click', `#switch_to_email_verify_code_modal-d`, function(e) {
+    switchModal('update_email_modal-d', 'email_verification_modal-d');
+
 });
 
+// $("#switch_to_email_verify_code_modal-d").click(function() {
+//     $("#update_email_modal-d").modal('hide');
+//     $("#email_verification_modal-d").modal('show');
+// });
+
 // ------For enter new email switch modals ----->
-$("#switch_to_new_email_modal-d").click(function() {
-    $("#email_verification_modal-d").modal('hide');
-    $("#new_email_modal-d").modal('show');
+$('.modal').on('click', `#switch_to_new_email_modal-d`, function(e) {
+    switchModal('email_verification_modal-d', 'new_email_modal-d');
+
 });
+
+// $("#switch_to_new_email_modal-d").click(function() {
+//     $("#email_verification_modal-d").modal('hide');
+//     $("#new_email_modal-d").modal('show');
+// });
 
 
 // ------ For success new email switch modals ----->
-$("#email_success_modal-d").click(function() {
-    $("#new_email_modal-d").modal('hide');
-    $("#success_email_modal-d").modal('show');
+$('.modal').on('click', `#email_success_modal-d`, function(e) {
+    switchModal('new_email_modal-d', 'success_email_modal-d');
+
 });
+
+// $("#email_success_modal-d").click(function() {
+//     $("#new_email_modal-d").modal('hide');
+//     $("#success_email_modal-d").modal('show');
+// });
 
 /**  --------------- jquery of switch modals for new email ----------- */
 
@@ -195,31 +223,51 @@ $("#email_success_modal-d").click(function() {
 /**  --------------- jquery of switch modals for new password ----------- */
 
 // ------For enter verify code to update password switch modals ----->
-$("#switch_to_password_verify_code_modal-d").click(function() {
-    $("#update_password_modal-d").modal('hide');
-    $("#password_verification_modal-d").modal('show');
+$('.modal').on('click', `#switch_to_password_verify_code_modal-d`, function(e) {
+    switchModal('update_password_modal-d', 'password_verification_modal-d');
+
 });
+
+// $("#switch_to_password_verify_code_modal-d").click(function() {
+//     $("#update_password_modal-d").modal('hide');
+//     $("#password_verification_modal-d").modal('show');
+// });
 
 // ------For enter new password switch modals ----->
-$("#switch_to_new_password_modal-d").click(function() {
-    $("#password_verification_modal-d").modal('hide');
-    $("#new_password_modal-d").modal('show');
+$('.modal').on('click', `#switch_to_new_password_modal-d`, function(e) {
+    switchModal('password_verification_modal-d', 'new_password_modal-d');
+
 });
 
+// $("#switch_to_new_password_modal-d").click(function() {
+//     $("#password_verification_modal-d").modal('hide');
+//     $("#new_password_modal-d").modal('show');
+// });
+
 // ------ For success new password switch modals ----->
-$("#password_success_modal-d").click(function() {
-    $("#new_password_modal-d").modal('hide');
-    $("#success_password_modal-d").modal('show');
+$('.modal').on('click', `#password_success_modal-d`, function(e) {
+    switchModal('new_password_modal-d', 'success_password_modal-d');
+
 });
+
+// $("#password_success_modal-d").click(function() {
+//     $("#new_password_modal-d").modal('hide');
+//     $("#success_password_modal-d").modal('show');
+// });
 
 /**  --------------- jquery of switch modals for new password ----------- */
 
 /**-------------------- switch modal for rating or not -------------------- */
 
-$("#switch_to_no_rating_modal").click(function() {
-    $("#player_played_modal-d").modal('hide');
-    $("#player_not_played_modal-d").modal('show');
+$('.modal').on('click', `#switch_to_no_rating_modal`, function(e) {
+    switchModal('player_played_modal-d', 'player_not_played_modal-d');
+
 });
+
+// $("#switch_to_no_rating_modal").click(function() {
+//     $("#player_played_modal-d").modal('hide');
+//     $("#player_not_played_modal-d").modal('show');
+// });
 
 
 /** -------------- for add stadium modal --------------- */

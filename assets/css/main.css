@@ -772,7 +772,7 @@ sup {
 }
 
 .bg_lightgrey-s {
-    background-color: #F3F3F3;
+    background-color: #F3F3F3 !important;
 }
 
 .text_lightdark-s {
@@ -1736,6 +1736,7 @@ output:after {
     position: absolute;
     top: 38%;
     left: 37%;
+    width: 25% !important;
 }
 
 .dropdown-item.active,
@@ -1811,6 +1812,18 @@ output:after {
     }
     .image_width_for_profile_card-s {
         width: 50px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .h_674px-s {
+        height: 727px;
+    }
+    .fs_sm_10px_invitation-s {
+        font-size: 10px;
+    }
+    .stadium_img {
+        height: 83%;
     }
 }
 

@@ -109,13 +109,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         function toggleCalendar() {
             let calendar = document.getElementById("toggle_calendar-d");
-            if (this.src == "assets/images/arrow_green.svg" || calendar.classList.contains("d-none")) {
+            if (this.src == "assets/images/arrow_down_green.svg" || calendar.classList.contains("d-none")) {
                 this.setAttribute("width", 18);
                 this.src = "assets/images/up_arrow.svg";
                 calendar.classList.remove("d-none");
             } else {
-                this.setAttribute("width", 10);
-                this.src = "assets/images/arrow_green.svg";
+                this.setAttribute("width", 17);
+                this.src = "assets/images/arrow_down_green.svg";
                 calendar.classList.add("d-none");
             }
 

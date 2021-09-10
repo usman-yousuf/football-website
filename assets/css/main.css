@@ -1822,8 +1822,23 @@ output:after {
     .fs_sm_10px_invitation-s {
         font-size: 10px;
     }
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
     .stadium_img {
         height: 83%;
+    }
+    .ft_size_on_small-screen-s {
+        font-size: 10px !important;
+    }
+    .ft_size_location_text_on_small-screen-s {
+        font-size: 9px !important;
+    }
+    .profile_img-s {
+        width: 39px;
+        height: 39px;
+        border-radius: 37px;
+        border: 1px solid green;
     }
 }
 
@@ -1832,12 +1847,12 @@ output:after {
 }
 
 @media screen and (max-width:320px) {
-    .fs_sm_21px-s{
+    .fs_sm_21px-s {
         font-size: 21px;
     }
- 
 }
-.btn:focus{
+
+.btn:focus {
     outline: none;
     border: none;
     box-shadow: none;

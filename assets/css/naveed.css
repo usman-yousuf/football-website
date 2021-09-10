@@ -1,0 +1,161 @@
+/* Naveed */
+
+.one_s{
+    background-color: black;
+    height: 90px;
+    width: 90px;
+    border-radius: 45px;
+    color: white;
+}
+.sign_in-s{
+    width: 220px;
+    height: 50px;
+    background-color: #006400;
+    color: white;
+    border-radius: 10px !important;
+}
+.sign_welcome-s{
+    color: #006400;
+}
+.bg_blue_gray-s{
+    background-color: #e9f5f2;
+}
+.account_tag-s{
+    color: #006400;
+}
+.img_div-s{
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    border: 2px solid #006400;
+}
+.fields {position: relative;
+    margin-bottom: 20px;
+    width: 100px;
+}
+.field label {
+    margin-bottom: 0;
+    font-size: 11px;
+    font-family: 'SFProText-Medium';
+    background: #fff;
+    color: #9EAFAF;
+    position: absolute;
+    top: -7px;
+    left: 16px;
+    padding: 0 10px 0 3px;
+}
+/* .input_field-s{
+    width: 400px;
+    height: 40px;
+} */
+.label-s{
+    color: green !important;
+}
+/* .input_TAG-s{
+    width: 250px;
+    height: 40px;
+} */
+.sign_up_btn-s{
+    width: 200px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    border-radius: 10px !important;
+    
+}
+.gender-tag-s{
+    color: #006400;
+}
+.position-tag-s{
+    color: #006400;
+}
+.color-s{
+    color: #006400 !important;
+}
+::placeholder{
+    font-size: 13px;
+    opacity: 0.7;
+}
+.upload-s{
+    color: grey;
+}
+.image_uploader-s{
+    width: 30px;
+    height: 30px;
+    opacity: 0.4;
+}
+.font_family_roboto-s {
+    font-family: roboto !important;
+}
+[type="radio"] {
+    visibility: hidden;
+}
+
+[type="radio"]::before {
+    border: 1px solid #D8D8D8;
+    height: 15px;
+    width: 15px;
+    background-color: #D8D8D8;
+    border-radius: 50%;
+    display: block;
+    content: " ";
+    cursor: pointer;
+    visibility: visible;
+}
+
+[type="radio"]:checked::before {
+    background-color: #006400;
+}
+.bg_img-s{
+    background-image: url('../images/arrow_black.svg\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: right top 5px;
+    background-size: 480px;
+}
+@media screen and (min-width:200px) and (max-width:800px){
+    .bg_img-s{
+        border: none;
+        background-size: 250px;
+        /* border-radius: 0px; */
+    }
+}
+/* .btn-sign-in{
+    border: 1px solid black;
+} */
+@media screen and (min-width:300px) and (max-width:430px){
+    .sign_up_btn-s{
+        width: 120px;
+        
+    }
+}
+.h6_tag-s{
+    color: #006400;
+    font-weight: bold;
+}
+.btn-sign-in {
+    background-color: #006400;
+    color: white;
+    width: 120px;
+}
+/* .col-sm-6{
+    border: 1px solid black;
+} */
+/* .container-fluid{
+    border: 1px solid black;
+}
+.row{
+    border: 1px solid red
+} */
+
+input:focus{
+    outline: none !important;
+    border: none;
+    box-shadow: none;
+}
+.main_div-s{
+    border-radius: 50px;
+}
+/* .app_class-m{
+    margin-left: 10px;
+} */
+

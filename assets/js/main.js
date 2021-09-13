@@ -26,9 +26,14 @@ $(`.player_position_button-s`).click(function() {
 $(`.chat_parent`).click(function() {
     $(`.list_member_parent-d`).find('.br_on_active-s').removeClass('br_on_active-s');
     $(this).addClass(`br_on_active-s`);
-    $(`.chat_module_parent`).find('.d-block').removeClass('d-block').addClass('d-none');
-    $(`#${$(this).attr('data-parent-chat')}`).removeClass('d-none').addClass('d-block');
+    $(`.chat_module_parent`).find('.d-lg-block').removeClass('d-lg-block').addClass('d-none');
+    $(`#${$(this).attr('data-parent-chat')}`).removeClass('d-none').addClass('d-lg-block');
+    $(`.chat_member_list_container-d`).addClass('d-none').addClass('d-lg-block');
 });
+$(`.chat_back_to_list-d`).click(function() {
+    $(`.chat_member_list_container-d`).removeClass('d-none');
+});
+
 
 
 // $('.player_position_button-s').click(function() {

@@ -125,10 +125,10 @@
 
 .pignose-calendar .pignose-calendar-top {
     padding: 2.6em 0;
-    background-color: #fafafa;
-    border-bottom: 1px solid #e2e2e2;
-    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .125);
-    box-shadow: 0 3px 8px rgba(0, 0, 0, .125);
+    /* background-color: #fafafa; */
+    /* border-bottom: 1px solid #e2e2e2; */
+    /* -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .125); */
+    /* box-shadow: 0 3px 8px rgba(0, 0, 0, .125); */
     border-radius: 10px !important;
     position: relative;
     overflow: hidden
@@ -155,13 +155,15 @@
 
 .pignose-calendar .pignose-calendar-top .pignose-calendar-top-year {
     font-size: 115%;
-    color: rgba(0, 0, 0, .5)
+    font-weight: 600;
+    color: green;
 }
 
 .pignose-calendar .pignose-calendar-top .pignose-calendar-top-month {
     margin-bottom: .4em;
     font-size: 130%;
-    font-weight: 600
+    font-weight: 600;
+    color: green !important;
 }
 
 .pignose-calendar .pignose-calendar-top .pignose-calendar-top-nav {
@@ -224,7 +226,7 @@
 
 .pignose-calendar .pignose-calendar-header .pignose-calendar-week.pignose-calendar-week-sat,
 .pignose-calendar .pignose-calendar-header .pignose-calendar-week.pignose-calendar-week-sun {
-    color: #fa4832
+    color: black;
 }
 
 .pignose-calendar .pignose-calendar-header .pignose-calendar-week:last-child {
@@ -275,8 +277,8 @@
     display: inline-block;
     width: 2.4em;
     height: 2.4em;
-    border-radius: 50%;
-    color: #49c4d0;
+    border-radius: 5px;
+    color: black;
     line-height: 2.4em;
     text-align: center;
     text-decoration: none;
@@ -294,8 +296,8 @@
 }
 
 .pignose-calendar .pignose-calendar-unit.pignose-calendar-unit-active a {
-    background-color: #2fabb7;
-    color: #fff;
+    background-color: green;
+    color: #ffff !important;
     font-weight: 600;
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .5);
     box-shadow: 0 1px 3px rgba(0, 0, 0, .5)
@@ -329,7 +331,7 @@
 
 .pignose-calendar .pignose-calendar-unit.pignose-calendar-unit-sat a,
 .pignose-calendar .pignose-calendar-unit.pignose-calendar-unit-sun a {
-    color: #fa4832
+    color: black;
 }
 
 .pignose-calendar.pignose-calendar-default .pignose-calendar-body .pignose-calendar-row .pignose-calendar-unit.pignose-calendar-unit-toggle-active a {

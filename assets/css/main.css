@@ -736,14 +736,14 @@ sup {
 }
 
 .textarea_h_w-s {
-    min-height: 50px;
-    max-height: 70px;
+    height: 37px !important;
     resize: none;
 }
 
-textarea.form-control {
+
+/* textarea.form-control {
     height: 0px;
-}
+} */
 
 .br_right_10px-s {
     border-radius: 0px 0px 10px 10px;

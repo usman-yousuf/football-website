@@ -129,7 +129,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ------ For game invitation switch modals ----->
 
-    $('.calendar').pignoseCalendar();
 
     $('.modal').on('click', `#switch_to_select_date-d`, function(e) {
         // $(`#accept_invitation_modal-d`).modal().hide();
@@ -286,8 +285,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $('.modal').on('click', '.trigger_rating-d', function(e) {
         // console.log('fefefefe');
-        $("#option_of_filter_modal-d").modal('hide');
-        $("#filter_by_rating_modal-d").modal('show');
+        // $("#option_of_filter_modal-d").modal('hide');
+        // $("#filter_by_rating_modal-d").modal('show');
+        switchModal('option_of_filter_modal-d', 'filter_by_rating_modal-d');
+
     });
 
     $('.modal').on('click', '.trigger_price-d', function(e) {
@@ -310,4 +311,7 @@ document.addEventListener('DOMContentLoaded', function() {
         $(`.tab-content`).find('.active').removeClass('active').removeClass('show');
         $(`#${$(this).attr('href').replace('#','')}`).addClass('active').addClass('show');
     })
+
+    $('.calendar').pignoseCalendar();
+
 });

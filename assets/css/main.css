@@ -701,6 +701,11 @@ sup {
     border-radius: 50%;
 }
 
+.vl {
+    border-left: 1px solid grey;
+    height: 200px;
+}
+
 .message_count-s {
     width: 31px;
     background-color: green;
@@ -738,6 +743,13 @@ sup {
 .textarea_h_w-s {
     height: 37px !important;
     resize: none;
+}
+
+.code_input-s {
+    width: 47px;
+    border: 0px;
+    padding-left: 12px;
+    background-color: #E5EEE7;
 }
 
 
@@ -1860,4 +1872,23 @@ output:after {
     outline: none;
     border: none;
     box-shadow: none;
+}
+
+
+/* new pages of payment */
+
+.mt-11px-s {
+    margin-top: 11px !important;
+}
+
+.bc_green-s {
+    border-top: 3px solid green;
+}
+
+.bc_red-s {
+    border-top: 3px solid red;
+}
+
+.bc_lightgrey-s {
+    border-top: 3px solid #E5EEE7;
 }

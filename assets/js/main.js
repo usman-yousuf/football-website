@@ -50,19 +50,67 @@ $(`.chat_back_to_list-d`).click(function() {
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    // $(`#lower,#upper`).on('input', function() {
+    $(`.min_input-d`).on('input change', function(){
+        const
+        maxInput = $(this).parent().find('.max_input-d'),
+        maxValue = $(this).parent().find('.max_value-d'),
+        minValue = $(this).prev(),
+      
+        setMinValue = ()=>{
+            let
+            newValue = Number(($(this).val() - $(this).attr('min')) * 100 / ($(this).attr('max') - $(this).attr('min'))),
+            
+            newPosition = 10 - (newValue * 0.2);
+            $(minValue).html( `<span>${$(this).val()}</span>` );
+            $(minValue).css('left', `calc(${newValue}% + (${newPosition}px))`);
+            if( $(this).val() >  $(maxInput).val() ){
+                $(maxInput).val($(this).val()) ;
+                $(maxValue).html('');
+            }
+        };
+        $(document).ready("DOMContentLoaded", setMinValue);
+        $(this).on('input', setMinValue);
+        
+    }); 
+     
+    $(`.max_input-d`).on('input change', function(){
+        const
+        minInput = $(this).parent().find('.min_input-d'),
+        minValue = $(this).parent().find('.min_value-d'),
+        maxValue = $(this).prev(),
+        setMaxValue = ()=>{
+            let
+            newValues = Number( ($(this).val() - $(this).attr("max")) * 100 / ($(this).attr('min') - $(this).attr('max')) ),
+            newPositions = 10 - (newValues * 0.2);
+            $(maxValue).html(`<span>${$(this).val()}</span>`) ;
+            $(maxValue).css('right', `calc(${newValues}% + (${newPositions}px))`) ;
+            if( $(this).val() <  $(minInput).val() ){
+                $(minInput).val($(this).val());
+                $(minValue).html('');
+            }
+        };
+        $(document).ready("DOMContentLoaded", setMaxValue);
+        $(this).on('input', setMaxValue);
+        
+    });
+        
+
+    // $(`#lower,#upper`).on('input change keyup', function() {
     //     let rating_Value = $(`#rating_value-d`);
     //     let rating_Value_upper = $(`#rating_value-d2`);
     //     let rating_slider = $(`#lower`);
     //     let rating_slider_upper = $(`#upper`);
 
     //     $(rating_Value_upper).text($(rating_slider_upper).val());
-    //     $(rating_Value).text($(rating_slider).val());
-
-    //     $(rating_Value).position() = ($(rating_slider).val() / 2) + `%`;
+    //     let slider_val = parseInt($(rating_slider).val());
+    //     $(rating_Value).text(slider_val);
+    //     $(rating_slider).attr('data-original-title',slider_val);
+    //     $(rating_slider).attr('title', rating_slider);
+    //     $('[data-toggle="tooltip"]').tooltip();
+    
     // });
     // rating_slider.oninput = ( ()=> {
-    //     let value = rating_slider.value;
+        //     let value = rating_slider.value;
     //     console.log(rating_Value.textContent);
     //     rating_Value. textContent = value;
 
@@ -310,4 +358,4 @@ $(`.p_tab`).click(function() {
     $(this).addClass('performance_text');
     $(`.tab-content`).find('.active').removeClass('active').removeClass('show');
     $(`#${$(this).attr('href').replace('#','')}`).addClass('active').addClass('show');
-})
+});

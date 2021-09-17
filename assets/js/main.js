@@ -362,9 +362,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     $('.calendar').pignoseCalendar();
 
-$(`.p_tab`).click(function() {
-    $(`.nav-tabs`).find(`.performance_text`).removeClass('performance_text');
-    $(this).addClass('performance_text');
-    $(`.tab-content`).find('.active').removeClass('active').removeClass('show');
-    $(`#${$(this).attr('href').replace('#','')}`).addClass('active').addClass('show');
+    $(`.p_tab`).click(function() {
+        $(`.nav-tabs`).find(`.performance_text`).removeClass('performance_text');
+        $(this).addClass('performance_text');
+        $(`.tab-content`).find('.active').removeClass('active').removeClass('show');
+        $(`#${$(this).attr('href').replace('#','')}`).addClass('active').addClass('show');
+    });
+
 });

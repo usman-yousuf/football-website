@@ -12,22 +12,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.13.0/themes/prism.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/components/icon.min.css">
+    <link rel="stylesheet" href="assets/css/pignose.calendar.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/ui.css" />
+
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/mina.css">
-    <!-- <link rel="stylesheet" href="assets/css/page.css"> -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/theme.css">
 
     <title>HirePlayer</title>
-    <style>
-        .year-label {
-            font-size: 21px !important;
-        }
-        
-        .month-label {
-            font-size: 21px !important;
-        }
-    </style>
+
 </head>
 
 <body class="bg_img-s font_family_roboto-s">
@@ -172,9 +169,10 @@
                     <a href="javascript:void(0)" class="td_none-s d-flex align-self-center mx-2"><img src="assets/images/arrow_down_green.svg" class="img-fluid change_img-d" width="17" alt="arrow button"></a>
                 </div>
                 <div class="col-12 d-none mb-4 mt-3" id="toggle_calendar-d">
-                    <main>
-                        <div class="calendar-wrapper" id="calendar-wrapper"></div>
-                    </main>
+                    <div>
+                        <div class="calendar"></div>
+                    </div>
+
                 </div>
             </div>
             <div class="row pt-4 pb-3 pr-xl-5 pr-3">
@@ -477,43 +475,9 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="assets/js/calendar.js"></script>
-    <script src="assets/js/calendar.min.js"></script>
-    <script src="https://unpkg.com/codeflask/build/codeflask.min.js"></script>
+
+    <script src="assets/js/pignose.calendar.full.min.js"></script>
     <script src="assets/js/main.js"></script>
-
-    <!-- <script type="text/javascript">
-        var config = `
-        function selectDate(date) {
-          $('#calendar-wrapper').updateCalendarOptions({
-            date: date
-          });
-          console.log(calendar.getSelectedDate());
-        }
-
-        var defaultConfig = {
-          weekDayLength: 1,
-          date: '08-05-2021',
-          onClickDate: selectDate,
-          showYearDropdown: true,
-          startOnMonday: true,
-        };
-
-        var calendar = $('#calendar-wrapper').calendar(defaultConfig);
-        console.log(calendar.getSelectedDate());
-`;
-        eval(config);
-        const flask = new CodeFlask("#editor", {
-            language: "js",
-            lineNumbers: true,
-        });
-        flask.updateCode(config);
-        flask.onUpdate((code) => {
-            try {
-                eval(code);
-            } catch (e) {}
-        });
-    </script> -->
 </body>
 
 </html>

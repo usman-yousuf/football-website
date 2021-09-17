@@ -15,23 +15,23 @@ $(document).ready(function() {
     $(`a[href$="#"]`).addClass('active').addClass('change_color_of_nav_icon-s');
 
 
-});
+    $(`.player_position_button-s`).click(function() {
+        $(`.active_position-s`).removeClass(`active_position-s`).find('.child').addClass(`opacity_4-s`);
+        $(this).addClass('active_position-s');
+        $(this).find(`.opacity_4-s`).removeClass(`opacity_4-s`);
+    });
 
-$(`.player_position_button-s`).click(function() {
-    $(`.active_position-s`).removeClass(`active_position-s`).find('.child').addClass(`opacity_4-s`);
-    $(this).addClass('active_position-s');
-    $(this).find(`.opacity_4-s`).removeClass(`opacity_4-s`);
-});
+    $(`.chat_parent`).click(function() {
+        $(`.list_member_parent-d`).find('.br_on_active-s').removeClass('br_on_active-s');
+        $(this).addClass(`br_on_active-s`);
+        $(`.chat_module_parent`).find('.d-lg-block').removeClass('d-lg-block').addClass('d-none');
+        $(`#${$(this).attr('data-parent-chat')}`).removeClass('d-none').addClass('d-lg-block');
+        $(`.chat_member_list_container-d`).addClass('d-none').addClass('d-lg-block');
+    });
+    $(`.chat_back_to_list-d`).click(function() {
+        $(`.chat_member_list_container-d`).removeClass('d-none');
+    });
 
-$(`.chat_parent`).click(function() {
-    $(`.list_member_parent-d`).find('.br_on_active-s').removeClass('br_on_active-s');
-    $(this).addClass(`br_on_active-s`);
-    $(`.chat_module_parent`).find('.d-lg-block').removeClass('d-lg-block').addClass('d-none');
-    $(`#${$(this).attr('data-parent-chat')}`).removeClass('d-none').addClass('d-lg-block');
-    $(`.chat_member_list_container-d`).addClass('d-none').addClass('d-lg-block');
-});
-$(`.chat_back_to_list-d`).click(function() {
-    $(`.chat_member_list_container-d`).removeClass('d-none');
 });
 
 
@@ -175,183 +175,192 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    // ------ For game invitation switch modals ----->
 
 
-});
+    $('.modal').on('click', `#switch_to_select_date-d`, function(e) {
+        // $(`#accept_invitation_modal-d`).modal().hide();
+        // $(`#accept_invitation_modal-d`).modal('hide', 500);
+        // $(`#select_date_modal-d`).modal('show');
 
-// ------ For game invitation switch modals ----->
-$('.modal').on('click', `#switch_to_select_date-d`, function(e) {
-    // $(`#accept_invitation_modal-d`).modal().hide();
-    // $(`#accept_invitation_modal-d`).modal('hide', 500);
-    // $(`#select_date_modal-d`).modal('show');
+        switchModal('accept_invitation_modal-d', 'select_date_modal-d');
+    });
+    $(`#cancel_modal-d`).click(function() {
+        window.location.href = "hire_Players.html";
+    });
+    // $(`#cancel_modal-d`).click(function() {
+    //     alert('text');
+    //     window.location.href = "game_invitation.html";
+    // });
 
-    switchModal('accept_invitation_modal-d', 'select_date_modal-d');
-});
-$(`#cancel_modal-d`).click(function() {
-    window.location.href = "hire_Players.html";
-});
-// $(`#cancel_modal-d`).click(function() {
-//     alert('text');
-//     window.location.href = "game_invitation.html";
-// });
+    /**  --------------- jquery of switch modals for new phone number ----------- */
 
-/**  --------------- jquery of switch modals for new phone number ----------- */
+    // ------ For verify code to phone update switch modals ----->
+    $('.modal').on('click', `#switch_to_phone_verify_code-d`, function(e) {
+        switchModal('update_phone_num_modal-d', 'num_verification_modal-d');
 
-// ------ For verify code to phone update switch modals ----->
-$('.modal').on('click', `#switch_to_phone_verify_code-d`, function(e) {
-    switchModal('update_phone_num_modal-d', 'num_verification_modal-d');
+    });
+    // $("#switch_to_phone_verify_code-d").click(function() {
+    // $("#update_phone_num_modal-d").modal('hide');
+    // $("#num_verification_modal-d").modal('show');
+    // $(`#cal`).click(function() {
+    //     window.location.href = "hire_Players.html";
+    // });
 
-});
-// $("#switch_to_phone_verify_code-d").click(function() {
-// $("#update_phone_num_modal-d").modal('hide');
-// $("#num_verification_modal-d").modal('show');
-// $(`#cal`).click(function() {
-//     window.location.href = "hire_Players.html";
-// });
+    // ------ For enter new phone verify code switch modals ----->
+    $('.modal').on('click', `#switch_to_new_phone_modal-d`, function(e) {
+        switchModal('num_verification_modal-d', 'new_num_modal-d');
 
-// ------ For enter new phone verify code switch modals ----->
-$('.modal').on('click', `#switch_to_new_phone_modal-d`, function(e) {
-    switchModal('num_verification_modal-d', 'new_num_modal-d');
+    });
 
-});
+    // $("#switch_to_new_phone_modal-d").click(function() {
+    //     $("#num_verification_modal-d").modal('hide');
+    //     $("#new_num_modal-d").modal('show');
+    // });
 
-// $("#switch_to_new_phone_modal-d").click(function() {
-//     $("#num_verification_modal-d").modal('hide');
-//     $("#new_num_modal-d").modal('show');
-// });
+    // ------ For success new phone switch modals ----->
+    $('.modal').on('click', `#phone_success_modal-d`, function(e) {
+        switchModal('new_num_modal-d', 'success_phone_num_modal-d');
 
-// ------ For success new phone switch modals ----->
-$('.modal').on('click', `#phone_success_modal-d`, function(e) {
-    switchModal('new_num_modal-d', 'success_phone_num_modal-d');
+    });
 
-});
+    // $("#phone_success_modal-d").click(function() {
+    //     $("#new_num_modal-d").modal('hide');
+    //     $("#success_phone_num_modal-d").modal('show');
+    // });
 
-// $("#phone_success_modal-d").click(function() {
-//     $("#new_num_modal-d").modal('hide');
-//     $("#success_phone_num_modal-d").modal('show');
-// });
-
-/**  --------------- jquery of switch modals for new phone number ----------- */
+    /**  --------------- jquery of switch modals for new phone number ----------- */
 
 
-/**  --------------- jquery of switch modals for new email ----------- */
+    /**  --------------- jquery of switch modals for new email ----------- */
 
-// ------For enter verify code to update email switch modals ----->
-$('.modal').on('click', `#switch_to_email_verify_code_modal-d`, function(e) {
-    switchModal('update_email_modal-d', 'email_verification_modal-d');
+    // ------For enter verify code to update email switch modals ----->
+    $('.modal').on('click', `#switch_to_email_verify_code_modal-d`, function(e) {
+        switchModal('update_email_modal-d', 'email_verification_modal-d');
 
-});
+    });
 
-// $("#switch_to_email_verify_code_modal-d").click(function() {
-//     $("#update_email_modal-d").modal('hide');
-//     $("#email_verification_modal-d").modal('show');
-// });
+    // $("#switch_to_email_verify_code_modal-d").click(function() {
+    //     $("#update_email_modal-d").modal('hide');
+    //     $("#email_verification_modal-d").modal('show');
+    // });
 
-// ------For enter new email switch modals ----->
-$('.modal').on('click', `#switch_to_new_email_modal-d`, function(e) {
-    switchModal('email_verification_modal-d', 'new_email_modal-d');
+    // ------For enter new email switch modals ----->
+    $('.modal').on('click', `#switch_to_new_email_modal-d`, function(e) {
+        switchModal('email_verification_modal-d', 'new_email_modal-d');
 
-});
+    });
 
-// $("#switch_to_new_email_modal-d").click(function() {
-//     $("#email_verification_modal-d").modal('hide');
-//     $("#new_email_modal-d").modal('show');
-// });
-
-
-// ------ For success new email switch modals ----->
-$('.modal').on('click', `#email_success_modal-d`, function(e) {
-    switchModal('new_email_modal-d', 'success_email_modal-d');
-
-});
-
-// $("#email_success_modal-d").click(function() {
-//     $("#new_email_modal-d").modal('hide');
-//     $("#success_email_modal-d").modal('show');
-// });
-
-/**  --------------- jquery of switch modals for new email ----------- */
+    // $("#switch_to_new_email_modal-d").click(function() {
+    //     $("#email_verification_modal-d").modal('hide');
+    //     $("#new_email_modal-d").modal('show');
+    // });
 
 
-/**  --------------- jquery of switch modals for new password ----------- */
+    // ------ For success new email switch modals ----->
+    $('.modal').on('click', `#email_success_modal-d`, function(e) {
+        switchModal('new_email_modal-d', 'success_email_modal-d');
 
-// ------For enter verify code to update password switch modals ----->
-$('.modal').on('click', `#switch_to_password_verify_code_modal-d`, function(e) {
-    switchModal('update_password_modal-d', 'password_verification_modal-d');
+    });
 
-});
+    // $("#email_success_modal-d").click(function() {
+    //     $("#new_email_modal-d").modal('hide');
+    //     $("#success_email_modal-d").modal('show');
+    // });
 
-// $("#switch_to_password_verify_code_modal-d").click(function() {
-//     $("#update_password_modal-d").modal('hide');
-//     $("#password_verification_modal-d").modal('show');
-// });
-
-// ------For enter new password switch modals ----->
-$('.modal').on('click', `#switch_to_new_password_modal-d`, function(e) {
-    switchModal('password_verification_modal-d', 'new_password_modal-d');
-
-});
-
-// $("#switch_to_new_password_modal-d").click(function() {
-//     $("#password_verification_modal-d").modal('hide');
-//     $("#new_password_modal-d").modal('show');
-// });
-
-// ------ For success new password switch modals ----->
-$('.modal').on('click', `#password_success_modal-d`, function(e) {
-    switchModal('new_password_modal-d', 'success_password_modal-d');
-
-});
-
-// $("#password_success_modal-d").click(function() {
-//     $("#new_password_modal-d").modal('hide');
-//     $("#success_password_modal-d").modal('show');
-// });
-
-/**  --------------- jquery of switch modals for new password ----------- */
-
-/**-------------------- switch modal for rating or not -------------------- */
-
-$('.modal').on('click', `#switch_to_no_rating_modal`, function(e) {
-    switchModal('player_played_modal-d', 'player_not_played_modal-d');
-
-});
-
-// $("#switch_to_no_rating_modal").click(function() {
-//     $("#player_played_modal-d").modal('hide');
-//     $("#player_not_played_modal-d").modal('show');
-// });
+    /**  --------------- jquery of switch modals for new email ----------- */
 
 
-/** -------------- for add stadium modal --------------- */
+    /**  --------------- jquery of switch modals for new password ----------- */
 
-$("#switch_to_add_stadium_modal-d").click(function() {
-    $("#send_invitation_modal-d").modal('hide');
-    $("#add_stadium_modal-d").modal('show');
-});
+    // ------For enter verify code to update password switch modals ----->
+    $('.modal').on('click', `#switch_to_password_verify_code_modal-d`, function(e) {
+        switchModal('update_password_modal-d', 'password_verification_modal-d');
 
-// filter modals switch
+    });
+
+    // $("#switch_to_password_verify_code_modal-d").click(function() {
+    //     $("#update_password_modal-d").modal('hide');
+    //     $("#password_verification_modal-d").modal('show');
+    // });
+
+    // ------For enter new password switch modals ----->
+    $('.modal').on('click', `#switch_to_new_password_modal-d`, function(e) {
+        switchModal('password_verification_modal-d', 'new_password_modal-d');
+
+    });
+
+    // $("#switch_to_new_password_modal-d").click(function() {
+    //     $("#password_verification_modal-d").modal('hide');
+    //     $("#new_password_modal-d").modal('show');
+    // });
+
+    // ------ For success new password switch modals ----->
+    $('.modal').on('click', `#password_success_modal-d`, function(e) {
+        switchModal('new_password_modal-d', 'success_password_modal-d');
+
+    });
+
+    // $("#password_success_modal-d").click(function() {
+    //     $("#new_password_modal-d").modal('hide');
+    //     $("#success_password_modal-d").modal('show');
+    // });
+
+    /**  --------------- jquery of switch modals for new password ----------- */
+
+    /**-------------------- switch modal for rating or not -------------------- */
+
+    $('.modal').on('click', `#switch_to_no_rating_modal`, function(e) {
+        switchModal('player_played_modal-d', 'player_not_played_modal-d');
+
+    });
+
+    // $("#switch_to_no_rating_modal").click(function() {
+    //     $("#player_played_modal-d").modal('hide');
+    //     $("#player_not_played_modal-d").modal('show');
+    // });
 
 
-$('.modal').on('click', '.trigger_rating-d', function(e) {
-    // console.log('fefefefe');
-    $("#option_of_filter_modal-d").modal('hide');
-    $("#filter_by_rating_modal-d").modal('show');
-});
+    /** -------------- for add stadium modal --------------- */
 
-$('.modal').on('click', '.trigger_price-d', function(e) {
-    // $(".option_of_filter_modal-d").modal('hide');
-    // $("#filter_by_price_modal-d").modal('show');
-    switchModal('option_of_filter_modal-d', 'filter_by_price_modal-d');
+    $("#switch_to_add_stadium_modal-d").click(function() {
+        $("#send_invitation_modal-d").modal('hide');
+        $("#add_stadium_modal-d").modal('show');
+    });
 
-});
+    // filter modals switch
 
 
-$('.modal').on('click', '.trigger_location-d', function(e) {
-    // $(".option_of_filter_modal-d").modal('hide');
-    // $("#filter_by_distance_modal-d").modal('show');
-    switchModal('option_of_filter_modal-d', 'filter_by_distance_modal-d');
-});
+    $('.modal').on('click', '.trigger_rating-d', function(e) {
+        // console.log('fefefefe');
+        // $("#option_of_filter_modal-d").modal('hide');
+        // $("#filter_by_rating_modal-d").modal('show');
+        switchModal('option_of_filter_modal-d', 'filter_by_rating_modal-d');
+
+    });
+
+    $('.modal').on('click', '.trigger_price-d', function(e) {
+        // $(".option_of_filter_modal-d").modal('hide');
+        // $("#filter_by_price_modal-d").modal('show');
+        switchModal('option_of_filter_modal-d', 'filter_by_price_modal-d');
+
+    });
+
+
+    $('.modal').on('click', '.trigger_location-d', function(e) {
+        // $(".option_of_filter_modal-d").modal('hide');
+        // $("#filter_by_distance_modal-d").modal('show');
+        switchModal('option_of_filter_modal-d', 'filter_by_distance_modal-d');
+    });
+
+    $(`.p_tab`).click(function() {
+        $(`.nav-tabs`).find(`.performance_text`).removeClass('performance_text');
+        $(this).addClass('performance_text');
+        $(`.tab-content`).find('.active').removeClass('active').removeClass('show');
+        $(`#${$(this).attr('href').replace('#','')}`).addClass('active').addClass('show');
+    })
+
+    $('.calendar').pignoseCalendar();
 
 $(`.p_tab`).click(function() {
     $(`.nav-tabs`).find(`.performance_text`).removeClass('performance_text');

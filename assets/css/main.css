@@ -1278,6 +1278,38 @@ input:checked+.slider:before {
     border-radius: 5px;
 }
 
+.range-value{
+    position: absolute;
+    top: -50%;
+  }
+  .range-value span{
+    width: 30px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: black;
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 6px;
+    top: -34px;
+  }
+  .range-value span:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    margin-top: -1px;
+  }
+  
+
 HTML CSS JSResult Skip Results Iframe EDIT ON output {
     position: absolute;
     background-image: linear-gradient(#444444, #999999);

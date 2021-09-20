@@ -10,6 +10,107 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
     <title>Filter by Rating</title>
+    <style>
+ .range-wrap {
+    position: relative;
+    /* width: 100%;
+    height: 36px;
+    box-sizing: border-box;
+    background: rgba(248, 247, 244, 0.2);
+    padding-top: 15px;
+    padding-left: 16px;
+    border-radius: 3px; */
+}
+
+
+/* Reset style for input range */
+
+.range-wrap input[type=range] {
+    width: 100%;
+    position: absolute;
+    /* height: 2px; 
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  pointer-events: none; */
+    -webkit-appearance: none;
+}
+
+.range-wrap input[type=range]::-ms-track {
+    width: 188px;
+    height: 2px;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    pointer-events: none;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    border-radius: 5px;
+}
+
+
+/* Style toddler input range */
+
+.range-wrap input[type=range]::-webkit-slider-thumb {
+    /* WebKit/Blink */
+    position: relative;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin-top: -9px;
+    background-color: #006400;
+    z-index: 100;
+}
+
+
+/* Style track input range */
+
+.range-wrap input[type=range]::-webkit-slider-runnable-track {
+    /* WebKit/Blink */
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    background: #006400;
+    border-radius: 5px;
+}
+
+.range-value{
+  position: absolute;
+  top: -50%;
+}
+.range-value span{
+  width: 30px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  
+  color: black;
+  font-size: 12px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 6px;
+  top: -34px;
+}
+.range-value span:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -1px;
+}
+
+
+    </style>
 </head>
 <body>
     <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#filter_by_rating_modal-d">
@@ -38,12 +139,14 @@
                                     <br>
                                 </div>
                                 <span class="float-right" id="rating_value-d2">3.5</span> -->
-                                <div class="price-field" id="rating_slider-d">
-                                    <input type="range" class="lower_value-s" min="100" max="500" value="120" id="lower">
-                                    <span class="float-left rating_value-s" id="rating_value-d">3.5</span>
-                                    <input type="range" min="100" max="500" value="500" id="upper">
-                                    <!-- <span class="float-left " id="rating_value-d">3.5</span> -->
-                                </div>
+                                
+                                <div class="range-wrap">
+                                    <div class="range-value" id="rangeV"></div>
+                                    <input id="range" type="range" min="200" max="500" value="200" step="1">
+                                    <div class="range-value" id="rangeV-s"></div>
+                                    <input id="range-s" type="range" min="200" max="500" value="500" step="1">
+                                  </div>
+                                   
                             </div>
                         </div>
                     </form>
@@ -70,6 +173,53 @@
 
     <!-- ajax -->
     <script src="assets/js/main.js"></script>
+    
+    <script>
+        // debugger;
+        $(`#range`).on('input change', function(){
+
+            const
+            range = document.getElementById('range'),
+            rangeV = document.getElementById('rangeV'),
+            setValue = ()=>{
+                let
+                newValue = Number( (range.value - range.min) * 100 / (range.max - range.min) ),
+                newPosition = 10 - (newValue * 0.2);
+                rangeV.innerHTML = `<span>${range.value}</span>`;
+                rangeV.style.left = `calc(${newValue}% + (${newPosition}px))`;
+                if( $(`#range`).val() >  $(`#range-s`).val() ){
+                    $(`#range-s`).val($(`#range`).val()) ;
+                    document.getElementById('rangeV-s').innerHTML = '';
+                }
+            };
+            document.addEventListener("DOMContentLoaded", setValue);
+            range.addEventListener('input', setValue);
+            
+        });  
+        $(`#range-s`).on('input change', function(){
+
+            
+            const
+            ranges = document.getElementById('range-s'),
+            rangeVs = document.getElementById('rangeV-s'),
+            text = ()=>{
+                let
+                newValues = Number( (ranges.value - ranges.max) * 100 / (ranges.min - ranges.max) ),
+                newPositions = 10 - (newValues * 0.2);
+                rangeVs.innerHTML = `<span>${ranges.value}</span>`;
+                rangeVs.style.right = `calc(${newValues}% + (${newPositions}px))`;
+                if( $(`#range-s`).val() <  $(`#range`).val() ){
+                    $(`#range`).val($(`#range-s`).val());
+                    document.getElementById('rangeV').innerHTML = '';
+                }
+            };
+            document.addEventListener("DOMContentLoaded", text);
+            ranges.addEventListener('input', text);
+            
+        });
+            
+    
+    </script>
 </body>
 </body>
 </html>

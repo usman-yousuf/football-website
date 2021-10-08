@@ -7,6 +7,10 @@
 
 //loop for all nav link items to active them on click
 $(document).ready(function() {
+
+    $('.delete_row-d').click(function () {
+        $(this).parent().parent().remove();
+    });
     // console.log('test');
     // console.log('window.location.hostname: ', (window.location.href.substring(window.location.href.lastIndexOf('/'))).replace('/', ''));
 
@@ -368,5 +372,7 @@ document.addEventListener('DOMContentLoaded', function() {
         $(`.tab-content`).find('.active').removeClass('active').removeClass('show');
         $(`#${$(this).attr('href').replace('#','')}`).addClass('active').addClass('show');
     });
+
+    
 
 });

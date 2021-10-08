@@ -1924,3 +1924,44 @@ output:after {
 .bc_lightgrey-s {
     border-top: 3px solid #E5EEE7;
 }
+
+/* Admin Pages CSS */
+
+.mw_9_125rem-s{
+    min-width: 9.125rem;
+}
+
+.mw_8_125rem-s{
+    min-width: 8.125rem;
+}
+
+.mw_18_75rem-s{
+    min-width: 18.75rem;
+}
+
+.dropdown_hover-s a:hover{
+    background-color: #006400;
+    color: white;
+}
+
+table, tr, td, tbody, thead{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+}
+
+tbody:before {
+    content:"@";
+    display:block;
+    line-height:20px;
+    text-indent:-99999px;
+}
+
+.mh_69vh-s{
+    min-height: 69vh;
+}
+
+.mh_188px-s{
+    min-height: 188px;
+}
